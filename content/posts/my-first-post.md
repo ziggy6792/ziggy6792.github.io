@@ -4,4 +4,4 @@ date: 2020-04-29T00:21:12+08:00
 draft: true
 ---
 
-Today I stuck my dick in the toaster
+In this blog I aspire to detail my journey in adopting AWS Amplify, Cognito, AppSync and DynamoDb
