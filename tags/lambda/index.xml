@@ -6,7 +6,7 @@
     <description>Recent content in Lambda on Simon&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Aug 2019 09:07:48 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2020 09:07:48 +0700</lastBuildDate>
     
 	<atom:link href="https://ziggy6792.github.io/tags/lambda/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,10 +14,10 @@
     <item>
       <title>Accessing AppSync API DynamoDB Tables from Amplify Lambda Functions</title>
       <link>https://ziggy6792.github.io/posts/amplify-lambda-dynamodb/</link>
-      <pubDate>Fri, 23 Aug 2019 09:07:48 +0700</pubDate>
+      <pubDate>Sun, 23 Feb 2020 09:07:48 +0700</pubDate>
       
       <guid>https://ziggy6792.github.io/posts/amplify-lambda-dynamodb/</guid>
-      <description>Amplify offers the ability to add lambda functions which use other configured resources including DynamoDB Tables</description>
+      <description>Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article focuses on creating a Lambda function with Amplify CLI that has access these tables</description>
     </item>
     
   </channel>

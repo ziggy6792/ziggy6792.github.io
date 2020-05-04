@@ -8,15 +8,15 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<meta property="og:title" content="Accessing AppSync API DynamoDB Tables from Amplify Lambda Functions" />
-<meta property="og:description" content="Amplify offers the ability to add lambda functions which use other configured resources including DynamoDB Tables" />
+<meta property="og:description" content="Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article focuses on creating a Lambda function with Amplify CLI that has access these tables" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ziggy6792.github.io/posts/amplify-lambda-dynamodb/" />
-<meta property="article:published_time" content="2019-08-23T09:07:48+07:00" />
-<meta property="article:modified_time" content="2019-08-23T09:07:48+07:00" />
+<meta property="article:published_time" content="2020-02-23T09:07:48+07:00" />
+<meta property="article:modified_time" content="2020-02-23T09:07:48+07:00" />
 
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Accessing AppSync API DynamoDB Tables from Amplify Lambda Functions"/>
-<meta name="twitter:description" content="Amplify offers the ability to add lambda functions which use other configured resources including DynamoDB Tables"/>
+<meta name="twitter:description" content="Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article focuses on creating a Lambda function with Amplify CLI that has access these tables"/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -48,7 +48,7 @@
 			<h1 class="post__title">Accessing AppSync API DynamoDB Tables from Amplify Lambda Functions</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-08-23T09:07:48&#43;07:00">August 23, 2019</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/web-development/" rel="category">Web Development</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-02-23T09:07:48&#43;07:00">February 23, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/web-development/" rel="category">Web Development</a>
 	</span>
 </div></div>
 		</header>
@@ -74,8 +74,16 @@
 </div>
 <div class="content post__content clearfix">
 			<h2 id="introduction">Introduction</h2>
-<p>This article will focus on creating a lambda function with the Amplify CLI that has access to the <a href="https://docs.amplify.aws/cli/graphql-transformer/directives#model">@model</a> DynamoDB tables setup for an <a href="https://docs.amplify.aws/lib/graphqlapi/getting-started/q/platform/js">Amplify AppSync API</a>.</p>
-<p><strong>WHY</strong></p>
+<p>Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article will focus on creating a lambda function with the Amplify CLI that has access to the <a href="https://docs.amplify.aws/cli/graphql-transformer/directives#model">@model</a> DynamoDB tables setup for an <a href="https://docs.amplify.aws/lib/graphqlapi/getting-started/q/platform/js">Amplify AppSync API</a>.<br>
+Specifically we will look at;</p>
+<ul>
+<li>Creating a Lambda function with Amplify CLI configured to use DynamoDB table resources</li>
+<li>Potential problems with creating Lambdas with Amplify and provisioning resouces</li>
+<li>Best practices for provisioning resouces</li>
+<li>Writing a simple Lambda handler to test access to the configured tables</li>
+<li>Testing the Lambda</li>
+</ul>
+<p><strong>WHY?</strong></p>
 <ul>
 <li>Perhaps you want to write some custom graphQL <a href="https://docs.amplify.aws/cli/graphql-transformer/directives#function">@function</a> resolvers that interact with your API DynamoDB tables directly (e.g. add a batch of items to a table)</li>
 <li>Or, set up triggers on your tables (e.g. to cascade deletes to orphaned items)</li>
@@ -164,13 +172,13 @@
 </figure>
 
 <h2 id="test-your-new-function-write-to-dynamodb-from-lambda-function">Test your new function. Write to DynamoDB from Lambda Function</h2>
-<p>To test access to dynamoDB from your new Lambda function copy the following code into your local lambda function index.js.</p>
+<p>To test access to dynamoDB from your new Lambda function, copy the following code (from line 23) into your local lambda function index.js, replacing the hello world function that was created here <a href="/posts/amplify-lambda-dynamodb/#creating-a-lambda-function-with-amplify-cli">here</a>.</p>
 <script type="application/javascript" src="https://gist.github.com/ziggy6792/f8ea26516f51fbb7bf2ee024f9d054f0.js?file=lambda-function-index.js"></script>
 
 <p><strong>IMPORTANT</strong>:</p>
 <ul>
-<li>Do not replace the Amplify Params, keep your own</li>
-<li>Replace tableName (line 33) with one of your own resource attributes as environment variables that was created here <a href="/posts/amplify-lambda-dynamodb/#creating-a-lambda-function-with-amplify-cli">here</a></li>
+<li>Do not replace/edit (lines 1 to 21) the Amplify Params, keep your own</li>
+<li>Replace tableName (line 33) with one of your own resource attributes as environment variables that was created <a href="/posts/amplify-lambda-dynamodb/#creating-a-lambda-function-with-amplify-cli">here</a></li>
 <li>You will also need to cd to you local lambda function directory and install npm package uuid</li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#a6e22e">NBMAC0056</span>:<span style="color:#a6e22e">SwtNinja</span> <span style="color:#a6e22e">verhoeven</span><span style="color:#960050;background-color:#1e0010">$</span> <span style="color:#a6e22e">cd</span> <span style="color:#e6db74">&#34;amplify/backend/function/doSomethingToDBTables/src/&#34;</span>
