@@ -1,0 +1,29 @@
+{{- if .Param "authorbox" }}
+  {{- range .Params.authors }}
+    {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+    <div class="authorbox clearfix">
+      {{- if .Params.photo }}
+      <figure class="authorbox__avatar">
+        <img alt="{{ .Params.name }} avatar" src="{{ .Params.photo | relURL }}" class="avatar" height="90" width="90">
+      </figure>
+      {{- else }}
+      <figure class="authorbox__avatar">
+        <img alt="{{ .Params.name }} avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+      </figure>
+      {{- end }}
+      {{- if .Params.name }}
+      <div class="authorbox__header">
+        <span class="authorbox__name">
+          <!-- <a href="{{ .Permalink }}" class="block-link"> -->{{ T "authorbox_name" .Params.name }}<!-- </a> -->
+        </span>
+      </div>
+      {{- end }}
+      {{- with .Params.summary }}
+      <div class="authorbox__description">
+        {{ . }}
+      </div>
+      {{- end }}
+    </div>
+    {{- end }}
+  {{- end }}
+{{- end }}
