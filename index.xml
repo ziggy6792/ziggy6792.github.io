@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Simon&#39;s blog</title>
+    <link>https://ziggy6792.github.io/</link>
+    <description>Recent content on Simon&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2020 00:21:12 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 23 Aug 2019 09:07:48 +0700</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ziggy6792.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>My First Post</title>
-      <link>http://example.org/posts/my-first-post/</link>
-      <pubDate>Wed, 29 Apr 2020 00:21:12 +0800</pubDate>
+      <title>Accessing AppSync API DynomoDB Tables from Amplify Lambda Functions</title>
+      <link>https://ziggy6792.github.io/posts/amplify-lambda-dynomodb/</link>
+      <pubDate>Fri, 23 Aug 2019 09:07:48 +0700</pubDate>
       
-      <guid>http://example.org/posts/my-first-post/</guid>
-      <description>In this blog I aspire to detail my journey in adopting AWS Amplify, Cognito, AppSync and DynamoDb. But first let me stick my dick in this toaster.</description>
+      <guid>https://ziggy6792.github.io/posts/amplify-lambda-dynomodb/</guid>
+      <description>Amplify offers the ability to add lambda functions which use other configured resources including DynomoDB Tables</description>
     </item>
     
   </channel>
