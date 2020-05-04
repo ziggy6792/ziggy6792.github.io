@@ -6,7 +6,7 @@
     <description>Recent content in Cloud Formation on Simon&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Feb 2020 09:07:48 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2020 09:07:48 +0700</lastBuildDate>
     
 	<atom:link href="https://ziggy6792.github.io/tags/cloud-formation/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Accessing AppSync API DynamoDB Tables from Amplify Lambda Functions</title>
       <link>https://ziggy6792.github.io/posts/amplify-lambda-dynamodb/</link>
-      <pubDate>Sun, 23 Feb 2020 09:07:48 +0700</pubDate>
+      <pubDate>Fri, 20 Mar 2020 09:07:48 +0700</pubDate>
       
       <guid>https://ziggy6792.github.io/posts/amplify-lambda-dynamodb/</guid>
       <description>Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article focuses on creating a Lambda function with Amplify CLI that has access these tables</description>
