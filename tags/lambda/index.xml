@@ -20,5 +20,14 @@
       <description>Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article focuses on creating a Lambda function with Amplify CLI that has access these tables</description>
     </item>
     
+    <item>
+      <title>Welcome to my blog</title>
+      <link>https://ziggy6792.github.io/posts/my-first-post/</link>
+      <pubDate>Sun, 15 Mar 2020 09:07:48 +0700</pubDate>
+      
+      <guid>https://ziggy6792.github.io/posts/my-first-post/</guid>
+      <description>In this blog I aspire to detail my journey in adopting AWS Amplify, Cognito, AppSync and DynamoDb.</description>
+    </item>
+    
   </channel>
 </rss>
