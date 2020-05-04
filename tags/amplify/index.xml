@@ -22,10 +22,10 @@
     
     <item>
       <title>Welcome to my blog</title>
-      <link>https://ziggy6792.github.io/posts/my-first-post/</link>
+      <link>https://ziggy6792.github.io/posts/wellcome-to-my-blog/</link>
       <pubDate>Sun, 15 Mar 2020 09:07:48 +0700</pubDate>
       
-      <guid>https://ziggy6792.github.io/posts/my-first-post/</guid>
+      <guid>https://ziggy6792.github.io/posts/wellcome-to-my-blog/</guid>
       <description>In this blog I aspire to detail my journey in adopting AWS Amplify, Cognito, AppSync and DynamoDb.</description>
     </item>
     
