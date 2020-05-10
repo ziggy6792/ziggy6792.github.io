@@ -52,6 +52,6 @@ I will cover widely applicable topics such as;
 
 In all areas of software development there is more than one way to skin a fish. However, I believe this is particularly prevalent when it comes to AWS due to the vast array of features and possibilities in this space.
 
-I hope I can get some feedback on from other developes on my approach and design decisions and maybe benefit from learning alternate approaches, their pros and cons.
+I hope I can get some feedback from other developers on my approach and design decisions and maybe benefit from learning alternate approaches, as well as their pros and cons through discussions.
 
 Most importantly, I hope that other people who are looking at adopting these technologies can benefit from a documented report of someone building up their AWS skills and mastering Serverless Application development.
