@@ -1,6 +1,6 @@
 [submodule "mainroad"]
 	path = themes/mainroad
 	url = https://github.com/vimux/mainroad
-[submodule "gists/Accessing_DynomoDB_Tables"]
-	path = gists/Accessing_DynomoDB_Tables
+[submodule "gists/Accessing_DynamoDB_Tables"]
+	path = gists/Accessing_DynamoDB_Tables
 	url = git@gist.github.com:f8ea26516f51fbb7bf2ee024f9d054f0.git
