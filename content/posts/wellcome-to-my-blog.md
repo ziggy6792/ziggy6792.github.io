@@ -25,6 +25,7 @@ summary: "In this blog I aspire to detail my journey in adopting AWS Amplify, Co
 ## Introduction
 
 In this blog I aspire to detail my journey in adopting AWS Serverless Architecture;
+
 - Amplify
 - Lambda
 - Cognito
