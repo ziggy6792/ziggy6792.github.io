@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>AppSync</title>
+      <link>https://ziggy6792.github.io/tags/appsync/</link>
+      <pubDate>Fri, 20 Mar 2020 09:07:48 +0700</pubDate>
+      
+      <guid>https://ziggy6792.github.io/tags/appsync/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>AWS</title>
       <link>https://ziggy6792.github.io/tags/aws/</link>
       <pubDate>Fri, 20 Mar 2020 09:07:48 +0700</pubDate>
@@ -30,11 +39,11 @@
     </item>
     
     <item>
-      <title>Cloud Formation</title>
-      <link>https://ziggy6792.github.io/tags/cloud-formation/</link>
+      <title>CloudFormation</title>
+      <link>https://ziggy6792.github.io/tags/cloudformation/</link>
       <pubDate>Fri, 20 Mar 2020 09:07:48 +0700</pubDate>
       
-      <guid>https://ziggy6792.github.io/tags/cloud-formation/</guid>
+      <guid>https://ziggy6792.github.io/tags/cloudformation/</guid>
       <description></description>
     </item>
     
@@ -53,6 +62,15 @@
       <pubDate>Fri, 20 Mar 2020 09:07:48 +0700</pubDate>
       
       <guid>https://ziggy6792.github.io/tags/lambda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud Formation</title>
+      <link>https://ziggy6792.github.io/tags/cloud-formation/</link>
+      <pubDate>Sun, 15 Mar 2020 09:07:48 +0700</pubDate>
+      
+      <guid>https://ziggy6792.github.io/tags/cloud-formation/</guid>
       <description></description>
     </item>
     
