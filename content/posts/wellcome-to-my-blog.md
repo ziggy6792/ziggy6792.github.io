@@ -25,6 +25,7 @@ summary: "In this blog I aspire to detail my journey in adopting AWS Amplify, Co
 ## Introduction
 
 In this blog I aspire to detail my journey in adopting AWS Serverless Architecture;
+
 - Amplify
 - Lambda
 - Cognito
@@ -32,7 +33,7 @@ In this blog I aspire to detail my journey in adopting AWS Serverless Architectu
 - DynamoDB
 - API Gateway
 
-I am creating a Competition Management App for event organizers and competitors at [Singapore Wakepark](http://www.singaporewakepark.com/home/). This is full stack serverless web application (ReactJS front-end, Amplify GraphQL API + Node JS Lambda back-end). I chose these technologies for the job because I believe them to be a good fit to my needs;
+I am creating a Competition Management App for event organizers and competitors at [Singapore Wakepark](http://www.singaporewakepark.com/home/). This is a full stack serverless web application (ReactJS front-end, GraphQL API (AppSync + Node JS Lambda) back-end. I chose these technologies for the job because I believe them to be a good fit to my needs;
 
 - Easy scalability
 - Pay for what you use (when no competitions are running the cost of running the application will be negligible)
@@ -40,7 +41,7 @@ I am creating a Competition Management App for event organizers and competitors 
 
 But also because they are exciting technologies which I am keen to work with.
 
-Most of my explanations and sample code will in someway showcase my Competition Management App (such as DynamoDB tables with names like Event, Competition, Heat...). However I aim to distill the topics I am learning into blog posts that demonstrate my work in a way that can benefit all developers (building a variety of of applications) using AWS. \
+Most of my explanations and sample code will in someway showcase my Competition Management App (such as DynamoDB tables with names like Event, Competition, Heat...). However I aim to distill the topics I am learning into blog posts that demonstrate my work in a way that can benefit all developers (building a variety of applications) using AWS. \
 I will cover widely applicable topics such as;
 
 - Accessing DynamoDB tables from Lambdas
@@ -51,6 +52,6 @@ I will cover widely applicable topics such as;
 
 In all areas of software development there is more than one way to skin a fish. However, I believe this is particularly prevalent when it comes to AWS due to the vast array of features and possibilities in this space.
 
-I hope I can get some feedback on from other developes on my approach and design decisions and maybe benefit from learning alternate approaches, their pros and cons.
+I hope I can get some feedback from other developers on my approach and design decisions and maybe benefit from learning alternate approaches, as well as their pros and cons through discussions.
 
 Most importantly, I hope that other people who are looking at adopting these technologies can benefit from a documented report of someone building up their AWS skills and mastering Serverless Application development.

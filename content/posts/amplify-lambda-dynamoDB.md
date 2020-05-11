@@ -1,37 +1,36 @@
 ---
-title: "Accessing AppSync API DynamoDB Tables from Amplify Lambda Functions"
+title: "Accessing Amplify GraphQL API objects from Lambda functions"
 date: 2020-03-20T09:07:48+07:00
 authors:
   - Simon Verhoeven
 authorbox: true
 
 # thumbnail: "img/placeholder.jpg" # Optional, thumbnail
-# lead: "EKS in a Terraform way"
+# lead: "code first serverless"
 toc: true # Optional, enable Table of Contents for specific post
 categories:
   - "Web Development"
 tags:
   - "AWS"
   - "Amplify"
+  - "AppSync"
   - "DynamoDB"
   - "Lambda"
-  - "Cloud Formation"
+  - "CloudFormation"
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
 draft: false
-summary: "Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article focuses on creating a Lambda function with Amplify CLI that has access these tables"
+summary: "Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article focuses on creating a Lambda function with Amplify CLI that has access to these tables"
 ---
 
 ## Introduction
 
-Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article will focus on creating a lambda function with the Amplify CLI that has access to the [@model](https://docs.amplify.aws/cli/graphql-transformer/directives#model) DynamoDB tables setup for an [Amplify AppSync API](https://docs.amplify.aws/lib/graphqlapi/getting-started/q/platform/js). \
+Amplify offers the ability to add Lambda functions which use other configured resources including API objects backed by DynamoDb. This article will focus on creating a lambda function with the Amplify CLI that has access to the DynamoDB tables setup for an [AppSync GraphQL API](https://docs.amplify.aws/lib/graphqlapi/getting-started/q/platform/js#create-the-graphql-api). \
 Specifically we will look at;
 
 - Creating a Lambda function with Amplify CLI configured to use DynamoDB table resources
-- Potential problems with creating Lambdas with Amplify and provisioning resouces
-- Best practices for provisioning resouces
-- Writing a simple Lambda handler to test access to the configured tables
-- Testing the Lambda
+- The resource provisioning mechanism and potential problems with creating Lambdas created through Amplify
+- Writing & testing a sample Lambda handler to demonstrate its capabilities
 
 **WHY?**
 
@@ -46,7 +45,8 @@ Specifically we will look at;
 
 ## Creating a Lambda function with Amplify CLI
 
-Use the following commands to create a Lambda function with Amplify CLI. After selecting the category storage you will be prompted to select the [@model](https://docs.amplify.aws/cli/graphql-transformer/directives#model) DynamoDB tables setup by [amplify add api](https://docs.amplify.aws/lib/graphqlapi/getting-started/q/platform/js). \
+Use the following commands to create a Lambda function with the Amplify CLI. After selecting the category `storage`, you will be prompted to select DynamoDB tables wich exist for the GraphQL API [@model](https://docs.amplify.aws/cli/graphql-transformer/directives#model).
+
 **NOTE**: You will need Amplify CLI version 4.16.1 or higher.
 
 {{< gist ziggy6792 f8ea26516f51fbb7bf2ee024f9d054f0 "createLambdaFunction.txt" >}}
@@ -54,38 +54,39 @@ Use the following commands to create a Lambda function with Amplify CLI. After s
 ## Potential maximum policy size issue when running amplify push
 
 When running amplify push at the end of the last step you may see the following [issue](https://github.com/aws-amplify/amplify-cli/issues/1699).
-"Maximum policy size of 10240 bytes exceeded for role \<apiName\>LambdaRole26741da9-\<apiName\>"
 
-This issue occurs when the policy created by for the lambda role (the IAM role created to run your new lambda function) exceeds the maximum size allowed for role inline policies.
+> "Maximum policy size of 10240 bytes exceeded for role `<apiName>LambdaRole26741da9-<apiName>`"
+
+This issue occurs when the policy created for the lambda role (the IAM role created to run your new lambda function) exceeds the maximum size allowed for role inline policies.
 
 ### Option1: Reducing the number of tables added to the role policy
 
-If possible you should reduce the tables and actions granted in the previous step (following the best practice that each lambda only has access to the actions and resources it expressly needs). However, this may not be possible. In my case, I wanted to write a lambda function that cascaded deletes through my table schema. Therefore, my lambda function needs to have access to all of my API tables.
+If possible, you should reduce the tables and actions granted in the previous step (following the best practice that each lambda only has access to the actions and resources it expressly needs). However, this may not be possible. In my case, I wanted to write a lambda function that cascaded deletes through my table schema. Therefore, my lambda function needs to have access to all of my API tables.
 
-### Option2: Customizing local cloud formation template generated by Amplify
+### Option2: Customizing local CloudFormation template generated by Amplify
 
-To understand a work around for this issue, it is important to explain in more detail what amplify add function is actually doing. Amplify add function creates a local folder for the function containing a cloud formation template. E.g;
+To understand a work around for this issue, it is important to explain in more detail what `amplify add function` is actually doing. This method creates a local folder for the function containing a CloudFormation template. E.g;
 
 {{< highlight go >}}
 amplify/backend/function/doSomethingToDBTables/doSomethingToDBTables-cloudformation-template.json
 {{< / highlight >}}
 
-This template describes the lambda to be created when amplify push is next run. However, Amplify is not very clever when it comes to creating the templates which create role inline policies. The amplify created cloud formation template creates a separate inline policy statement for each DynamoDB table (even if the allowed actions are the same).
+This template describes the lambda to be created when amplify push is next run. However, Amplify is not very clever when it comes to creating the templates which create role inline policies. The Amplify created CloudFormation template creates a separate inline policy statement for each DynamoDB table (even if the allowed actions are the same).
 
 For example; granting these actions;
 
-- "dynamodb:Put\*",
-- "dynamodb:Create\*",
-- "dynamodb:BatchWriteItem",
-- "dynamodb:Get\*",
-- "dynamodb:BatchGetItem",
-- "dynamodb:List\*",
-- "dynamodb:Describe\*",
-- "dynamodb:Scan",
-- "dynamodb:Query",
-- "dynamodb:Update\*",
-- "dynamodb:RestoreTable\*",
-- "dynamodb:Delete\*"
+- `"dynamodb:Put*"`
+- `"dynamodb:Create*"`
+- `"dynamodb:BatchWriteItem"`
+- `"dynamodb:Get*"`
+- `"dynamodb:BatchGetItem"`
+- `"dynamodb:List*"`
+- `"dynamodb:Describe*"`
+- `"dynamodb:Scan"`
+- `"dynamodb:Query"`
+- `"dynamodb:Update*"`
+- `"dynamodb:RestoreTable*"`
+- `"dynamodb:Delete*"`
 
 To these tables;
 
@@ -100,42 +101,40 @@ Will create the following access policy list of statements;
 
 {{< gist ziggy6792 f8ea26516f51fbb7bf2ee024f9d054f0 "accessPolicyExample1.json" >}}
 
-Which is actually equivalent to the following single statement (which uses pattern resource descriptions instead);
+Which is actually equivalent to the following single statement (using the pattern resource identifier: `*-xl3qodhqsfdmhe5psj4vqa7wsy-compapi` matching every table for **this particular GraphQL API Environment**);
 
 {{< gist ziggy6792 f8ea26516f51fbb7bf2ee024f9d054f0 "accessPolicyExample2.json" >}}
 
 The difference with using the second example however is that; generating policies this way will not cause policies to grow in size with the number of API tables and therefore will not easily hit the maximum policy size and cause the maximum policy size issue.
 
-Therefore, a workaround for the maximum policy size issue is to modify your cloud formation template to consolidate the assignment of actions to tables. Exactly how to modify the cloud formation template will depend on the specific access rights you want to grant to your lambda. A common example however would be if you wanted to grant the same access to all API tables.
+Therefore, a workaround for the maximum policy size issue is to modify your CloudFormation template to consolidate the assignment of actions to tables. Exactly how to modify the CloudFormation template will depend on the specific access rights you want to grant to your lambda. A common example however would be if you wanted to grant the same access to all API tables for a particular environment as shown above.
 
-## Modify cloud formation template to give access to all Amplify API tables
+## Modify CloudFormation template to give access to all Amplify API tables
 
-The following steps show how you can grant access to all Amplify API tables and avoid the maximum policy size issue.
+Using [jq](https://stedolan.github.io/jq) we can first remove all but the first policy statement from the generated `doSomethingToDBTables-cloudformation-template.json`:
 
-I have created the following shell script to help with this common example.
-
-Running this script will remove all but one access policy statements from the lambda function role.
-
-{{< gist ziggy6792 f8ea26516f51fbb7bf2ee024f9d054f0 "reduceLambdaAccessPolicySize.sh" >}}
-
-You can run this shell script and enter the path to your lambda cloud formation template as shown below.
-
-{{< highlight go >}}
-NBMAC0056:SwtNinja verhoeven\$ . amplify/bash/reduceLambdaAccessPolicySize.sh
-Path To Cloud Formation Template:amplify/backend/function/doSomethingToDBTables/doSomethingToDBTables-cloudformation-template.json
+{{< highlight bash "linenos=inline,hl_lines=2" >}}
+jq '.Resources.AmplifyResourcesPolicy.Properties.PolicyDocument.Statement[0] as $stmt0 |
+    .Resources.AmplifyResourcesPolicy.Properties.PolicyDocument.Statement = [$stmt0]' \
+    doSomethingToDBTables-cloudformation-template.json >${DIR}/output.json
 {{< / highlight >}}
 
-This will create a file "output-cloudformation-template.json" in the same directory as the shell script. Copy and replace the entire contents of this file into your Lambda function local cloud formation template.
+**NOTE**: `jq` currently does not support in-place editing of files
 
-Now manually edit the template to give access to all api tables by using a pattern resource definition ("\*-ApiName-EnvName").
-
-In your new cloud formation template, make the following changes;
+This will create a new file `output.json` in the same directory, manually edit this file replacing the tableName specific resource identifier with the pattern identifier (`*-<ApiName>-<EnvName>`). Here's a sample diff;
 
 {{< gist ziggy6792 f8ea26516f51fbb7bf2ee024f9d054f0 "editCloudFormationTemplate.diff" >}}
 
-[Here](https://gist.github.com/ziggy6792/f8ea26516f51fbb7bf2ee024f9d054f0#file-dosomethingtodbtables-cloudformation-template-json) is an example of my final cloud formation template ready to be pushed using amplify push.
+Next, replace original `doSomethingToDBTables-cloudformation-template.json` with `output.json`.
 
-Next run amplify push.
+{{< highlight bash "linenos=inline,hl_lines=2" >}}
+rm doSomethingToDBTables-cloudformation-template.json
+mv output.json doSomethingToDBTables-cloudformation-template.json
+{{< / highlight >}}
+
+[Here](https://gist.github.com/ziggy6792/f8ea26516f51fbb7bf2ee024f9d054f0#file-dosomethingtodbtables-cloudformation-template-json) is an example of my final CloudFormation template.
+
+Finally, run `amplify push`.
 
 Go to your ec2 console. You should see the following created lambda function;
 
@@ -147,21 +146,22 @@ Along with the following attached role and access policy.
 
 ## Test your new function. Write to DynamoDB from Lambda Function
 
-To test access to dynamoDB from your new Lambda function, copy the following code (from line 23) into your local lambda function index.js, replacing the hello world function that was created here [here](/posts/amplify-lambda-dynamodb/#creating-a-lambda-function-with-amplify-cli). 
+To test access to dynamoDB from your new Lambda function, copy the following code (from line 23) into your local lambda function index.js, replacing the hello world function that was created [here](/posts/amplify-lambda-dynamodb/#creating-a-lambda-function-with-amplify-cli). 
 
 {{< gist ziggy6792 f8ea26516f51fbb7bf2ee024f9d054f0 "lambda-function-index.js" >}}
 
-**IMPORTANT**: 
-- Do not replace/edit (lines 1 to 21) the Amplify Params, keep your own
-- Replace tableName (line 33) with one of your own resource attributes as environment variables that was created [here](/posts/amplify-lambda-dynamodb/#creating-a-lambda-function-with-amplify-cli)
-- You will also need to cd to you local lambda function directory and install npm package uuid
+**IMPORTANT**:
 
-{{< highlight go "linenos=inline,hl_lines=2" >}}
-NBMAC0056:SwtNinja verhoeven$ cd "amplify/backend/function/doSomethingToDBTables/src/"
-NBMAC0056:src verhoeven$ npm i --save uuid
+- Do not replace/edit the Amplify auto generated variables (lines 1 to 21), keep your own variables separate from this auto-generated code to ensure they are not overwritten.
+- Replace tableName (line 33) with one of your own resource attributes as environment variables that was created [here](/posts/amplify-lambda-dynamodb/#creating-a-lambda-function-with-amplify-cli)
+- You will also need to cd to you local lambda function directory and install npm package uuid locally
+
+{{< highlight bash "linenos=inline,hl_lines=2" >}}
+cd "amplify/backend/function/doSomethingToDBTables/src/"
+npm i --save uuid
 {{< / highlight >}}
 
-Next run amplify push
+Next run `amplify push`
 
 Now you can test your function in the AWS console;
 
@@ -171,7 +171,7 @@ And then verify that an item was created in the specified table;
 
 {{< figure src="/img/posts/Accessing-DynamoDB-Tables/Test-Function-Created-Item.png" title="Test Function Success - Created Item" >}}
 
-<!-- {{< highlight go "linenos=inline,hl_lines=8 15-17" >}}
+<!-- {{< highlight json "linenos=inline,hl_lines=8 15-17" >}}
 {
   "name": "doSomethingToDBTables",
   "version": "2.0.0",
