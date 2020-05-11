@@ -20,7 +20,7 @@ tags:
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
 draft: false
-summary: "Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article focuses on creating a Lambda function with Amplify CLI that has access to these tables"
+summary: "Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article focuses on creating a Lambda function with Amplify CLI that has access to these tables."
 ---
 
 ## Introduction
@@ -113,10 +113,10 @@ Therefore, a workaround for the maximum policy size issue is to modify your Clou
 
 Using [jq](https://stedolan.github.io/jq) we can first remove all but the first policy statement from the generated `doSomethingToDBTables-cloudformation-template.json`:
 
-{{< highlight bash "linenos=inline,hl_lines=2" >}}
+{{< highlight bash >}}
 jq '.Resources.AmplifyResourcesPolicy.Properties.PolicyDocument.Statement[0] as $stmt0 |
     .Resources.AmplifyResourcesPolicy.Properties.PolicyDocument.Statement = [$stmt0]' \
-    doSomethingToDBTables-cloudformation-template.json >${DIR}/output.json
+    doSomethingToDBTables-cloudformation-template.json >output.json
 {{< / highlight >}}
 
 **NOTE**: `jq` currently does not support in-place editing of files
