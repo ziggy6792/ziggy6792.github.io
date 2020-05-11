@@ -17,7 +17,7 @@
       <pubDate>Thu, 19 Mar 2020 09:07:48 +0700</pubDate>
       
       <guid>https://ziggy6792.github.io/posts/wakeboard-competition-app/</guid>
-      <description>In this blog I aspire to detail my journey in adopting AWS Amplify, Cognito, AppSync and DynamoDb.</description>
+      <description>A short write up the Wakeboard Competition Management App; motivation, requirements, tools and design.</description>
     </item>
     
   </channel>

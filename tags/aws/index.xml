@@ -17,7 +17,7 @@
       <pubDate>Fri, 20 Mar 2020 09:07:48 +0700</pubDate>
       
       <guid>https://ziggy6792.github.io/posts/amplify-lambda-dynamodb/</guid>
-      <description>Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article focuses on creating a Lambda function with Amplify CLI that has access to these tables</description>
+      <description>Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article focuses on creating a Lambda function with Amplify CLI that has access to these tables.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Thu, 19 Mar 2020 09:07:48 +0700</pubDate>
       
       <guid>https://ziggy6792.github.io/posts/wakeboard-competition-app/</guid>
-      <description>In this blog I aspire to detail my journey in adopting AWS Amplify, Cognito, AppSync and DynamoDb.</description>
+      <description>A short write up the Wakeboard Competition Management App; motivation, requirements, tools and design.</description>
     </item>
     
     <item>
