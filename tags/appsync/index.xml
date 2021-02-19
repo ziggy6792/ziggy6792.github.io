@@ -6,11 +6,7 @@
     <description>Recent content in AppSync on Simon&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Mar 2020 09:07:48 +0700</lastBuildDate>
-    
-	<atom:link href="https://ziggy6792.github.io/tags/appsync/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 20 Mar 2020 09:07:48 +0700</lastBuildDate><atom:link href="https://ziggy6792.github.io/tags/appsync/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Accessing Amplify GraphQL API objects from Lambda functions</title>
       <link>https://ziggy6792.github.io/posts/amplify-lambda-dynamodb/</link>

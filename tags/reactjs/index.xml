@@ -6,18 +6,14 @@
     <description>Recent content in ReactJS on Simon&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Mar 2020 09:07:48 +0700</lastBuildDate>
-    
-	<atom:link href="https://ziggy6792.github.io/tags/reactjs/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 19 Mar 2020 09:07:48 +0700</lastBuildDate><atom:link href="https://ziggy6792.github.io/tags/reactjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wakeboard Competition App Project</title>
       <link>https://ziggy6792.github.io/posts/wakeboard-competition-app/</link>
       <pubDate>Thu, 19 Mar 2020 09:07:48 +0700</pubDate>
       
       <guid>https://ziggy6792.github.io/posts/wakeboard-competition-app/</guid>
-      <description>A short write up of my Wakeboard Competition Management App; motivation, requirements, tools and design.</description>
+      <description>A short write up the Wakeboard Competition Management App; motivation, requirements, tools and design.</description>
     </item>
     
   </channel>
