@@ -72,7 +72,8 @@
     <li><a href="#our-tools">Our Tools</a>
       <ul>
         <li><a href="#amazon-web-services">Amazon Web Services</a></li>
-        <li><a href="#reactjs">ReactJS</a></li>
+        <li><a href="#aws-cloud-development-kit">AWS Cloud Development Kit</a></li>
+        <li><a href="#nodejs">NodeJS</a></li>
       </ul>
     </li>
     <li><a href="#architecture">Architecture</a></li>
@@ -147,13 +148,33 @@
 </ul>
 <p>We are making use of the following AWS tools and services;</p>
 <ul>
-<li><a href="https://aws.amazon.com/cdk/">AWS CDK</a>, to rapidly provision and configure our cloud services</li>
+<li><a href="https://aws.amazon.com/cdk/">AWS CDK</a>, to rapidly provision and configure our cloud services (see below)</li>
 <li><a href="https://aws.amazon.com/cognito/">Amazon Cognito</a>, to handle user sign up authorization</li>
 <li><a href="https://aws.amazon.com/dynamodb/">Amazon DynamoDB</a>, to provide millisecond response times to API queries for competition and rider data</li>
-<li><a href="https://aws.amazon.com/lambda/">AWS Lambda</a>, to support some of the more specific graphQL queries and mutations (e.g: building a competition from a set of parameters)</li>
+<li><a href="https://aws.amazon.com/lambda/">AWS Lambda</a>, to support some of the more specific GraphQL queries and mutations (e.g. building a competition from a set of parameters)</li>
 </ul>
-<h3 id="reactjs">ReactJS</h3>
-<p>We are building our application front end using ReactJS, which offers;</p>
+<h3 id="aws-cloud-development-kit">AWS Cloud Development Kit</h3>
+<p>We are building and maintaining application infrastructure using AWS CDK, which offers;</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Infrastructure_as_code">Infrastructure as code</a>. Application infrastructure can be configured in code removing the need for physical hardware configuration or interactive configuration tools. This leads to faster development speed, lower risk and lower cost</li>
+<li>Flexibility in Project Design. CDK essentially offers a way to assemble AWS CloudFormation stacks in an easily readable way. It offers many existing customizable constructs (such as LambdaRestApiGateway) and also escape hatching (overwriting its own output with traditional CloudFormation stack configuration). This means that essentially any conceivable AWS stack can be assembled using CDK.</li>
+<li>Fantastic typescript support out of the box</li>
+</ul>
+<h3 id="nodejs">NodeJS</h3>
+<h4 id="nodejs-backend">NodeJS (Backend)</h4>
+<p>We are building our application backend using NodeJS, which offers;</p>
+<ul>
+<li>JavaScript event loop offers very simple handling of asynchronous communication to other systems (such as DynamoDB)</li>
+<li>Easy to deploy and run on AWS Lambda (lots of support for AWS services such as DynamoDB amd Cognito)</li>
+<li>Top speed performance when running on AWS lambda compared to other development ecosystems</li>
+</ul>
+<p>We are making use of the following NodeJS libraries and tools;</p>
+<ul>
+<li><a href="https://typegraphql.com/">TypeGraphGL</a> for building our GraphQL API. Provides very fast development experience with features such as dependency injection, validation, auth guards and resolver inheritance.</li>
+<li><a href="https://github.com/awslabs/dynamodb-data-mapper-js">Amazon DynamoDB DataMapper</a> is an Object Document Mapper (ODM) for JavaScript applications using DynamoDB. ODMs pair vary nicely with <a href="https://typegraphql.com/">TypeGraphGL</a>. The idea is to have only one source of truth by defining domain objects (such as User, Competition etc&hellip;) with fields mapped to database schema and/or GraphQL schema using Typescript decorators.</li>
+</ul>
+<h4 id="reactjs-frontend">ReactJS (Frontend)</h4>
+<p>We are building our application frontend using ReactJS, which offers;</p>
 <ul>
 <li>A robust and flexible approach to handling dynamic content and rich stateful interactions (e.g. managing and rendering competition state)</li>
 <li>A really fun development experience. Many developers, including myself, really enjoy ReactJS programming. This also ensures a rich and growing ecosystem of React libraries and tools to support present and future development</li>
@@ -162,10 +183,14 @@
 <p>We are making use of the following ReactJS libraries and tools;</p>
 <ul>
 <li><a href="https://docs.amplify.aws/">AWS Amplify</a>, to connect to cloud resources</li>
-<li><a href="https://aws-amplify.github.io/">Redux</a>, to store competition state and share it among components</li>
-<li><a href="https://redux-saga.js.org/">Redux Saga</a>, to handle side effects (e.g accessing the GraphQL API) when updating competition state</li>
+<li><a href="https://redux-toolkit.js.org/">Redux Toolkit</a>, for global state management (such as logged in user state)</li>
+<li><a href="https://www.apollographql.com/docs/react/">Apollo Client</a>, to fetch competition state and share it among components</li>
 <li><a href="https://material-ui.com/">Material UI</a>, to make use of many out of the box UI components with a common theme and appearance</li>
-<li><a href="https://www.npmjs.com/package/axios">Axios</a>, to write lightweight and easily configurable REST API calls to the Cognito Admin Queries API (e.g; getUsersInRole)</li>
+</ul>
+<!-- raw HTML omitted -->
+<h4 id="typescript">Typescript</h4>
+<ul>
+<li><a href="https://www.typescriptlang.org/">Typescript</a> is being used on frontend and backend to assist in writing structured easily understandable code. Also provides additional programming concepts such as decorators that are not supported by vanilla JS.</li>
 </ul>
 <h2 id="architecture">Architecture</h2>
 <p>Here’s a map of the services and tools we are using and how they connect to each-other.</p>
@@ -192,6 +217,9 @@
 		</li>
 		<li class="tags__item">
 			<a class="tags__link btn" href="/tags/amplify/" rel="tag">Amplify</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/cdk/" rel="tag">CDK</a>
 		</li>
 	</ul>
 </div>
