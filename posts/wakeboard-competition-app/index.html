@@ -10,7 +10,7 @@
 	<meta property="og:title" content="Wakeboard Competition App Project" />
 <meta property="og:description" content="A short write up the Wakeboard Competition Management App; motivation, requirements, tools and design." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ziggy6792.github.io/posts/wakeboard-competition-app/" />
+<meta property="og:url" content="https://ziggy6792.github.io/posts/wakeboard-competition-app/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-03-19T09:07:48+07:00" />
 <meta property="article:modified_time" content="2020-03-19T09:07:48+07:00" />
 
@@ -72,7 +72,7 @@
     <li><a href="#our-tools">Our Tools</a>
       <ul>
         <li><a href="#amazon-web-services">Amazon Web Services</a></li>
-        <li><a href="#nodejs">NodeJS</a></li>
+        <li><a href="#reactjs">ReactJS</a></li>
       </ul>
     </li>
     <li><a href="#architecture">Architecture</a></li>
@@ -136,9 +136,6 @@
 <li>As a judge I want to be able to end a heat and have riders allocated automatically to the next round (based on the competition structure defined by the organizer)</li>
 <li>As a user I want to track the overall progression of all riders in real-time</li>
 <li>As a user I want to see real-time metrics. E.g. is a competition running behind schedule</li>
-<li>As a user I can see a timetable of the event so that I can see the program for the competition day (when each round is starting) I can also see additional information like when the prize ceremony will be</li>
-<li>Deep linking. As a user I can share a link that can be followed to view the page I am on. E.g. forward a link to the results for a particular heat</li>
-<li>As a user I can see an event landing page which has event info; start time, description. Note: anything else can be hardcoded (e.g. video of SWP)</li>
 </ul>
 <h2 id="our-tools">Our Tools</h2>
 <h3 id="amazon-web-services">Amazon Web Services</h3>
@@ -150,36 +147,13 @@
 </ul>
 <p>We are making use of the following AWS tools and services;</p>
 <ul>
-<li><a href="https://aws.amazon.com/cdk/">AWS CDK</a>, to rapidly provision and configure our cloud services (see below)</li>
+<li>The <a href="https://github.com/aws-amplify/amplify-cli">AWS Amplify CLI</a>, to rapidly provision and configure our cloud services</li>
 <li><a href="https://aws.amazon.com/cognito/">Amazon Cognito</a>, to handle user sign up authorization</li>
 <li><a href="https://aws.amazon.com/dynamodb/">Amazon DynamoDB</a>, to provide millisecond response times to API queries for competition and rider data</li>
-<li><a href="https://aws.amazon.com/lambda/">AWS Lambda</a>, to support some of the more specific GraphQL queries and mutations (e.g. building a competition from a set of parameters)</li>
-<li><a href="https://aws.amazon.com/codepipeline/">Code Pipeline</a> for Continuous Integration (automatically building and testing code) and Continuous Delivery (safely deploying new application versions)</li>
+<li><a href="https://aws.amazon.com/lambda/">AWS Lambda</a>, to support some of the more specific graphQL queries and mutations (e.g: building a competition from a set of parameters)</li>
 </ul>
-<h4 id="aws-cloud-development-kit">AWS Cloud Development Kit</h4>
-<p>We are building and maintaining application infrastructure using AWS CDK, which offers;</p>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Infrastructure_as_code">Infrastructure as code</a>. Application infrastructure can be configured in code removing the need for physical hardware configuration or interactive configuration tools. This leads to faster development speed, lower risk and lower cost</li>
-<li>Flexibility in Project Design. CDK essentially offers a way to assemble AWS CloudFormation stacks in an easily readable way. It offers many existing customizable constructs (such as LambdaRestApiGateway) and also escape hatching (overwriting its own output with traditional YAML CloudFormation stack configuration). This means that essentially any conceivable AWS stack can be assembled using CDK</li>
-<li>Fantastic typescript support out of the box</li>
-</ul>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h3 id="nodejs">NodeJS</h3>
-<h4 id="nodejs-backend">NodeJS (Backend)</h4>
-<p>We are building our application backend using NodeJS, which offers;</p>
-<ul>
-<li>JavaScript event loop offers very simple handling of asynchronous communication to other systems (such as DynamoDB)</li>
-<li>Easy to deploy and run on AWS Lambda (lots of support for AWS services such as DynamoDB amd Cognito)</li>
-<li>Top speed performance when running on AWS lambda compared to other development ecosystems</li>
-</ul>
-<p>We are making use of the following NodeJS libraries and tools;</p>
-<ul>
-<li><a href="https://typegraphql.com/">TypeGraphGL</a> for building our GraphQL API. Provides very fast development experience with features such as dependency injection, validation, auth guards and resolver inheritance.</li>
-<li><a href="https://github.com/awslabs/dynamodb-data-mapper-js">Amazon DynamoDB DataMapper</a> is an Object Document Mapper (ODM) for JavaScript applications using DynamoDB. ODMs pair vary nicely with <a href="https://typegraphql.com/">TypeGraphGL</a>. The idea is to have only one source of truth by defining domain objects (such as User, Competition etc&hellip;) with fields mapped to database schema and/or GraphQL schema using Typescript decorators.</li>
-</ul>
-<h4 id="reactjs-frontend">ReactJS (Frontend)</h4>
-<p>We are building our application frontend using ReactJS, which offers;</p>
+<h3 id="reactjs">ReactJS</h3>
+<p>We are building our application front end using ReactJS, which offers;</p>
 <ul>
 <li>A robust and flexible approach to handling dynamic content and rich stateful interactions (e.g. managing and rendering competition state)</li>
 <li>A really fun development experience. Many developers, including myself, really enjoy ReactJS programming. This also ensures a rich and growing ecosystem of React libraries and tools to support present and future development</li>
@@ -188,19 +162,14 @@
 <p>We are making use of the following ReactJS libraries and tools;</p>
 <ul>
 <li><a href="https://docs.amplify.aws/">AWS Amplify</a>, to connect to cloud resources</li>
-<li><a href="https://redux-toolkit.js.org/">Redux Toolkit</a>, for global state management (such as logged in user state)</li>
-<li><a href="https://www.apollographql.com/docs/react/">Apollo Client</a>, to fetch competition state and share it among components</li>
+<li><a href="https://aws-amplify.github.io/">Redux</a>, to store competition state and share it among components</li>
+<li><a href="https://redux-saga.js.org/">Redux Saga</a>, to handle side effects (e.g accessing the GraphQL API) when updating competition state</li>
 <li><a href="https://material-ui.com/">Material UI</a>, to make use of many out of the box UI components with a common theme and appearance</li>
-</ul>
-<!-- raw HTML omitted -->
-<h4 id="typescript">Typescript</h4>
-<ul>
-<li><a href="https://www.typescriptlang.org/">Typescript</a> is being used on frontend and backend to assist in writing structured easily understandable code. Also provides additional programming concepts such as decorators that are not supported by vanilla JS.</li>
+<li><a href="https://www.npmjs.com/package/axios">Axios</a>, to write lightweight and easily configurable REST API calls to the Cognito Admin Queries API (e.g; getUsersInRole)</li>
 </ul>
 <h2 id="architecture">Architecture</h2>
 <p>Here’s a map of the services and tools we are using and how they connect to each-other.</p>
-<figure>
-    <img src="/img/posts/wakeboard-competition-app/Architecture.png"/> <figcaption>
+<figure><img src="/img/posts/wakeboard-competition-app/Architecture.png"/><figcaption>
             <h4>Application Architecture</h4>
         </figcaption>
 </figure>
@@ -224,7 +193,7 @@
 			<a class="tags__link btn" href="/tags/amplify/" rel="tag">Amplify</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/cdk/" rel="tag">CDK</a>
+			<a class="tags__link btn" href="/tags/aws-cdk/" rel="tag">AWS CDK</a>
 		</li>
 	</ul>
 </div>
@@ -257,7 +226,7 @@
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2021 Mofos Engineering Ltd.
+			&copy; 2023 Mofos Engineering Ltd.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>

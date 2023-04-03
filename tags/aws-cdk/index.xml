@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS CDK on Simon&#39;s blog</title>
+    <link>https://ziggy6792.github.io/tags/aws-cdk/</link>
+    <description>Recent content in AWS CDK on Simon&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Mar 2020 09:07:48 +0700</lastBuildDate><atom:link href="https://ziggy6792.github.io/tags/aws-cdk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wakeboard Competition App Project</title>
+      <link>https://ziggy6792.github.io/posts/wakeboard-competition-app/</link>
+      <pubDate>Thu, 19 Mar 2020 09:07:48 +0700</pubDate>
+      
+      <guid>https://ziggy6792.github.io/posts/wakeboard-competition-app/</guid>
+      <description>A short write up the Wakeboard Competition Management App; motivation, requirements, tools and design.</description>
+    </item>
+    
+  </channel>
+</rss>
