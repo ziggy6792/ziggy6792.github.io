@@ -1,7 +1,9 @@
 baseURL: 'https://hugo-profile.netlify.app'
 languageCode: 'en-us'
 title: "Simon's Portfolio"
-theme: hugo-profile
+theme:
+  - hugo-profile
+  - hugo-photoshop5-gallery
 
 outputs:
   home:

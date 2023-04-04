@@ -1,3 +1,6 @@
 [submodule "themes/hugo-profile"]
 	path = themes/hugo-profile
 	url = https://github.com/gurusabarish/hugo-profile.git
+[submodule "themes/hugo-photoshop5-gallery"]
+	path = themes/hugo-photoshop5-gallery
+	url = git@github.com:thkukuk/hugo-photoswipe5-gallery.git
