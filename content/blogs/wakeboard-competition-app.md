@@ -4,6 +4,7 @@ date: 2020-03-19T09:07:48+07:00
 authors:
   - Simon Verhoeven
 authorbox: true
+image: /images/posts/wakeboard-competition-app/wakeboard-bw.jpg
 
 # thumbnail: "img/placeholder.jpg" # Optional, thumbnail
 # lead: "EKS in a Terraform way"
