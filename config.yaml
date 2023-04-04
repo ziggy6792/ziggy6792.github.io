@@ -135,6 +135,8 @@ params:
       newPage: false
     socialLinks:
       fontAwesomeIcons:
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/simonverhoeven067/
         - icon: fab fa-github
           url: https://github.com/ziggy6792
         - icon: fab fa-stack-overflow
@@ -318,11 +320,8 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+      github: https://github.com/
+      linkedin: https://www.linkedin.com/in/simonverhoeven067/
 
   # List pages like blogs and posts
   listPages:
