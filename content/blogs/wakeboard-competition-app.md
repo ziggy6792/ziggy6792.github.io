@@ -117,7 +117,7 @@ We are making use of the following ReactJS libraries and tools;
 
 Here’s a map of the services and tools we are using and how they connect to each-other.
 
-{{< figure src="/img/posts/wakeboard-competition-app/Architecture.png"   title="Application Architecture" >}}
+{{< figure src="/images/posts/wakeboard-competition-app/Architecture.png"   title="Application Architecture" >}}
 
 <!-- Option | Description | Disadvantages
 ----|------|------

@@ -276,11 +276,11 @@ Finally, run `amplify push`.
 
 Go to your ec2 console. You should see the following created lambda function;
 
-{{< figure src="/img/posts/Accessing-DynamoDB-Tables/Created-Function.png" title="Created Lambda Function" >}}
+{{< figure src="/images/posts/Accessing-DynamoDB-Tables/Created-Function.png" title="Created Lambda Function" >}}
 
 Along with the following attached role and access policy.
 
-{{< figure src="/img/posts/Accessing-DynamoDB-Tables/Created-Role.png" title="Created Role" >}}
+{{< figure src="/images/posts/Accessing-DynamoDB-Tables/Created-Role.png" title="Created Role" >}}
 
 ## Test your new function. Write to DynamoDB from Lambda Function
 
@@ -362,11 +362,11 @@ Next run `amplify push`
 
 Now you can test your function in the AWS console;
 
-{{< figure src="/img/posts/Accessing-DynamoDB-Tables/Test-Function.png" title="Test Function" >}}
+{{< figure src="/images/posts/Accessing-DynamoDB-Tables/Test-Function.png" title="Test Function" >}}
 
 And then verify that an item was created in the specified table;
 
-{{< figure src="/img/posts/Accessing-DynamoDB-Tables/Test-Function-Created-Item.png" title="Test Function Success - Created Item" >}}
+{{< figure src="/images/posts/Accessing-DynamoDB-Tables/Test-Function-Created-Item.png" title="Test Function Success - Created Item" >}}
 
 <!-- {{< highlight json "linenos=inline,hl_lines=8 15-17" >}}
 {

@@ -84,21 +84,21 @@ params:
     textAlign: left # default: left
 
   # color preference
-  # color:
-  #   textColor:
-  #   secondaryTextColor:
-  #   backgroundColor:
-  #   secondaryBackgroundColor:
-  #   primaryColor:
-  #   secondaryColor:
+  color:
+    textColor:
+    secondaryTextColor:
+    backgroundColor:
+    secondaryBackgroundColor:
+    primaryColor:
+    secondaryColor:
 
-  #   darkmode:
-  #     textColor:
-  #     secondaryTextColor:
-  #     backgroundColor:
-  #     secondaryBackgroundColor:
-  #     primaryColor:
-  #     secondaryColor:
+    darkmode:
+      textColor:
+      secondaryTextColor:
+      backgroundColor:
+      secondaryBackgroundColor:
+      primaryColor:
+      secondaryColor:
 
   # If you want to customize the menu, you can change it here
   navbar:
@@ -125,7 +125,7 @@ params:
     content: 'A keen Software Developer/Consultant with 9 years’ experience in IT Professional Services. Interested in full stack development, Serverless Application Architecture (such as AWS Lambda) and front-end development (particularly ReactJS).'
     image: /images/me.jpg
     bottomImage:
-      enable: true
+      enable: false
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
