@@ -49,7 +49,66 @@ Use the following commands to create a Lambda function with the Amplify CLI. Aft
 
 **NOTE**: You will need Amplify CLI version 4.16.1 or higher.
 
-{{< gist ziggy6792 f8ea26516f51fbb7bf2ee024f9d054f0 "createLambdaFunction.txt" >}}
+<!-- {{< gist ziggy6792 f8ea26516f51fbb7bf2ee024f9d054f0 "createLambdaFunction.txt" >}} -->
+
+```
+NBMAC0056:SwtNinja verhoeven$ amplify add function
+Using service: Lambda, provided by: awscloudformation
+? Provide a friendly name for your resource to be used as a label for this category in the project: doSomethingToDBTables
+? Provide the AWS Lambda function name: doSomethingToDBTables
+? Choose the function runtime that you want to use: NodeJS
+? Choose the function template that you want to use: Hello World
+? Do you want to access other resources created in this project from your Lambda function? Yes
+? Select the category storage
+? Storage has 8 resources in this project. Select the one you would like your Lambda to access Event:@model(appsync), Competition:@model(appsync), Heat:@model(appsync), SeedSlot:@model(appsync), Ride
+rAllocation:@model(appsync), User:@model(appsync)
+? Select the operations you want to permit for Event:@model(appsync) create, read, update, delete
+? Select the operations you want to permit for Competition:@model(appsync) create, read, update, delete
+? Select the operations you want to permit for Heat:@model(appsync) create, read, update, delete
+? Select the operations you want to permit for SeedSlot:@model(appsync) create, read, update, delete
+? Select the operations you want to permit for RiderAllocation:@model(appsync) create, read, update, delete
+? Select the operations you want to permit for User:@model(appsync) create, read, update, delete
+
+You can access the following resource attributes as environment variables from your Lambda function
+        API_COMPAPI_COMPETITIONTABLE_ARN
+        API_COMPAPI_COMPETITIONTABLE_NAME
+        API_COMPAPI_EVENTTABLE_ARN
+        API_COMPAPI_EVENTTABLE_NAME
+        API_COMPAPI_GRAPHQLAPIIDOUTPUT
+        API_COMPAPI_HEATTABLE_ARN
+        API_COMPAPI_HEATTABLE_NAME
+        API_COMPAPI_RIDERALLOCATIONTABLE_ARN
+        API_COMPAPI_RIDERALLOCATIONTABLE_NAME
+        API_COMPAPI_SEEDSLOTTABLE_ARN
+        API_COMPAPI_SEEDSLOTTABLE_NAME
+        API_COMPAPI_USERTABLE_ARN
+        API_COMPAPI_USERTABLE_NAME
+        ENV
+        REGION
+? Do you want to invoke this function on a recurring schedule? No
+? Do you want to edit the local lambda function now? Yes
+Please edit the file in your editor: <project-dir>/amplify/backend/function/doSomethingToDBTables/src/index.js
+? Press enter to continue
+Successfully added resource doSomethingToDBTables locally.
+
+Next steps:
+Check out sample function code generated in <project-dir>/amplify/backend/function/doSomethingToDBTables/src
+"amplify function build" builds all of your functions currently in the project
+"amplify mock function <functionName>" runs your function locally
+"amplify push" builds all of your local backend resources and provisions them in the cloud
+"amplify publish" builds all of your local backend and front-end resources (if you added hosting category) and provisions them in the cloud
+
+NBMAC0056:SwtNinja verhoeven$ amplify push
+✔ Successfully pulled backend environment compapi from the cloud.
+
+Current Environment: compapi
+
+| Category | Resource name         | Operation | Provider plugin   |
+| -------- | --------------------- | --------- | ----------------- |
+| Function | doSomethingToDBTables | Create    | awscloudformation |
+| Api      | compapi               | No Change | awscloudformation |
+? Are you sure you want to continue? Yes
+```
 
 ## Potential maximum policy size issue when running amplify push
 
@@ -99,11 +158,90 @@ To these tables;
 
 Will create the following access policy list of statements;
 
-{{< gist ziggy6792 f8ea26516f51fbb7bf2ee024f9d054f0 "accessPolicyExample1.json" >}}
+<!-- {{< gist ziggy6792 f8ea26516f51fbb7bf2ee024f9d054f0 "accessPolicyExample1.json" >}} -->
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+      {
+          "Action": [
+              "dynamodb:Put*",
+              "dynamodb:Create*",
+              "dynamodb:BatchWriteItem",
+              "dynamodb:Get*",
+              "dynamodb:BatchGetItem",
+              "dynamodb:List*",
+              "dynamodb:Describe*",
+              "dynamodb:Scan",
+              "dynamodb:Query",
+              "dynamodb:Update*",
+              "dynamodb:RestoreTable*",
+              "dynamodb:Delete*"
+          ],
+          "Resource": [
+              "arn:aws:dynamodb:ap-southeast-1:694710432912:table/Competition-xl3qodhqsfdmhe5psj4vqa7wsy-compapi",
+              "arn:aws:dynamodb:ap-southeast-1:694710432912:table/Competition-xl3qodhqsfdmhe5psj4vqa7wsy-compapi/index/*"
+          ],
+          "Effect": "Allow"
+      },{
+        "Action": [
+            "dynamodb:Put*",
+            "dynamodb:Create*",
+            "dynamodb:BatchWriteItem",
+            "dynamodb:Get*",
+            "dynamodb:BatchGetItem",
+            "dynamodb:List*",
+            "dynamodb:Describe*",
+            "dynamodb:Scan",
+            "dynamodb:Query",
+            "dynamodb:Update*",
+            "dynamodb:RestoreTable*",
+            "dynamodb:Delete*"
+        ],
+        "Resource": [
+            "arn:aws:dynamodb:ap-southeast-1:694710432912:table/User-xl3qodhqsfdmhe5psj4vqa7wsy-compapi",
+            "arn:aws:dynamodb:ap-southeast-1:694710432912:table/User-xl3qodhqsfdmhe5psj4vqa7wsy-compapi/index/*"
+        ],
+        "Effect": "Allow"
+    },
+    ...Repeat For Each Table
+  ]
+}
+```
 
 Which is actually equivalent to the following single statement (using the pattern resource identifier: `*-xl3qodhqsfdmhe5psj4vqa7wsy-compapi` matching every table for **this particular GraphQL API Environment**);
 
-{{< gist ziggy6792 f8ea26516f51fbb7bf2ee024f9d054f0 "accessPolicyExample2.json" >}}
+<!-- {{< gist ziggy6792 f8ea26516f51fbb7bf2ee024f9d054f0 "accessPolicyExample2.json" >}} -->
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+      {
+          "Action": [
+              "dynamodb:Put*",
+              "dynamodb:Create*",
+              "dynamodb:BatchWriteItem",
+              "dynamodb:Get*",
+              "dynamodb:BatchGetItem",
+              "dynamodb:List*",
+              "dynamodb:Describe*",
+              "dynamodb:Scan",
+              "dynamodb:Query",
+              "dynamodb:Update*",
+              "dynamodb:RestoreTable*",
+              "dynamodb:Delete*"
+          ],
+          "Resource": [
+              "arn:aws:dynamodb:ap-southeast-1:694710432912:table/*-xl3qodhqsfdmhe5psj4vqa7wsy-compapi",
+              "arn:aws:dynamodb:ap-southeast-1:694710432912:table/*-xl3qodhqsfdmhe5psj4vqa7wsy-compapi/index/*"
+          ],
+          "Effect": "Allow"
+      }
+  ]
+}
+```
 
 The difference with using the second example however is that; generating policies this way will not cause policies to grow in size with the number of API tables and therefore will not easily hit the maximum policy size and cause the maximum policy size issue.
 
@@ -148,7 +286,66 @@ Along with the following attached role and access policy.
 
 To test access to dynamoDB from your new Lambda function, copy the following code (from line 23) into your local lambda function index.js, replacing the hello world function that was created [here](/posts/amplify-lambda-dynamodb/#creating-a-lambda-function-with-amplify-cli).
 
-{{< gist ziggy6792 f8ea26516f51fbb7bf2ee024f9d054f0 "lambda-function-index.js" >}}
+<!-- {{< gist ziggy6792 f8ea26516f51fbb7bf2ee024f9d054f0 "lambda-function-index.js" >}} -->
+
+```
+/* Amplify Params - DO NOT EDIT
+	API_COMPAPI_BPOSTTABLE_ARN
+	API_COMPAPI_BPOSTTABLE_NAME
+	API_COMPAPI_COMPETITIONTABLE_ARN
+	API_COMPAPI_COMPETITIONTABLE_NAME
+	API_COMPAPI_CUSTOMERTABLE_ARN
+	API_COMPAPI_CUSTOMERTABLE_NAME
+	API_COMPAPI_EVENTTABLE_ARN
+	API_COMPAPI_EVENTTABLE_NAME
+	API_COMPAPI_GRAPHQLAPIIDOUTPUT
+	API_COMPAPI_HEATTABLE_ARN
+	API_COMPAPI_HEATTABLE_NAME
+	API_COMPAPI_RIDERALLOCATIONTABLE_ARN
+	API_COMPAPI_RIDERALLOCATIONTABLE_NAME
+	API_COMPAPI_SEEDSLOTTABLE_ARN
+	API_COMPAPI_SEEDSLOTTABLE_NAME
+	API_COMPAPI_USERTABLE_ARN
+	API_COMPAPI_USERTABLE_NAME
+	ENV
+	REGION
+Amplify Params - DO NOT EDIT */
+
+var AWS = require('aws-sdk');
+var uuid = require('uuid');
+
+AWS.config.update({ region: process.env.REGION });
+
+var ddb = new AWS.DynamoDB({ apiVersion: '2012-08-10' });
+
+exports.handler = async (event, context, callback) => {
+	let items = [{id:uuid.v4(),name:"Hello World"}];
+	try {
+		await write(process.env.API_COMPAPI_EVENTTABLE_NAME,items)
+	} catch (err) {
+		callback(err)
+	}
+	return callback(null,items);
+};
+
+async function write(tableName, items) {
+	var itemsToWrite = items
+	var params = {
+		RequestItems: {
+			[tableName]:
+				itemsToWrite.map((item) => {
+					return ({
+						PutRequest: {
+							Item: AWS.DynamoDB.Converter.marshall(item)
+						}
+					})
+				})
+		}
+
+	};
+	const data = await ddb.batchWriteItem(params).promise();
+}
+```
 
 **IMPORTANT**:
 
