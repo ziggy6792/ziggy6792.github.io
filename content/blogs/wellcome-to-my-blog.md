@@ -4,6 +4,7 @@ date: 2020-03-15T09:07:48+07:00
 authors:
   - Simon Verhoeven
 authorbox: true
+image: /images/wellcome-to-my-blog/wellcome.jpg
 
 # thumbnail: "img/placeholder.jpg" # Optional, thumbnail
 # lead: "EKS in a Terraform way"
