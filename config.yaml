@@ -56,7 +56,7 @@ Menus:
 
 params:
   title: "Simon's Portfolio"
-  description: Text about my cool site
+  description: Site to showcase my previous projects
   # staticPath: ""  # The path to serve the static files from
   favicon: '/fav.png'
 
