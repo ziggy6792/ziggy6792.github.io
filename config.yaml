@@ -58,7 +58,7 @@ params:
   title: "Simon's Portfolio"
   description: Site to showcase my previous projects
   # staticPath: ""  # The path to serve the static files from
-  favicon: '/fav.png'
+  favicon: '/fav3.svg'
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -176,11 +176,20 @@ params:
           enable: false
         company: 'Telepathy Labs'
         companyUrl: 'https://telepathy.ai/'
-        date: 'Feb 2022 - present'
+        date: 'Feb 2022 - current'
         content: |
           - Architect and build several Telepathy Labs software products.
           - Technologies; Node.js, React.js, Next.js, TypeScript, Docker, GraphQL.
           - Schedule, supervise and delegate tasks among other developers.
+      - job: 'Chief Technology Officer'
+        info:
+          enable: false
+        company: 'Whire'
+        companyUrl: 'https://www.whire.net/'
+        date: 'June 2021 - Current'
+        content: |
+          - Set the technical direction for product development.
+          - Manage and oversee all IT related elements of business.
       - job: 'Expert Software Developer'
         info:
           enable: false
@@ -188,8 +197,10 @@ params:
         companyUrl: 'https://www.zuehlke.com/en'
         date: 'Jul 2020 - Jan 2022'
         content: |
-          - Responsible for developing IT architectures of innovative software solutions and for strategic client technology consulting. 
-          - Technologies; Node.js, React, Typescript, Jenkins, Java (Spring), Swift (iOS)
+          - Responsible for developing IT architectures of innovative software solutions and for strategic client technology consulting.
+          - Technologies; Node.js, React.js, TypeScript, Jenkins, Docker, Java (Spring Boot).
+          - Frontend Capability Owner: Responsible for reviewing technology horizons (key technologies used in current and future projects) and planning learning for developers.
+          - Conducted initial and final stage interviews.
 
       - job: 'Senior Architect'
         company: 'Appway Singapore'
@@ -229,22 +240,25 @@ params:
 
   # Achievements
   achievements:
-    enable: false
-    # title: "Custom Name"
+    enable: true
+    title: Recommendations
     items:
-      - title: Google kickstart runner
-        content: I solved all problems with optimal solution.
-        url: https://example.com
-      - title: Facebook Hackathon Winner
-        content: Developed a product using Artificial Intelligence.
-      - title: Simon Portfolio
-        content: Developed a theme and getting 1K+ downloads per month.
-        url: 'https://github.com/gurusabarish/hugo-profile'
-      - title: Microsoft Imagine Runner
-        content: We are developed a product which can help others.
-      - title: Google Summer of Code
-        content: Contributed to a open source project.
-        url: https://example.com
+      - title: Harikrishnan Nagarajan
+        company: Bank Julius Baer
+        job: Associate Director
+        content: |
+          Simon is very professional and knowledgeable person, he worked in my project as senior developer. He gave detailed insights of the approach taken which were really helpful in decision making.
+          With experience and depth view we were able to finish the project on time.
+          Keep up the good work and attitude Simon all the best.
+        url: https://www.linkedin.com/in/harikrishnan-nagarajan-65871a55/
+      - title: Benjamin Marsili
+        company: Whire
+        job: Founder
+        content: |
+          Simon makes state-of-the-art software architecture sound simple, and he delivers.
+          Whether you are starting a new project or restructuring an old stack, his work ethics, drive and sound engineering mind will make the difference between what could have been an expensive failure and a software stack providing a great user as well as developer experience.
+          Working with Simon is investing in your company's sustainable future.
+        url: https://www.linkedin.com/in/marsilib/
 
   # projects
   projects:
