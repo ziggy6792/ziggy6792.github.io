@@ -1,0 +1,9 @@
+.idea
+**/themes/
+exampleSite/public/
+exampleSite/resources/
+*.lock
+public
+.DS_Store
+**/.DS_Store
+**/_gen/

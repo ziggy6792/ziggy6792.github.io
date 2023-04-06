@@ -1,22 +1,22 @@
 ---
-title: 'Emoji Support 2'
+title: 'Alpaca Cup'
 date: 2021-04-03T22:53:58+05:30
 draft: false
 github_link: 'https://github.com/gurusabarish/hugo-profile'
-author: 'Gurusabarish'
+author: 'Simon Verhoeven'
 tags:
   - Emoji support
   - Sample
   - example
-image: /images/post.jpg
-demo: https://www.google.com/
+image: /images/projects/alpaca/alpaca.png
+demo: https://alpacacup.com/events
 description: ''
 toc:
 ---
 
 This is some content
 
-{{< gallery />}} {{< load-photoswipe >}}
+<!-- {{< gallery />}} {{< load-photoswipe >}} -->
 
 <!-- {{< figure src="judge scoring.png"
     width="200"
