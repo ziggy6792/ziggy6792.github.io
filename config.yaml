@@ -75,7 +75,7 @@ params:
 
   theme:
     # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+    defaultTheme: "dark" # dark
 
   font:
     fontSize: 1rem # default: 1rem
@@ -270,7 +270,7 @@ params:
         image: /images/projects/crypto-bro.webp
         featured:
           name: Demo
-          link: https://github.com/ziggy6792/project-realtime-crypto-
+          link: https://github.com/ziggy6792/project-realtime-crypto-tracker
       - title: Network Animation (D3, React)
         content: |
           Animating a series of chronological events occurring in network graph.
