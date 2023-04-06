@@ -6,8 +6,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "yarn run-p watch:tw watch:hugo",
-    "watch:tw": "yarn workspaces foreach run watch",
-    "watch:hugo": "hugo server -w"
+    "watch:tw": "yarn workspaces foreach run yarn watch",
+    "watch:hugo": "hugo server -w",
+    "build": "yarn run-s build:tw build:hugo",
+    "build:tw": "yarn workspaces foreach run yarn build",
+    "build:hugo": "hugo",
+    "deploy": "yarn build && ./deploy.sh"
   },
   "workspaces": [
     "themes/hugo-profile"
