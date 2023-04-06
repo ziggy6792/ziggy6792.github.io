@@ -1,5 +1,5 @@
-baseURL: 'https://hugo-profile.netlify.app'
-languageCode: 'en-us'
+baseURL: "https://ziggy6792.github.io/"
+languageCode: "en-us"
 title: "Simon's Portfolio"
 theme:
   - hugo-profile
@@ -7,12 +7,12 @@ theme:
 
 outputs:
   home:
-    - 'HTML'
-    - 'RSS'
-    - 'JSON'
+    - "HTML"
+    - "RSS"
+    - "JSON"
   page:
-    - 'HTML'
-    - 'RSS'
+    - "HTML"
+    - "RSS"
 
 Paginate: 3
 enableRobotsTXT: true
@@ -58,7 +58,7 @@ params:
   title: "Simon's Portfolio"
   description: Site to showcase my previous projects
   # staticPath: ""  # The path to serve the static files from
-  favicon: '/fav3.svg'
+  favicon: "/fav3.svg"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -119,18 +119,18 @@ params:
   # Hero
   hero:
     enable: true
-    intro: 'Hi, my name is'
-    title: 'Simon.'
-    subtitle: 'I build things for the web'
-    content: 'A keen Software Developer/Consultant with 9 years’ experience in IT Professional Services. Interested in full stack development, Serverless Application Architecture (such as AWS Lambda) and front-end development (particularly ReactJS).'
+    intro: "Hi, my name is"
+    title: "Simon."
+    subtitle: "I build things for the web"
+    content: "A keen Software Developer/Consultant with 9 years’ experience in IT Professional Services. Interested in full stack development, Serverless Application Architecture (such as AWS Lambda) and front-end development (particularly ReactJS)."
     image: /images/me.jpg
     bottomImage:
       enable: false
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
-      name: 'Resume'
-      url: '/images/Simon Verhoeven CV.pdf'
+      name: "Resume"
+      url: "/images/Simon Verhoeven CV.pdf"
       download: true
       newPage: false
     socialLinks:
@@ -150,8 +150,8 @@ params:
   # About
   about:
     enable: true
-    title: 'About Me'
-    image: '/images/me2.jpg'
+    title: "About Me"
+    image: "/images/me2.jpg"
     content: |-
       A software developer from the UK speciallizing in web development.
       I worked for 8 years as an IT consultant, predominantly in banking projects (in Zurich and Singapore). I now work for an AI startup.
@@ -171,41 +171,41 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - job: 'Senior Software Engineer'
+      - job: "Senior Software Engineer"
         info:
           enable: false
-        company: 'Telepathy Labs'
-        companyUrl: 'https://telepathy.ai/'
-        date: 'Feb 2022 - Current'
+        company: "Telepathy Labs"
+        companyUrl: "https://telepathy.ai/"
+        date: "Feb 2022 - Current"
         content: |
           - Architect and build several Telepathy Labs software products.
           - Technologies; Node.js, React.js, Next.js, TypeScript, Docker, GraphQL.
           - Schedule, supervise and delegate tasks among other developers.
-      - job: 'Chief Technology Officer'
+      - job: "Chief Technology Officer"
         info:
           enable: false
-        company: 'Whire'
-        companyUrl: 'https://www.whire.net/'
-        date: 'June 2021 - Current'
+        company: "Whire"
+        companyUrl: "https://www.whire.net/"
+        date: "June 2021 - Current"
         content: |
           - Set the technical direction for product development.
           - Manage and oversee all IT related elements of business.
-      - job: 'Expert Software Developer'
+      - job: "Expert Software Developer"
         info:
           enable: false
-        company: 'Zühlke Group'
-        companyUrl: 'https://www.zuehlke.com/en'
-        date: 'Jul 2020 - Jan 2022'
+        company: "Zühlke Group"
+        companyUrl: "https://www.zuehlke.com/en"
+        date: "Jul 2020 - Jan 2022"
         content: |
           - Responsible for developing IT architectures of innovative software solutions and for strategic client technology consulting.
           - Technologies; Node.js, React.js, TypeScript, Jenkins, Docker, Java (Spring Boot).
           - Frontend Capability Owner: Responsible for reviewing technology horizons (key technologies used in current and future projects) and planning learning for developers.
           - Conducted initial and final stage interviews.
 
-      - job: 'Senior Architect'
-        company: 'Appway Singapore'
-        companyUrl: 'https://onboarding.fnz.com/'
-        date: 'Apr 2018 - Jul 2020'
+      - job: "Senior Architect"
+        company: "Appway Singapore"
+        companyUrl: "https://onboarding.fnz.com/"
+        date: "Apr 2018 - Jul 2020"
         info:
           enable: false
         content: |
@@ -214,10 +214,10 @@ params:
           - Influenced key stakeholders. Proposed new and alternative solutions taking efficiency, maintainability and client satisfaction into consideration.
           - Trained other developers in the use of Appway and Appway project architecture.
           - Supported and maintained production environments.
-      - job: 'Senior Architect'
-        company: 'Appway AG'
-        companyUrl: 'https://onboarding.fnz.com/'
-        date: 'Sep 2014 - Mar 2018'
+      - job: "Senior Architect"
+        company: "Appway AG"
+        companyUrl: "https://onboarding.fnz.com/"
+        date: "Sep 2014 - Mar 2018"
         info:
           enable: false
         content: |
@@ -233,9 +233,9 @@ params:
     items:
       - title: Bachelor of Engineering (BEng), Computer Science
         school:
-          name: 'University of York'
+          name: "University of York"
           url: https://www.york.ac.uk/
-        date: '2011 - 2014'
+        date: "2011 - 2014"
         grade: 2:1
 
   # Achievements
@@ -335,7 +335,7 @@ params:
 
   footer:
     recentPosts:
-      path: 'blogs'
+      path: "blogs"
       count: 3
       title: Recent Posts
       enable: true
@@ -352,19 +352,19 @@ params:
   singlePages:
     readTime:
       enable: true
-      content: 'min read'
+      content: "min read"
     scrollprogress:
       enable: true
 
   # For translations
   terms:
-    read: 'Read'
-    toc: 'Table Of Contents'
-    copyright: 'All rights reserved'
-    pageNotFound: 'Page not found'
-    emailText: 'Check out this site'
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
 
   datesFormat:
-    article: 'Jan 2, 2006'
-    articleList: 'Jan 2, 2006'
-    articleRecent: 'Jan 2, 2006'
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
