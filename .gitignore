@@ -7,3 +7,4 @@ public
 .DS_Store
 **/.DS_Store
 **/_gen/
+**/node_modules

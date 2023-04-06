@@ -8,15 +8,24 @@ tags:
   - Emoji support
   - Sample
   - example
+tech:
+  - logo: https://cdn.worldvectorlogo.com/logos/react-1.svg
+    name: 'Hugo'
+    url: 'https://gohugo.io/'
+  - logo: https://cdn.worldvectorlogo.com/logos/react-1.svg
+    name: 'Hugo'
+    url: 'https://gohugo.io/'
 image: /images/projects/alpaca/alpaca.png
 demo: https://alpacacup.com/events
 description: ''
 toc:
 ---
 
-This is some content
+### Introduction
 
-<!-- {{< gallery />}} {{< load-photoswipe >}} -->
+Alpaca Cup is an event management application for hosting and scoring competitions. Focus on sharing competition information (who is in each round) and live scores from judges.
+
+{{< gallery />}} {{< load-photoswipe >}}
 
 <!-- {{< figure src="judge scoring.png"
     width="200"
