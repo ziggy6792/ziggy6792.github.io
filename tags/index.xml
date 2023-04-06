@@ -2,107 +2,107 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Simon&#39;s Portfolio</title>
-    <link>https://hugo-profile.netlify.app/tags/</link>
+    <link>https://ziggy6792.github.io/tags/</link>
     <description>Recent content in Tags on Simon&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Apr 2021 22:53:58 +0530</lastBuildDate><atom:link href="https://hugo-profile.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Apr 2021 22:53:58 +0530</lastBuildDate><atom:link href="https://ziggy6792.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emoji support</title>
-      <link>https://hugo-profile.netlify.app/tags/emoji-support/</link>
+      <link>https://ziggy6792.github.io/tags/emoji-support/</link>
       <pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
       
-      <guid>https://hugo-profile.netlify.app/tags/emoji-support/</guid>
+      <guid>https://ziggy6792.github.io/tags/emoji-support/</guid>
       <description></description>
     </item>
     
     <item>
       <title>example</title>
-      <link>https://hugo-profile.netlify.app/tags/example/</link>
+      <link>https://ziggy6792.github.io/tags/example/</link>
       <pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
       
-      <guid>https://hugo-profile.netlify.app/tags/example/</guid>
+      <guid>https://ziggy6792.github.io/tags/example/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sample</title>
-      <link>https://hugo-profile.netlify.app/tags/sample/</link>
+      <link>https://ziggy6792.github.io/tags/sample/</link>
       <pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
       
-      <guid>https://hugo-profile.netlify.app/tags/sample/</guid>
+      <guid>https://ziggy6792.github.io/tags/sample/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Amplify</title>
-      <link>https://hugo-profile.netlify.app/tags/amplify/</link>
+      <link>https://ziggy6792.github.io/tags/amplify/</link>
       <pubDate>Fri, 20 Mar 2020 09:07:48 +0700</pubDate>
       
-      <guid>https://hugo-profile.netlify.app/tags/amplify/</guid>
+      <guid>https://ziggy6792.github.io/tags/amplify/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AppSync</title>
-      <link>https://hugo-profile.netlify.app/tags/appsync/</link>
+      <link>https://ziggy6792.github.io/tags/appsync/</link>
       <pubDate>Fri, 20 Mar 2020 09:07:48 +0700</pubDate>
       
-      <guid>https://hugo-profile.netlify.app/tags/appsync/</guid>
+      <guid>https://ziggy6792.github.io/tags/appsync/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AWS</title>
-      <link>https://hugo-profile.netlify.app/tags/aws/</link>
+      <link>https://ziggy6792.github.io/tags/aws/</link>
       <pubDate>Fri, 20 Mar 2020 09:07:48 +0700</pubDate>
       
-      <guid>https://hugo-profile.netlify.app/tags/aws/</guid>
+      <guid>https://ziggy6792.github.io/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CloudFormation</title>
-      <link>https://hugo-profile.netlify.app/tags/cloudformation/</link>
+      <link>https://ziggy6792.github.io/tags/cloudformation/</link>
       <pubDate>Fri, 20 Mar 2020 09:07:48 +0700</pubDate>
       
-      <guid>https://hugo-profile.netlify.app/tags/cloudformation/</guid>
+      <guid>https://ziggy6792.github.io/tags/cloudformation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DynamoDB</title>
-      <link>https://hugo-profile.netlify.app/tags/dynamodb/</link>
+      <link>https://ziggy6792.github.io/tags/dynamodb/</link>
       <pubDate>Fri, 20 Mar 2020 09:07:48 +0700</pubDate>
       
-      <guid>https://hugo-profile.netlify.app/tags/dynamodb/</guid>
+      <guid>https://ziggy6792.github.io/tags/dynamodb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lambda</title>
-      <link>https://hugo-profile.netlify.app/tags/lambda/</link>
+      <link>https://ziggy6792.github.io/tags/lambda/</link>
       <pubDate>Fri, 20 Mar 2020 09:07:48 +0700</pubDate>
       
-      <guid>https://hugo-profile.netlify.app/tags/lambda/</guid>
+      <guid>https://ziggy6792.github.io/tags/lambda/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ReactJS</title>
-      <link>https://hugo-profile.netlify.app/tags/reactjs/</link>
+      <link>https://ziggy6792.github.io/tags/reactjs/</link>
       <pubDate>Thu, 19 Mar 2020 09:07:48 +0700</pubDate>
       
-      <guid>https://hugo-profile.netlify.app/tags/reactjs/</guid>
+      <guid>https://ziggy6792.github.io/tags/reactjs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cloud Formation</title>
-      <link>https://hugo-profile.netlify.app/tags/cloud-formation/</link>
+      <link>https://ziggy6792.github.io/tags/cloud-formation/</link>
       <pubDate>Sun, 15 Mar 2020 09:07:48 +0700</pubDate>
       
-      <guid>https://hugo-profile.netlify.app/tags/cloud-formation/</guid>
+      <guid>https://ziggy6792.github.io/tags/cloud-formation/</guid>
       <description></description>
     </item>
     

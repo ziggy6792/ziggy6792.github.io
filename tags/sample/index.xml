@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sample on Simon&#39;s Portfolio</title>
-    <link>https://hugo-profile.netlify.app/tags/sample/</link>
+    <link>https://ziggy6792.github.io/tags/sample/</link>
     <description>Recent content in Sample on Simon&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Apr 2021 22:53:58 +0530</lastBuildDate><atom:link href="https://hugo-profile.netlify.app/tags/sample/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Apr 2021 22:53:58 +0530</lastBuildDate><atom:link href="https://ziggy6792.github.io/tags/sample/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alpaca Cup</title>
-      <link>https://hugo-profile.netlify.app/projects/alpaca-cup/</link>
+      <link>https://ziggy6792.github.io/projects/alpaca-cup/</link>
       <pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
       
-      <guid>https://hugo-profile.netlify.app/projects/alpaca-cup/</guid>
+      <guid>https://ziggy6792.github.io/projects/alpaca-cup/</guid>
       <description>Introduction Alpaca Cup is an event management application for hosting and scoring competitions. Focus on sharing competition information (who is in each round) and live scores from judges.
 The Lighthouse of Amrum
 Event Page
