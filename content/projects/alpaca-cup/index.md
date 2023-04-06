@@ -1,23 +1,23 @@
 ---
-title: 'Alpaca Cup'
+title: "Alpaca Cup"
 date: 2021-04-03T22:53:58+05:30
 draft: false
-github_link: 'https://github.com/gurusabarish/hugo-profile'
-author: 'Simon Verhoeven'
+github_link: "https://github.com/gurusabarish/hugo-profile"
+author: "Simon Verhoeven"
 tags:
   - Emoji support
   - Sample
   - example
 tech:
   - logo: https://cdn.worldvectorlogo.com/logos/react-1.svg
-    name: 'Hugo'
-    url: 'https://gohugo.io/'
+    name: "React"
+    url: "https://react.dev/"
   - logo: https://cdn.worldvectorlogo.com/logos/react-1.svg
-    name: 'Hugo'
-    url: 'https://gohugo.io/'
+    name: "Hugo"
+    url: "https://gohugo.io/"
 image: /images/projects/alpaca/alpaca.png
 demo: https://alpacacup.com/events
-description: ''
+description: ""
 toc:
 ---
 
