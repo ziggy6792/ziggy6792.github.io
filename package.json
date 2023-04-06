@@ -1,0 +1,30 @@
+{
+  "name": "hugo-profile",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": {
+    "packages": [
+      "themes/**"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziggy6792/ziggy6792.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ziggy6792/ziggy6792.github.io/issues"
+  },
+  "homepage": "https://github.com/ziggy6792/ziggy6792.github.io#readme",
+  "devDependencies": {
+    "prettier": "^2.8.7",
+    "prettier-plugin-go-template": "^0.0.13"
+  }
+}
