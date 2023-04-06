@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "yarn run-p watch:tw ",
-    "watch:tw": "yarn workspaces foreach run start",
+    "dev": "yarn run-p watch:tw watch:hugo",
+    "watch:tw": "yarn workspaces foreach run watch",
     "watch:hugo": "hugo server -w"
   },
   "workspaces": [
