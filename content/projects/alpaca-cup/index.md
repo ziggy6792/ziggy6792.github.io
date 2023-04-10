@@ -5,9 +5,10 @@ draft: false
 github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Simon Verhoeven"
 tags:
-  - Emoji support
-  - Sample
-  - example
+  - Alpaca Cup
+  - Web Dev
+  - ReactJS
+  - AWS
 tech:
   - logo: https://cdn.worldvectorlogo.com/logos/react-1.svg
     name: "React"
@@ -92,7 +93,9 @@ Judges use the app score competitors. Judge scoring is a collaborative process a
 
 Alpaca Cup is a state of the art web application build by professional web developers each with over 20 years' combined experience. For an in depth dive into the technology behind Alpaca Cup [see this article](/blogs/alpaca-cup-architecture/).
 
-# Impact
+## Impact
+
+See Alpaca Cup in action at the 2023 Embily Open Waterboarding Competition Live steam.
 
 {{< youtube cnMjZtYj6us >}}
 

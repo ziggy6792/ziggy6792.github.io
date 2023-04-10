@@ -5,9 +5,10 @@ draft: false
 github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Simon Verhoeven"
 tags:
-  - Emoji support
-  - Sample
-  - example
+  - Alpaca Cup
+  - Web Dev
+  - ReactJS
+  - AWS
 tech:
   - logo: https://cdn.worldvectorlogo.com/logos/react-1.svg
     name: "React"
@@ -40,14 +41,12 @@ socialShare: false
 
 ## Introduction
 
-This article shows an overview of the tools used and architecture for [Alpaca Cup](https://alpacacup.com/events), an event management application for hosting and scoring competitions.
+This article shows an overview of the technology and architecture behind [Alpaca Cup](https://alpacacup.com/events), an event management application for hosting and scoring competitions.
 
 ### Related Articles
 
 - Click [here](/projects/alpaca-cup) for introduction and overview of app features
 - Click [here](/blogs/wakeboard-competition-app) for deep dive into the original motivations for this project
-
-## Architecture
 
 <!-- {{< figure src="judge scoring.png"
     width="200"
@@ -138,3 +137,5 @@ Here are the key CDK components being utilized.
 Here’s a map of the services and tools we are using and how they connect to each-other.
 
 {{< figure src="/images/projects/alpaca/alpaca-cup-architecture.png" link="/images/projects/alpaca/alpaca-cup-architecture.png" title="Alpaca Cup Architecture" >}}
+
+{{< load-photoswipe >}}

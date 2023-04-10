@@ -12,9 +12,10 @@ toc: true # Optional, enable Table of Contents for specific post
 categories:
   - "Web Development"
 tags:
-  - "ReactJS"
-  - "AWS"
-  - "Amplify"
+  - Alpaca Cup
+  - Web Dev
+  - ReactJS
+  - AWS
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
 draft: false
