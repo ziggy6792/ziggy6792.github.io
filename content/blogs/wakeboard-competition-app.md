@@ -1,5 +1,5 @@
 ---
-title: 'Wakeboard Competition App Project'
+title: "Wakeboard Competition App Project"
 date: 2020-03-19T09:07:48+07:00
 authors:
   - Simon Verhoeven
@@ -10,15 +10,15 @@ image: /images/posts/wakeboard-competition-app/wakeboard-bw.jpg
 # lead: "EKS in a Terraform way"
 toc: true # Optional, enable Table of Contents for specific post
 categories:
-  - 'Web Development'
+  - "Web Development"
 tags:
-  - 'ReactJS'
-  - 'AWS'
-  - 'Amplify'
+  - "ReactJS"
+  - "AWS"
+  - "Amplify"
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
 draft: false
-summary: 'A short write up the Wakeboard Competition Management App; motivation, requirements, tools and design.'
+summary: "A short write up the Wakeboard Competition Management App; motivation, requirements, tools and design."
 ---
 
 ## Introduction
@@ -80,52 +80,3 @@ After talking to our stakeholders, here are some of the key features of the app 
 - As a judge I want to be able to end a heat and have riders allocated automatically to the next round (based on the competition structure defined by the organizer)
 - As a user I want to track the overall progression of all riders in real-time
 - As a user I want to see real-time metrics. E.g. is a competition running behind schedule
-
-## Our Tools
-
-### Amazon Web Services
-
-We are are making use of several cloud services and tools provided by Amazon Web Services (AWS), which offer;
-
-- High scalability and availability
-- Pay as you use payment model (when no competitions are running the cost of running the application will be negligible)
-- Many libraries, packages and tools available to do much of the heavy lifting involved in building modern, robust applications
-
-We are making use of the following AWS tools and services;
-
-- The [AWS Amplify CLI](https://github.com/aws-amplify/amplify-cli), to rapidly provision and configure our cloud services
-- [Amazon Cognito](https://aws.amazon.com/cognito/), to handle user sign up authorization
-- [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), to provide millisecond response times to API queries for competition and rider data
-- [AWS Lambda](https://aws.amazon.com/lambda/), to support some of the more specific graphQL queries and mutations (e.g: building a competition from a set of parameters)
-
-### ReactJS
-
-We are building our application front end using ReactJS, which offers;
-
-- A robust and flexible approach to handling dynamic content and rich stateful interactions (e.g. managing and rendering competition state)
-- A really fun development experience. Many developers, including myself, really enjoy ReactJS programming. This also ensures a rich and growing ecosystem of React libraries and tools to support present and future development
-- Potential to create a React Native Mobile App in the future, while reusing (and not replacing) a lot of solution code
-
-We are making use of the following ReactJS libraries and tools;
-
-- [AWS Amplify](https://docs.amplify.aws/), to connect to cloud resources
-- [Redux](https://aws-amplify.github.io/), to store competition state and share it among components
-- [Redux Saga](https://redux-saga.js.org/), to handle side effects (e.g accessing the GraphQL API) when updating competition state
-- [Material UI](https://material-ui.com/), to make use of many out of the box UI components with a common theme and appearance
-- [Axios](https://www.npmjs.com/package/axios), to write lightweight and easily configurable REST API calls to the Cognito Admin Queries API (e.g; getUsersInRole)
-
-## Architecture
-
-Here’s a map of the services and tools we are using and how they connect to each-other.
-
-{{< figure src="/images/posts/wakeboard-competition-app/Architecture.png"   title="Application Architecture" >}}
-
-<!-- Option | Description | Disadvantages
-----|------|------
-Pay a federation like the IWWF to manage the competition    || Yearly member subscription fees
-                                                            ||| Percentage taken from rider admission fees
-                                                            ||| Can only use judges affiliated with that federation (sometimes judges need to be flown in at an expense to the park)
-                                                            ||| Little control over the structure of competition
-                                                            ||| The applications available are old and results are not given in real time.
-
- -->
