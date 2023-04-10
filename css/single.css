@@ -35,6 +35,7 @@
   display: inline-block;
   text-decoration: none;
   color: var(--primary-color) !important;
+  font-weight: 900;
 }
 
 #single .page-content a::after {
@@ -153,7 +154,7 @@
 #single .page-content ul {
   margin-bottom: 1.2em;
   padding-left: 1.5em;
-  list-style-position: inside;
+  /* list-style-position: inside; */
   opacity: 0.9;
 }
 
@@ -162,6 +163,14 @@
   margin-bottom: 0.5em;
   padding-left: 1.5em;
 }
+
+/* #single .page-content ul li::before {
+  content: "▹";
+  color: var(--primary-color);
+  margin-left: -14px;
+  padding-right: 7px;
+  left: 0px;
+} */
 
 /* sidebar */
 

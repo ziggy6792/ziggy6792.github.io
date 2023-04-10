@@ -6,7 +6,29 @@
     <description>Recent content in AWS on Simon&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Mar 2020 09:07:48 +0700</lastBuildDate><atom:link href="https://ziggy6792.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Apr 2021 22:53:58 +0530</lastBuildDate><atom:link href="https://ziggy6792.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alpaca Cup</title>
+      <link>https://ziggy6792.github.io/projects/alpaca-cup/</link>
+      <pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
+      
+      <guid>https://ziggy6792.github.io/projects/alpaca-cup/</guid>
+      <description>Introduction Alpaca Cup is an event management application for hosting and scoring competitions. So far the app has been used exclusively for waterboarding competitions in Singapore, however we hope that it may be used in other extreme sports in the future (such as skateboarding) or indeed any competition that has a suitable format.
+The App serves 2 main purposes;
+Sharing event information (who is in each round, when rounds start, who progress to the next round) Sharing results for each round in realtime (i.</description>
+    </item>
+    
+    <item>
+      <title>Alpaca Cup Architecture</title>
+      <link>https://ziggy6792.github.io/blogs/alpaca-cup-architecture/</link>
+      <pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
+      
+      <guid>https://ziggy6792.github.io/blogs/alpaca-cup-architecture/</guid>
+      <description>Introduction This article shows an overview of the technology and architecture behind Alpaca Cup, an event management application for hosting and scoring competitions.
+Related Articles Click here for introduction and overview of app features Click here for deep dive into the original motivations for this project Tools Amazon Web Services Alpaca Cup makes use of several cloud services and tools provided by Amazon Web Services (AWS), which offer;
+High scalability and availability Pay as you use payment model (when no competitions are running the cost of running the application will be negligible) Many libraries, packages and tools available to do much of the heavy lifting involved in building modern, robust applications Here are the key AWS tools being utilized;</description>
+    </item>
+    
     <item>
       <title>Accessing Amplify GraphQL API objects from Lambda functions</title>
       <link>https://ziggy6792.github.io/blogs/amplify-lambda-dynamodb/</link>

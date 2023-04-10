@@ -61,8 +61,8 @@
   
   <link
     rel="stylesheet"
-    href="/css/style.min.745a997dfb5d9395bfceccf90b8e3956a1277edb47ac02725bcd860de87530df.css"
-    integrity="sha256-dFqZfftdk5W/zsz5C445VqEnfttHrAJyW82GDeh1MN8="
+    href="/css/style.min.436301fee67e6b99901e304e06b66142766a4f0c1493ac308186a30fcc84e68d.css"
+    integrity="sha256-Q2MB/uZ+a5mQHjBOBrZhQnZqTwwUk6wwgYajD8yE5o0="
   />
 <link
     rel="stylesheet"
@@ -329,7 +329,7 @@
         <div class="col-sm-12 col-md-12 col-lg-9">
           <div class="pr-lg-4">
             <div class="title mb-5">
-              <h1 class="text-center mb-4">Wakeboard Competition App Project</h1>
+              <h1 class="mb-4 text-center">Wakeboard Competition App Project</h1>
               <div class="text-center">
                 
                 <small>|</small>
@@ -411,52 +411,6 @@ Simon + Vincent -->
 <li>As a user I want to track the overall progression of all riders in real-time</li>
 <li>As a user I want to see real-time metrics. E.g. is a competition running behind schedule</li>
 </ul>
-<h2 id="our-tools">Our Tools</h2>
-<h3 id="amazon-web-services">Amazon Web Services</h3>
-<p>We are are making use of several cloud services and tools provided by Amazon Web Services (AWS), which offer;</p>
-<ul>
-<li>High scalability and availability</li>
-<li>Pay as you use payment model (when no competitions are running the cost of running the application will be negligible)</li>
-<li>Many libraries, packages and tools available to do much of the heavy lifting involved in building modern, robust applications</li>
-</ul>
-<p>We are making use of the following AWS tools and services;</p>
-<ul>
-<li>The <a href="https://github.com/aws-amplify/amplify-cli">AWS Amplify CLI</a>, to rapidly provision and configure our cloud services</li>
-<li><a href="https://aws.amazon.com/cognito/">Amazon Cognito</a>, to handle user sign up authorization</li>
-<li><a href="https://aws.amazon.com/dynamodb/">Amazon DynamoDB</a>, to provide millisecond response times to API queries for competition and rider data</li>
-<li><a href="https://aws.amazon.com/lambda/">AWS Lambda</a>, to support some of the more specific graphQL queries and mutations (e.g: building a competition from a set of parameters)</li>
-</ul>
-<h3 id="reactjs">ReactJS</h3>
-<p>We are building our application front end using ReactJS, which offers;</p>
-<ul>
-<li>A robust and flexible approach to handling dynamic content and rich stateful interactions (e.g. managing and rendering competition state)</li>
-<li>A really fun development experience. Many developers, including myself, really enjoy ReactJS programming. This also ensures a rich and growing ecosystem of React libraries and tools to support present and future development</li>
-<li>Potential to create a React Native Mobile App in the future, while reusing (and not replacing) a lot of solution code</li>
-</ul>
-<p>We are making use of the following ReactJS libraries and tools;</p>
-<ul>
-<li><a href="https://docs.amplify.aws/">AWS Amplify</a>, to connect to cloud resources</li>
-<li><a href="https://aws-amplify.github.io/">Redux</a>, to store competition state and share it among components</li>
-<li><a href="https://redux-saga.js.org/">Redux Saga</a>, to handle side effects (e.g accessing the GraphQL API) when updating competition state</li>
-<li><a href="https://material-ui.com/">Material UI</a>, to make use of many out of the box UI components with a common theme and appearance</li>
-<li><a href="https://www.npmjs.com/package/axios">Axios</a>, to write lightweight and easily configurable REST API calls to the Cognito Admin Queries API (e.g; getUsersInRole)</li>
-</ul>
-<h2 id="architecture">Architecture</h2>
-<p>Here’s a map of the services and tools we are using and how they connect to each-other.</p>
-<figure><img src="/images/posts/wakeboard-competition-app/Architecture.png"/><figcaption>
-            <h4>Application Architecture</h4>
-        </figcaption>
-</figure>
-
-<!-- Option | Description | Disadvantages
-----|------|------
-Pay a federation like the IWWF to manage the competition    || Yearly member subscription fees
-                                                            ||| Percentage taken from rider admission fees
-                                                            ||| Can only use judges affiliated with that federation (sometimes judges need to be flown in at an expense to the park)
-                                                            ||| Little control over the structure of competition
-                                                            ||| The applications available are old and results are not given in real time.
-
- -->
 </article>
           </div>
         </div>
@@ -481,13 +435,6 @@ Pay a federation like the IWWF to manage the competition    || Yearly member sub
         <li><a href="#requirements">Requirements</a></li>
       </ul>
     </li>
-    <li><a href="#our-tools">Our Tools</a>
-      <ul>
-        <li><a href="#amazon-web-services">Amazon Web Services</a></li>
-        <li><a href="#reactjs">ReactJS</a></li>
-      </ul>
-    </li>
-    <li><a href="#architecture">Architecture</a></li>
   </ul>
 </nav></div>
               </aside>
@@ -496,6 +443,22 @@ Pay a federation like the IWWF to manage the competition    || Yearly member sub
               <aside class="tags">
                 <h5>Tags</h5>
                 <ul class="tags-ul list-unstyled list-inline">
+                  
+                    <li class="list-inline-item">
+                      <a
+                        href="https://ziggy6792.github.io/tags/alpaca-cup"
+                        target="_blank"
+                        >Alpaca Cup</a
+                      >
+                    </li>
+                  
+                    <li class="list-inline-item">
+                      <a
+                        href="https://ziggy6792.github.io/tags/web-dev"
+                        target="_blank"
+                        >Web Dev</a
+                      >
+                    </li>
                   
                     <li class="list-inline-item">
                       <a
@@ -510,14 +473,6 @@ Pay a federation like the IWWF to manage the competition    || Yearly member sub
                         href="https://ziggy6792.github.io/tags/aws"
                         target="_blank"
                         >AWS</a
-                      >
-                    </li>
-                  
-                    <li class="list-inline-item">
-                      <a
-                        href="https://ziggy6792.github.io/tags/amplify"
-                        target="_blank"
-                        >Amplify</a
                       >
                     </li>
                   
@@ -556,6 +511,7 @@ Pay a federation like the IWWF to manage the competition    || Yearly member sub
                   </ul>
                 </div>
               </aside>
+            
             
           </div>
         </div>
@@ -628,6 +584,31 @@ Pay a federation like the IWWF to manage the competition    || Yearly member sub
             <div class="card h-100">
                 
                 <div class="card-header">
+                    <a href="/blogs/alpaca-cup-architecture/">
+                        <img src="/images/posts/alpaca-cup-architecture/alpaca-web-developer.png" class="card-img-top" alt="Alpaca Cup Architecture">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/alpaca-cup-architecture/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Alpaca Cup Architecture">Alpaca Cup Architecture</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Introduction This article shows an overview of the technology and architecture behind Alpaca Cup, an event management application for hosting and scoring competitions.
+Related Articles Click here for introduction and overview of app features Click here for deep dive into the original motivations for …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Apr 3, 2021</span>
+                    <a href="/blogs/alpaca-cup-architecture/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
                     <a href="/blogs/amplify-lambda-dynamodb/">
                         <img src="/images/posts/Accessing-DynamoDB-Tables/Amplify.png" class="card-img-top" alt="Accessing Amplify GraphQL API objects from Lambda functions">
                     </a>
@@ -668,31 +649,6 @@ Pay a federation like the IWWF to manage the competition    || Yearly member sub
                 <div class="mt-auto card-footer">
                     <span class="float-start">Mar 19, 2020</span>
                     <a href="/blogs/wakeboard-competition-app/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/wellcome-to-my-blog/">
-                        <img src="/images/wellcome-to-my-blog/wellcome.jpg" class="card-img-top" alt="Welcome to my blog">
-                    </a>
-                </div>
-                
-                <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/wellcome-to-my-blog/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Welcome to my blog">Welcome to my blog</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p>Introduction In this blog I aspire to detail my journey in adopting AWS Serverless Architecture;
-Amplify Lambda Cognito AppSync DynamoDB API Gateway I am creating a Competition Management App for event organizers and competitors at Singapore Wakepark. This is a full stack serverless web application …</p>
-                    </div>
-                </div>
-                <div class="mt-auto card-footer">
-                    <span class="float-start">Mar 15, 2020</span>
-                    <a href="/blogs/wellcome-to-my-blog/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>

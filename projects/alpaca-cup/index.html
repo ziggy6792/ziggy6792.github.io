@@ -42,15 +42,9 @@
 
 
 <meta property="og:title" content="Alpaca Cup" />
-<meta property="og:description" content="Introduction Alpaca Cup is an event management application for hosting and scoring competitions. Focus on sharing competition information (who is in each round) and live scores from judges.
-The Lighthouse of Amrum
-Event Page
-judge scoring.png
-judge scoring.png
-live page.png
-live page.png
-timetable page.png
-timetable page.png" />
+<meta property="og:description" content="Introduction Alpaca Cup is an event management application for hosting and scoring competitions. So far the app has been used exclusively for waterboarding competitions in Singapore, however we hope that it may be used in other extreme sports in the future (such as skateboarding) or indeed any competition that has a suitable format.
+The App serves 2 main purposes;
+Sharing event information (who is in each round, when rounds start, who progress to the next round) Sharing results for each round in realtime (i." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ziggy6792.github.io/projects/alpaca-cup/" /><meta property="article:section" content="projects" />
 <meta property="article:published_time" content="2021-04-03T22:53:58+05:30" />
@@ -58,15 +52,9 @@ timetable page.png" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Alpaca Cup"/>
-<meta name="twitter:description" content="Introduction Alpaca Cup is an event management application for hosting and scoring competitions. Focus on sharing competition information (who is in each round) and live scores from judges.
-The Lighthouse of Amrum
-Event Page
-judge scoring.png
-judge scoring.png
-live page.png
-live page.png
-timetable page.png
-timetable page.png"/>
+<meta name="twitter:description" content="Introduction Alpaca Cup is an event management application for hosting and scoring competitions. So far the app has been used exclusively for waterboarding competitions in Singapore, however we hope that it may be used in other extreme sports in the future (such as skateboarding) or indeed any competition that has a suitable format.
+The App serves 2 main purposes;
+Sharing event information (who is in each round, when rounds start, who progress to the next round) Sharing results for each round in realtime (i."/>
 
 
 
@@ -77,8 +65,8 @@ timetable page.png"/>
   
   <link
     rel="stylesheet"
-    href="/css/style.min.745a997dfb5d9395bfceccf90b8e3956a1277edb47ac02725bcd860de87530df.css"
-    integrity="sha256-dFqZfftdk5W/zsz5C445VqEnfttHrAJyW82GDeh1MN8="
+    href="/css/style.min.436301fee67e6b99901e304e06b66142766a4f0c1493ac308186a30fcc84e68d.css"
+    integrity="sha256-Q2MB/uZ+a5mQHjBOBrZhQnZqTwwUk6wwgYajD8yE5o0="
   />
 <link
     rel="stylesheet"
@@ -345,7 +333,7 @@ timetable page.png"/>
         <div class="col-sm-12 col-md-12 col-lg-9">
           <div class="pr-lg-4">
             <div class="title mb-5">
-              <h1 class="text-center mb-4">Alpaca Cup</h1>
+              <h1 class="mb-4 text-center">Alpaca Cup</h1>
               <div class="text-center">
                 Simon Verhoeven
                 <small>|</small>
@@ -375,7 +363,7 @@ timetable page.png"/>
 
                 <section>
                   <div>
-                    <div class="flex gap-4">
+                    <div class="flex flex-wrap gap-4">
                       
                         <div>
                           <a href="https://react.dev/">
@@ -390,11 +378,71 @@ timetable page.png"/>
                         </div>
                       
                         <div>
-                          <a href="https://gohugo.io/">
+                          <a href="https://graphql.org/">
                             <img
                               class="h-14"
-                              src="https://cdn.worldvectorlogo.com/logos/react-1.svg"
-                              alt="Hugo"
+                              src="https://graphql.org/img/logo.svg"
+                              alt="GraphQL"
+                              loading="lazy"
+                              style="cursor: pointer"
+                            />
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="https://aws.amazon.com/lambda/">
+                            <img
+                              class="h-14"
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Amazon_Lambda_architecture_logo.svg/200px-Amazon_Lambda_architecture_logo.svg.png"
+                              alt="AWS Lambda"
+                              loading="lazy"
+                              style="cursor: pointer"
+                            />
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="https://aws.amazon.com/api-gateway/">
+                            <img
+                              class="h-14"
+                              src="https://cdn.worldvectorlogo.com/logos/aws-api-gateway.svg"
+                              alt="AWS API Gateway"
+                              loading="lazy"
+                              style="cursor: pointer"
+                            />
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="https://aws.amazon.com/dynamodb/">
+                            <img
+                              class="h-14"
+                              src="/images/projects/alpaca/dynamo-db.png"
+                              alt="AWS DynamoDB"
+                              loading="lazy"
+                              style="cursor: pointer"
+                            />
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="https://aws.amazon.com/cognito/">
+                            <img
+                              class="h-14"
+                              src="/images/projects/alpaca/aws-cognito-logo.png"
+                              alt="AWS Cognito"
+                              loading="lazy"
+                              style="cursor: pointer"
+                            />
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="https://nodejs.org/en">
+                            <img
+                              class="h-14"
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
+                              alt="Node JS"
                               loading="lazy"
                               style="cursor: pointer"
                             />
@@ -408,126 +456,364 @@ timetable page.png"/>
                 <hr class="full-width" />
               
             
-            <article class="page-content p-2"><h3 id="introduction">Introduction</h3>
-<p>Alpaca Cup is an event management application for hosting and scoring competitions. Focus on sharing competition information (who is in each round) and live scores from judges.</p>
-<p>
+            <article class="page-content p-2"><h2 id="introduction">Introduction</h2>
+<p><a href="https://alpacacup.com/events">Alpaca Cup</a> is an event management application for hosting and scoring competitions. So far the app has been used exclusively for waterboarding competitions in Singapore, however we hope that it may be used in other extreme sports in the future (such as skateboarding) or indeed any competition that has a suitable format.</p>
+<p>The App serves 2 main purposes;</p>
+<ol>
+<li>Sharing event information (who is in each round, when rounds start, who progress to the next round)</li>
+<li>Sharing results for each round in realtime (i.e: live scores as they are entered by judges)</li>
+</ol>
+<h3 id="related-articles">Related Articles</h3>
+<ul>
+<li>Click <a href="/blogs/alpaca-cup-architecture">here</a> for deep dive into the technology behind Alpaca Cup</li>
+<li>Click <a href="/blogs/wakeboard-competition-app">here</a> for deep dive into the original motivations for this project</li>
+</ul>
+<h2 id="features">Features</h2>
+<h2 id="useful-terms">Useful Terms</h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Event</td>
+<td>An event is put on by an organizer and usually takes place over 1 or 2 days.</td>
+<td><a href="https://alpacacup.com/event/embily">Embily Open 2023</a></td>
+</tr>
+<tr>
+<td>Competition</td>
+<td>Events consist of competitions/disciplines.</td>
+<td><a href="https://alpacacup.com/competition/3f662283-b47e-48f8-915f-bfca763ebe0b">Pro Men</a></td>
+</tr>
+<tr>
+<td>Round</td>
+<td>Competitions consist of rounds. Each round will contain fewer riders than the previous. The final round winners are the competition winners.</td>
+<td><a href="https://alpacacup.com/competition/3f662283-b47e-48f8-915f-bfca763ebe0b">Pro Men - Round 1</a></td>
+</tr>
+<tr>
+<td>Heat</td>
+<td>Rounds consist of heats. The winners of each heat will progress to the next round.</td>
+<td><a href="https://alpacacup.com/heat/7d6602e7-9f48-43de-999e-09c61a0431e3">Pro Men - Round 1 - Heat 1</a></td>
+</tr>
+<tr>
+<td>Seed</td>
+<td>A seed is a preliminary ranking given to competitors the purposes of making a fair competition. I.e: so that the best 2 competitors do not face off in round 1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>Alpaca Cup has 3 main types of users (user roles)</p>
+<ol>
+<li>Competitors / Spectators</li>
+<li>Event Administrators</li>
+<li>Judges. There are usually 3 judges for each heat.</li>
+</ol>
+<h3 id="competitors--spectators">Competitors / Spectators</h3>
+<p>Competitors / Spectators use the app to see the overall competition structure (number of rounds, how many qualify to the next round etc..).</p>
+
 
 <link rel="stylesheet" href=/assets/css/hugo-easy-gallery.css><div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
   <div class="pswp-gallery pswp-gallery--single-column" id="photoswipe5-gallery">
 
       <div class="box" style="max-width: 750px;">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <div class="img" style="background-image: url('/projects/alpaca-cup/event%20page_hubb7d1f6f54493c7334ddf079d6405445_413809_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
-            <a href="/projects/alpaca-cup/event%20page.png" data-pswp-width="750"
+          <div class="img" style="background-image: url('/projects/alpaca-cup/gallery-competitors/competition-results_hubb7d1f6f54493c7334ddf079d6405445_221406_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/projects/alpaca-cup/gallery-competitors/competition-results.png" data-pswp-width="750"
                data-pswp-height="1334" target="_blank">
-              <img src="/projects/alpaca-cup/event%20page_hubb7d1f6f54493c7334ddf079d6405445_413809_300x300_fill_box_smart1_3.png" width="300" height="300" alt="event page.png">
+              <img src="/projects/alpaca-cup/gallery-competitors/competition-results_hubb7d1f6f54493c7334ddf079d6405445_221406_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-competitors/competition-results.png">
               <span class="pswp-caption-content">
-                The Lighthouse of Amrum<br>
+                gallery-competitors/competition-results.png<br>
               </span>
             </a>
           </div>
           <figcaption>
-            <p>Event Page</p>
+            <p>gallery-competitors/competition-results.png</p>
           </figcaption>
         </figure>
       </div>
 
       <div class="box" style="max-width: 750px;">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <div class="img" style="background-image: url('/projects/alpaca-cup/judge%20scoring_hucdf69c751da77027bde1f9b2b3194bd3_89037_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
-            <a href="/projects/alpaca-cup/judge%20scoring.png" data-pswp-width="750"
+          <div class="img" style="background-image: url('/projects/alpaca-cup/gallery-competitors/event%20page_hubb7d1f6f54493c7334ddf079d6405445_413809_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/projects/alpaca-cup/gallery-competitors/event%20page.png" data-pswp-width="750"
                data-pswp-height="1334" target="_blank">
-              <img src="/projects/alpaca-cup/judge%20scoring_hucdf69c751da77027bde1f9b2b3194bd3_89037_300x300_fill_box_smart1_3.png" width="300" height="300" alt="judge scoring.png">
+              <img src="/projects/alpaca-cup/gallery-competitors/event%20page_hubb7d1f6f54493c7334ddf079d6405445_413809_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-competitors/event page.png">
               <span class="pswp-caption-content">
-                judge scoring.png<br>
+                Shows key event info, the competitions taking place registered competitors.<br>
               </span>
             </a>
           </div>
           <figcaption>
-            <p>judge scoring.png</p>
+            <p>Event Page: Shows key event info...</p>
           </figcaption>
         </figure>
       </div>
 
       <div class="box" style="max-width: 750px;">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <div class="img" style="background-image: url('/projects/alpaca-cup/live%20page_hubb7d1f6f54493c7334ddf079d6405445_241552_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
-            <a href="/projects/alpaca-cup/live%20page.png" data-pswp-width="750"
+          <div class="img" style="background-image: url('/projects/alpaca-cup/gallery-competitors/live%20page_hubb7d1f6f54493c7334ddf079d6405445_241552_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/projects/alpaca-cup/gallery-competitors/live%20page.png" data-pswp-width="750"
                data-pswp-height="1334" target="_blank">
-              <img src="/projects/alpaca-cup/live%20page_hubb7d1f6f54493c7334ddf079d6405445_241552_300x300_fill_box_smart1_3.png" width="300" height="300" alt="live page.png">
+              <img src="/projects/alpaca-cup/gallery-competitors/live%20page_hubb7d1f6f54493c7334ddf079d6405445_241552_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-competitors/live page.png">
               <span class="pswp-caption-content">
-                live page.png<br>
+                gallery-competitors/live page.png<br>
               </span>
             </a>
           </div>
           <figcaption>
-            <p>live page.png</p>
+            <p>gallery-competitors/live page.png</p>
           </figcaption>
         </figure>
       </div>
 
       <div class="box" style="max-width: 750px;">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <div class="img" style="background-image: url('/projects/alpaca-cup/timetable%20page_hubb7d1f6f54493c7334ddf079d6405445_165058_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
-            <a href="/projects/alpaca-cup/timetable%20page.png" data-pswp-width="750"
+          <div class="img" style="background-image: url('/projects/alpaca-cup/gallery-competitors/timetable%20page_hubb7d1f6f54493c7334ddf079d6405445_165058_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/projects/alpaca-cup/gallery-competitors/timetable%20page.png" data-pswp-width="750"
                data-pswp-height="1334" target="_blank">
-              <img src="/projects/alpaca-cup/timetable%20page_hubb7d1f6f54493c7334ddf079d6405445_165058_300x300_fill_box_smart1_3.png" width="300" height="300" alt="timetable page.png">
+              <img src="/projects/alpaca-cup/gallery-competitors/timetable%20page_hubb7d1f6f54493c7334ddf079d6405445_165058_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-competitors/timetable page.png">
               <span class="pswp-caption-content">
-                timetable page.png<br>
+                gallery-competitors/timetable page.png<br>
               </span>
             </a>
           </div>
           <figcaption>
-            <p>timetable page.png</p>
+            <p>gallery-competitors/timetable page.png</p>
           </figcaption>
         </figure>
       </div>
   </div>
 </div>
- 
- 
- 
- 
-   
- 
- 
- <script type="module">
- import PhotoSwipeLightbox from '/assets/photoswipe5/photoswipe-lightbox.esm.js';
- import PhotoSwipeDynamicCaption from '/assets/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.esm.js';
- 
- const lightbox = new PhotoSwipeLightbox({
-   gallery: '#photoswipe5-gallery',
-   children: 'a',
-   pswpModule: () => import('/assets/photoswipe5/photoswipe.esm.js'),
-   bgOpacity: 0.95,
-   loop: false,
- });
- lightbox.init();
- 
- const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
-   
-   type: 'auto',
- });
- </script>
- 
- <link rel="stylesheet" href="/assets/photoswipe5/photoswipe.css">
- <link rel="stylesheet" href="/assets/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css">
-</p>
-<!-- <figure><img src="judge%20scoring.png"
-         alt="Lighthouse Amrum" width="200" height="300"/><figcaption>
-            <p>Bla bla bla</p>
-        </figcaption>
-</figure>
 
-<figure><img src="judge%20scoring.png"
-         alt="Lighthouse Amrum" width="200" height="300"/><figcaption>
-            <p>Bla bla bla</p>
-        </figcaption>
-</figure>
- -->
+<h3 id="event-administrators">Event Administrators</h3>
+<p>Event Administrators use the app to build and manage events.</p>
 
 
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+  <div class="pswp-gallery pswp-gallery--single-column" id="photoswipe5-gallery">
 
+      <div class="box" style="max-width: 1917px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/projects/alpaca-cup/gallery-event-administrators/admin%20competition%20manager_hua5a7a87ff55a2c52a93befaf5f3d418e_380001_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/projects/alpaca-cup/gallery-event-administrators/admin%20competition%20manager.png" data-pswp-width="1917"
+               data-pswp-height="974" target="_blank">
+              <img src="/projects/alpaca-cup/gallery-event-administrators/admin%20competition%20manager_hua5a7a87ff55a2c52a93befaf5f3d418e_380001_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-event-administrators/admin competition manager.png">
+              <span class="pswp-caption-content">
+                gallery-event-administrators/admin competition manager.png<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>gallery-event-administrators/admin competition manager.png</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="box" style="max-width: 1919px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/projects/alpaca-cup/gallery-event-administrators/admin%20create%20new%20event_hu7cb256c6267440e7494815492fc5dc7e_976063_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/projects/alpaca-cup/gallery-event-administrators/admin%20create%20new%20event.png" data-pswp-width="1919"
+               data-pswp-height="976" target="_blank">
+              <img src="/projects/alpaca-cup/gallery-event-administrators/admin%20create%20new%20event_hu7cb256c6267440e7494815492fc5dc7e_976063_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-event-administrators/admin create new event.png">
+              <span class="pswp-caption-content">
+                gallery-event-administrators/admin create new event.png<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>gallery-event-administrators/admin create new event.png</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="box" style="max-width: 1919px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/projects/alpaca-cup/gallery-event-administrators/admin%20edit%20event_hu7ab9fa2d59a957643fc0431730365a97_651913_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/projects/alpaca-cup/gallery-event-administrators/admin%20edit%20event.png" data-pswp-width="1919"
+               data-pswp-height="975" target="_blank">
+              <img src="/projects/alpaca-cup/gallery-event-administrators/admin%20edit%20event_hu7ab9fa2d59a957643fc0431730365a97_651913_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-event-administrators/admin edit event.png">
+              <span class="pswp-caption-content">
+                gallery-event-administrators/admin edit event.png<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>gallery-event-administrators/admin edit event.png</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="box" style="max-width: 1918px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/projects/alpaca-cup/gallery-event-administrators/admin%20manage%20timetable_hue27a151a759dce6f6f38059fa626af9a_464123_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/projects/alpaca-cup/gallery-event-administrators/admin%20manage%20timetable.png" data-pswp-width="1918"
+               data-pswp-height="974" target="_blank">
+              <img src="/projects/alpaca-cup/gallery-event-administrators/admin%20manage%20timetable_hue27a151a759dce6f6f38059fa626af9a_464123_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-event-administrators/admin manage timetable.png">
+              <span class="pswp-caption-content">
+                gallery-event-administrators/admin manage timetable.png<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>gallery-event-administrators/admin manage timetable.png</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="box" style="max-width: 1919px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/projects/alpaca-cup/gallery-event-administrators/admin%20request%20scores_hu7c76907e69eb6dea637ddcfa149b448d_194096_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/projects/alpaca-cup/gallery-event-administrators/admin%20request%20scores.png" data-pswp-width="1919"
+               data-pswp-height="975" target="_blank">
+              <img src="/projects/alpaca-cup/gallery-event-administrators/admin%20request%20scores_hu7c76907e69eb6dea637ddcfa149b448d_194096_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-event-administrators/admin request scores.png">
+              <span class="pswp-caption-content">
+                gallery-event-administrators/admin request scores.png<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>gallery-event-administrators/admin request scores.png</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="box" style="max-width: 1919px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/projects/alpaca-cup/gallery-event-administrators/admin%20review%20scores_hufeb64fab6eb65b85fcd460b3e9879488_199477_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/projects/alpaca-cup/gallery-event-administrators/admin%20review%20scores.png" data-pswp-width="1919"
+               data-pswp-height="971" target="_blank">
+              <img src="/projects/alpaca-cup/gallery-event-administrators/admin%20review%20scores_hufeb64fab6eb65b85fcd460b3e9879488_199477_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-event-administrators/admin review scores.png">
+              <span class="pswp-caption-content">
+                gallery-event-administrators/admin review scores.png<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>gallery-event-administrators/admin review scores.png</p>
+          </figcaption>
+        </figure>
+      </div>
+  </div>
+</div>
+
+<h3 id="judges">Judges</h3>
+<p>Judges use the app score competitors. Judge scoring is a collaborative process and every judge is able to see how other judges are scoring in realtime. Once the judges agree, the scores my be checked by an administrator before becoming public.</p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+  <div class="pswp-gallery pswp-gallery--single-column" id="photoswipe5-gallery">
+
+      <div class="box" style="max-width: 750px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/projects/alpaca-cup/gallery-judges/judge-score-run-1_hucdf69c751da77027bde1f9b2b3194bd3_89037_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/projects/alpaca-cup/gallery-judges/judge-score-run-1.png" data-pswp-width="750"
+               data-pswp-height="1334" target="_blank">
+              <img src="/projects/alpaca-cup/gallery-judges/judge-score-run-1_hucdf69c751da77027bde1f9b2b3194bd3_89037_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-judges/judge-score-run-1.png">
+              <span class="pswp-caption-content">
+                gallery-judges/judge-score-run-1.png<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>gallery-judges/judge-score-run-1.png</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="box" style="max-width: 750px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/projects/alpaca-cup/gallery-judges/judge-score-run-2-draft_huedcbe82e9fdfea4c88609d54c42f831a_150824_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/projects/alpaca-cup/gallery-judges/judge-score-run-2-draft.png" data-pswp-width="750"
+               data-pswp-height="1334" target="_blank">
+              <img src="/projects/alpaca-cup/gallery-judges/judge-score-run-2-draft_huedcbe82e9fdfea4c88609d54c42f831a_150824_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-judges/judge-score-run-2-draft.png">
+              <span class="pswp-caption-content">
+                gallery-judges/judge-score-run-2-draft.png<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>gallery-judges/judge-score-run-2-draft.png</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="box" style="max-width: 750px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/projects/alpaca-cup/gallery-judges/judge-score-run-2-expanded_huacc18f208dd04d3a6bf5d00a6a0909f1_108578_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/projects/alpaca-cup/gallery-judges/judge-score-run-2-expanded.png" data-pswp-width="750"
+               data-pswp-height="1334" target="_blank">
+              <img src="/projects/alpaca-cup/gallery-judges/judge-score-run-2-expanded_huacc18f208dd04d3a6bf5d00a6a0909f1_108578_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-judges/judge-score-run-2-expanded.png">
+              <span class="pswp-caption-content">
+                gallery-judges/judge-score-run-2-expanded.png<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>gallery-judges/judge-score-run-2-expanded.png</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="box" style="max-width: 750px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/projects/alpaca-cup/gallery-judges/judge-score-run-2_huedcbe82e9fdfea4c88609d54c42f831a_123610_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/projects/alpaca-cup/gallery-judges/judge-score-run-2.png" data-pswp-width="750"
+               data-pswp-height="1334" target="_blank">
+              <img src="/projects/alpaca-cup/gallery-judges/judge-score-run-2_huedcbe82e9fdfea4c88609d54c42f831a_123610_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-judges/judge-score-run-2.png">
+              <span class="pswp-caption-content">
+                gallery-judges/judge-score-run-2.png<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>gallery-judges/judge-score-run-2.png</p>
+          </figcaption>
+        </figure>
+      </div>
+  </div>
+</div>
+
+<h2 id="architecture">Architecture</h2>
+<p>Alpaca Cup is a state of the art web application build by professional web developers each with over 20 years&rsquo; combined experience. For an in depth dive into the technology behind Alpaca Cup <a href="/blogs/alpaca-cup-architecture/">see this article</a>.</p>
+<h2 id="impact">Impact</h2>
+<p>See Alpaca Cup in action at the 2023 Embily Open Waterboarding Competition Live steam.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/cnMjZtYj6us" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+
+
+
+  
+
+
+<script type="module">
+import PhotoSwipeLightbox from '/assets/photoswipe5/photoswipe-lightbox.esm.js';
+import PhotoSwipeDynamicCaption from '/assets/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.esm.js';
+
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#photoswipe5-gallery',
+  children: 'a',
+  pswpModule: () => import('/assets/photoswipe5/photoswipe.esm.js'),
+  bgOpacity: 0.95,
+  loop: false,
+});
+lightbox.init();
+
+const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
+  
+  type: 'auto',
+});
+</script>
+
+<link rel="stylesheet" href="/assets/photoswipe5/photoswipe.css">
+<link rel="stylesheet" href="/assets/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css">
 
 </article>
           </div>
@@ -541,11 +827,21 @@ timetable page.png"/>
                 </h5>
                 <div class="toc-content"><nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#introduction">Introduction</a>
       <ul>
-        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#related-articles">Related Articles</a></li>
       </ul>
     </li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#useful-terms">Useful Terms</a>
+      <ul>
+        <li><a href="#competitors--spectators">Competitors / Spectators</a></li>
+        <li><a href="#event-administrators">Event Administrators</a></li>
+        <li><a href="#judges">Judges</a></li>
+      </ul>
+    </li>
+    <li><a href="#architecture">Architecture</a></li>
+    <li><a href="#impact">Impact</a></li>
   </ul>
 </nav></div>
               </aside>
@@ -557,25 +853,33 @@ timetable page.png"/>
                   
                     <li class="list-inline-item">
                       <a
-                        href="https://ziggy6792.github.io/tags/emoji-support"
+                        href="https://ziggy6792.github.io/tags/alpaca-cup"
                         target="_blank"
-                        >Emoji support</a
+                        >Alpaca Cup</a
                       >
                     </li>
                   
                     <li class="list-inline-item">
                       <a
-                        href="https://ziggy6792.github.io/tags/sample"
+                        href="https://ziggy6792.github.io/tags/web-dev"
                         target="_blank"
-                        >Sample</a
+                        >Web Dev</a
                       >
                     </li>
                   
                     <li class="list-inline-item">
                       <a
-                        href="https://ziggy6792.github.io/tags/example"
+                        href="https://ziggy6792.github.io/tags/reactjs"
                         target="_blank"
-                        >example</a
+                        >ReactJS</a
+                      >
+                    </li>
+                  
+                    <li class="list-inline-item">
+                      <a
+                        href="https://ziggy6792.github.io/tags/aws"
+                        target="_blank"
+                        >AWS</a
                       >
                     </li>
                   
@@ -583,32 +887,14 @@ timetable page.png"/>
               </aside>
             
             
+            
               <aside class="social">
-                <h5>Social</h5>
+                <h5>Demo</h5>
                 <div class="social-content">
                   <ul class="list-inline">
-                    <li class="list-inline-item text-center">
-                      <a
-                        target="_blank"
-                        href="https://twitter.com/share?text=Alpaca%20Cup&url=https%3a%2f%2fziggy6792.github.io%2fprojects%2falpaca-cup%2f"
-                      >
-                        <i class="fab fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item text-center">
-                      <a
-                        target="_blank"
-                        href="https://api.whatsapp.com/send?text=Alpaca%20Cup: https%3a%2f%2fziggy6792.github.io%2fprojects%2falpaca-cup%2f"
-                      >
-                        <i class="fab fa-whatsapp"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item text-center">
-                      <a
-                        target="_blank"
-                        href="mailto:?subject=Alpaca%20Cup&amp;body=Check%20out%20this%20site https%3a%2f%2fziggy6792.github.io%2fprojects%2falpaca-cup%2f"
-                      >
-                        <i class="fa fa-envelope"></i>
+                    <li class="">
+                      <a target="_blank" href="https://alpacacup.com/events">
+                        alpacacup.com
                       </a>
                     </li>
                   </ul>
@@ -686,6 +972,31 @@ timetable page.png"/>
             <div class="card h-100">
                 
                 <div class="card-header">
+                    <a href="/blogs/alpaca-cup-architecture/">
+                        <img src="/images/posts/alpaca-cup-architecture/alpaca-web-developer.png" class="card-img-top" alt="Alpaca Cup Architecture">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/alpaca-cup-architecture/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Alpaca Cup Architecture">Alpaca Cup Architecture</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Introduction This article shows an overview of the technology and architecture behind Alpaca Cup, an event management application for hosting and scoring competitions.
+Related Articles Click here for introduction and overview of app features Click here for deep dive into the original motivations for …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Apr 3, 2021</span>
+                    <a href="/blogs/alpaca-cup-architecture/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
                     <a href="/blogs/amplify-lambda-dynamodb/">
                         <img src="/images/posts/Accessing-DynamoDB-Tables/Amplify.png" class="card-img-top" alt="Accessing Amplify GraphQL API objects from Lambda functions">
                     </a>
@@ -726,31 +1037,6 @@ timetable page.png"/>
                 <div class="mt-auto card-footer">
                     <span class="float-start">Mar 19, 2020</span>
                     <a href="/blogs/wakeboard-competition-app/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/wellcome-to-my-blog/">
-                        <img src="/images/wellcome-to-my-blog/wellcome.jpg" class="card-img-top" alt="Welcome to my blog">
-                    </a>
-                </div>
-                
-                <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/wellcome-to-my-blog/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Welcome to my blog">Welcome to my blog</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p>Introduction In this blog I aspire to detail my journey in adopting AWS Serverless Architecture;
-Amplify Lambda Cognito AppSync DynamoDB API Gateway I am creating a Competition Management App for event organizers and competitors at Singapore Wakepark. This is a full stack serverless web application …</p>
-                    </div>
-                </div>
-                <div class="mt-auto card-footer">
-                    <span class="float-start">Mar 15, 2020</span>
-                    <a href="/blogs/wellcome-to-my-blog/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
