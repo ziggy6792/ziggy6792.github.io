@@ -1,5 +1,5 @@
 ---
-title: 'Accessing Amplify GraphQL API objects from Lambda functions'
+title: "Accessing Amplify GraphQL API objects from Lambda functions"
 date: 2020-03-20T09:07:48+07:00
 authors:
   - Simon Verhoeven
@@ -9,18 +9,19 @@ image: /images/posts/Accessing-DynamoDB-Tables/Amplify.png
 # lead: "code first serverless"
 toc: true # Optional, enable Table of Contents for specific post
 categories:
-  - 'Web Development'
+  - "Web Development"
 tags:
-  - 'AWS'
-  - 'Amplify'
-  - 'AppSync'
-  - 'DynamoDB'
-  - 'Lambda'
-  - 'CloudFormation'
+  - "AWS"
+  - "Amplify"
+  - "AppSync"
+  - "DynamoDB"
+  - "Lambda"
+  - "CloudFormation"
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
 draft: false
-summary: 'Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article focuses on creating a Lambda function with Amplify CLI that has access to these tables.'
+description:
+summary: "Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article focuses on creating a Lambda function with Amplify CLI that has access to these tables."
 ---
 
 ## Introduction

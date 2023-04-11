@@ -41,7 +41,7 @@ socialShare: false
 
 ## Introduction
 
-[Alpaca Cup](https://alpacacup.com/events) is an event management application for hosting and scoring competitions. So far the app has been used exclusively for waterboarding competitions in Singapore, however we hope that it may be used in other extreme sports in the future (such as skateboarding) or indeed any competition that has a suitable format.
+[Alpaca Cup](https://alpacacup.com/events) is an event management application for hosting and scoring competitions. So far the app has been used exclusively for wakeboarding competitions in Singapore, however we hope that it may be used in other extreme sports in the future (such as skateboarding) or indeed any competition that has a suitable format.
 
 The App serves 2 main purposes;
 
@@ -95,7 +95,7 @@ Alpaca Cup is a state of the art web application build by professional web devel
 
 ## Impact
 
-See Alpaca Cup in action at the 2023 Embily Open Waterboarding Competition Live steam.
+See Alpaca Cup in action at the 2023 Embily Open Wakeboarding Competition Live steam.
 
 {{< youtube cnMjZtYj6us >}}
 

@@ -80,10 +80,13 @@ Here are the key AWS tools being utilized;
 - [DynamoDB](https://aws.amazon.com/dynamodb/), to provide millisecond response times to API queries for competition and rider data
 - [Lambda](https://aws.amazon.com/lambda/), for hosting application api / executing requests serverlessly
 - [API Gateway](https://aws.amazon.com/api-gateway/), to handle backend authentication
+- [LocalStack](https://docs.localstack.cloud/), to run a local DynamoDB database (deployed to a docker container using CDK)
 
-### Typescript Everywhere
+{{< gallery match="gallery-aws/*.png" />}}
 
-Alpaca Cup is build on the [Typescript Everywhere](https://creativedesignsguru.com/typescript-everywhere/) this makes development much simpler. The stack consist of;
+## Typescript Everywhere
+
+Alpaca Cup is build on the [Typescript Everywhere](https://creativedesignsguru.com/typescript-everywhere/) stack this makes development much simpler. The stack consist of;
 
 - NodeJS Backend
 - ReactJS Frontend
@@ -100,8 +103,8 @@ Here are the key ReactJS libraries tools being utilized;
 
 - [AWS SDK](https://aws.amazon.com/sdk-for-javascript/) to integrate with AWS services
 - [Jest](https://jestjs.io/), to run integration tests that run against a local test db
-- [Apollo Server](https://www.apollographql.com/docs/apollo-server/) to create a GraphQL api for serving requests to fetch and update event/competition data. The main idea is to have only one source of truth by defining the schema using classes and a bit of decorator help.
-- [Type GraphQL](https://typegraphql.com/) is a library that extends Apollo Server, removing a lot of boilerplate code and providing a fantastic developer experience. The main idea of Type GraphQL it to use Typescript classes and decorator to provide one source of truth by defining GraphQL schema.
+- [Apollo Server](https://www.apollographql.com/docs/apollo-server/) to create a GraphQL api for serving requests to fetch and update event/competition data.
+- [Type GraphQL](https://typegraphql.com/) is a library that extends Apollo Server, removing a lot of boilerplate code and providing a fantastic developer experience. The main idea of TypeGraphQL it to use Typescript classes and decorators to provide one source of truth by defining GraphQL schema.
 - [Dynamo Easy](https://github.com/shiftcode/dynamo-easy) provides a Object Data Model as an abstraction layer for working with Dynamo DB tables
 
 ### ReactJS Frontend
@@ -120,6 +123,8 @@ Here are the key ReactJS libraries tools being utilized;
 - [Redux](https://aws-amplify.github.io/), to store app global state (such as user authentication state)
 - [Material UI](https://material-ui.com/), to make use of many out of the box UI components with a common theme and appearance
 - [Axios](https://www.npmjs.com/package/axios), to wrap calls to api and apply middleware (such as adding AWS authentication credentials)
+
+{{< gallery match="gallery-react-app/*.png" />}}
 
 ### Infrastructure as Code (AWS CDK)
 

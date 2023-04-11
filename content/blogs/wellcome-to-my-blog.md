@@ -1,5 +1,5 @@
 ---
-title: 'Welcome to my blog'
+title: "Welcome to my blog"
 date: 2020-03-15T09:07:48+07:00
 authors:
   - Simon Verhoeven
@@ -10,17 +10,18 @@ image: /images/wellcome-to-my-blog/wellcome.jpg
 # lead: "EKS in a Terraform way"
 toc: true # Optional, enable Table of Contents for specific post
 categories:
-  - 'Web Development'
+  - "Web Development"
 tags:
-  - 'AWS'
-  - 'Amplify'
-  - 'DynamoDB'
-  - 'Lambda'
-  - 'Cloud Formation'
+  - "AWS"
+  - "Amplify"
+  - "DynamoDB"
+  - "Lambda"
+  - "Cloud Formation"
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
 draft: false
-description: 'In this blog I aspire to detail my journey in adopting AWS Amplify, Cognito, AppSync and DynamoDb.'
+description:
+summary: "In this blog I aspire to detail my journey in adopting AWS Amplify, Cognito, AppSync and DynamoDb."
 ---
 
 ## Introduction

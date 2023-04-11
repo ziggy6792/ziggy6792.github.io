@@ -19,6 +19,7 @@ tags:
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
 draft: false
+description:
 summary: "A short write up the Wakeboard Competition Management App; motivation, requirements, tools and design."
 ---
 
