@@ -4,6 +4,9 @@ date: 2021-04-03T22:53:58+05:30
 draft: false
 github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Simon Verhoeven"
+links:
+  - icon: fab fa-instagram
+    url: https://www.instagram.com/thealpacacup/
 tags:
   - Alpaca Cup
   - Web Dev
@@ -28,15 +31,20 @@ tech:
   - logo: /images/projects/alpaca/aws-cognito-logo.png
     name: "AWS Cognito"
     url: https://aws.amazon.com/cognito/
+  - logo: https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9hY2M3M2RiNTFjNmE3NzIxYTIzNDAzNTQ0OWQ4MzgwOT9zaXplPTQ5NiZkZWZhdWx0PXJldHJvIn0.xgNJFrB8Tz89BFgDaybQOp1e54UfUv7VeqayL_Piddg
+    name: "AWS CDK"
+    url: https://aws.amazon.com/cdk/
   - logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png
     name: Node JS
     url: https://nodejs.org/en
 
 image: /images/projects/alpaca/alpaca.png
-demo: https://alpacacup.com/events
+demo:
+  name: alpacacup.com
+  url: https://alpacacup.com
 description: ""
 # toc:
-socialShare: false
+socialShare: true
 ---
 
 ## Introduction
@@ -94,6 +102,10 @@ Judges use the app score competitors. Judge scoring is a collaborative process a
 Alpaca Cup is a state of the art web application build by professional web developers each with over 20 years' combined experience. For an in depth dive into the technology behind Alpaca Cup [see this article](/blogs/alpaca-cup-architecture/).
 
 ## Impact
+
+> 23 Live competitions completed
+
+> Average 1000 active users per event
 
 See Alpaca Cup in action at the 2023 Embily Open Wakeboarding Competition Live steam.
 

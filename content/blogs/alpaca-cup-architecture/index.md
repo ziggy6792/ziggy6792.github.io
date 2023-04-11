@@ -28,15 +28,20 @@ tech:
   - logo: /images/projects/alpaca/aws-cognito-logo.png
     name: "AWS Cognito"
     url: https://aws.amazon.com/cognito/
+  - logo: https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9hY2M3M2RiNTFjNmE3NzIxYTIzNDAzNTQ0OWQ4MzgwOT9zaXplPTQ5NiZkZWZhdWx0PXJldHJvIn0.xgNJFrB8Tz89BFgDaybQOp1e54UfUv7VeqayL_Piddg
+    name: "AWS CDK"
+    url: https://aws.amazon.com/cdk/
   - logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png
     name: Node JS
     url: https://nodejs.org/en
 
 image: /images/posts/alpaca-cup-architecture/alpaca-web-developer.png
-demo: https://alpacacup.com/events
+demo:
+  name: alpacacup.com
+  url: https://alpacacup.com
 description: ""
 # toc:
-socialShare: false
+socialShare: true
 ---
 
 ## Introduction
