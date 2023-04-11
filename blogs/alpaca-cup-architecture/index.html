@@ -65,8 +65,8 @@ High scalability and availability Pay as you use payment model (when no competit
   
   <link
     rel="stylesheet"
-    href="/css/style.min.436301fee67e6b99901e304e06b66142766a4f0c1493ac308186a30fcc84e68d.css"
-    integrity="sha256-Q2MB/uZ+a5mQHjBOBrZhQnZqTwwUk6wwgYajD8yE5o0="
+    href="/css/style.min.2613a638b09652d031b9a32dc8e9302118186f72cf5c4f981702a996dae2638e.css"
+    integrity="sha256-JhOmOLCWUtAxuaMtyOkwIRgYb3LPXE+YFwKpltriY44="
   />
 <link
     rel="stylesheet"
@@ -428,6 +428,18 @@ High scalability and availability Pay as you use payment model (when no competit
                         </div>
                       
                         <div>
+                          <a href="https://aws.amazon.com/cdk/">
+                            <img
+                              class="h-14"
+                              src="https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9hY2M3M2RiNTFjNmE3NzIxYTIzNDAzNTQ0OWQ4MzgwOT9zaXplPTQ5NiZkZWZhdWx0PXJldHJvIn0.xgNJFrB8Tz89BFgDaybQOp1e54UfUv7VeqayL_Piddg"
+                              alt="AWS CDK"
+                              loading="lazy"
+                              style="cursor: pointer"
+                            />
+                          </a>
+                        </div>
+                      
+                        <div>
                           <a href="https://nodejs.org/en">
                             <img
                               class="h-14"
@@ -480,9 +492,68 @@ High scalability and availability Pay as you use payment model (when no competit
 <li><a href="https://aws.amazon.com/dynamodb/">DynamoDB</a>, to provide millisecond response times to API queries for competition and rider data</li>
 <li><a href="https://aws.amazon.com/lambda/">Lambda</a>, for hosting application api / executing requests serverlessly</li>
 <li><a href="https://aws.amazon.com/api-gateway/">API Gateway</a>, to handle backend authentication</li>
+<li><a href="https://docs.localstack.cloud/">LocalStack</a>, to run a local DynamoDB database (deployed to a docker container using CDK)</li>
 </ul>
-<h3 id="typescript-everywhere">Typescript Everywhere</h3>
-<p>Alpaca Cup is build on the <a href="https://creativedesignsguru.com/typescript-everywhere/">Typescript Everywhere</a> this makes development much simpler. The stack consist of;</p>
+
+
+<link rel="stylesheet" href=/assets/css/hugo-easy-gallery.css><div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+  <div class="pswp-gallery pswp-gallery--single-column" id="photoswipe5-gallery">
+
+      <div class="box" style="max-width: 1920px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/blogs/alpaca-cup-architecture/gallery-aws/api-gateway_hu6674fa9b6d3e6181ab2d867db3c2c58a_476650_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/blogs/alpaca-cup-architecture/gallery-aws/api-gateway.png" data-pswp-width="1920"
+               data-pswp-height="971" target="_blank">
+              <img src="/blogs/alpaca-cup-architecture/gallery-aws/api-gateway_hu6674fa9b6d3e6181ab2d867db3c2c58a_476650_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-aws/api-gateway.png">
+              <span class="pswp-caption-content">
+                gallery-aws/api-gateway.png<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>gallery-aws/api-gateway.png</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="box" style="max-width: 1919px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/blogs/alpaca-cup-architecture/gallery-aws/DynamoDB_hubbdf9b99a737ace09b2f6f42d076a3ed_529145_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/blogs/alpaca-cup-architecture/gallery-aws/DynamoDB.png" data-pswp-width="1919"
+               data-pswp-height="969" target="_blank">
+              <img src="/blogs/alpaca-cup-architecture/gallery-aws/DynamoDB_hubbdf9b99a737ace09b2f6f42d076a3ed_529145_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-aws/DynamoDB.png">
+              <span class="pswp-caption-content">
+                gallery-aws/DynamoDB.png<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>gallery-aws/DynamoDB.png</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="box" style="max-width: 2032px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/blogs/alpaca-cup-architecture/gallery-aws/localstack_hu660e0c719cbff297f49dc0a43670323e_485114_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/blogs/alpaca-cup-architecture/gallery-aws/localstack.png" data-pswp-width="2032"
+               data-pswp-height="1167" target="_blank">
+              <img src="/blogs/alpaca-cup-architecture/gallery-aws/localstack_hu660e0c719cbff297f49dc0a43670323e_485114_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-aws/localstack.png">
+              <span class="pswp-caption-content">
+                gallery-aws/localstack.png<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>gallery-aws/localstack.png</p>
+          </figcaption>
+        </figure>
+      </div>
+  </div>
+</div>
+
+<h2 id="typescript-everywhere">Typescript Everywhere</h2>
+<p>Alpaca Cup is build on the <a href="https://creativedesignsguru.com/typescript-everywhere/">Typescript Everywhere</a> stack this makes development much simpler. The stack consist of;</p>
 <ul>
 <li>NodeJS Backend</li>
 <li>ReactJS Frontend</li>
@@ -498,8 +569,8 @@ High scalability and availability Pay as you use payment model (when no competit
 <ul>
 <li><a href="https://aws.amazon.com/sdk-for-javascript/">AWS SDK</a> to integrate with AWS services</li>
 <li><a href="https://jestjs.io/">Jest</a>, to run integration tests that run against a local test db</li>
-<li><a href="https://www.apollographql.com/docs/apollo-server/">Apollo Server</a> to create a GraphQL api for serving requests to fetch and update event/competition data. The main idea is to have only one source of truth by defining the schema using classes and a bit of decorator help.</li>
-<li><a href="https://typegraphql.com/">Type GraphQL</a> is a library that extends Apollo Server, removing a lot of boilerplate code and providing a fantastic developer experience. The main idea of Type GraphQL it to use Typescript classes and decorator to provide one source of truth by defining GraphQL schema.</li>
+<li><a href="https://www.apollographql.com/docs/apollo-server/">Apollo Server</a> to create a GraphQL api for serving requests to fetch and update event/competition data.</li>
+<li><a href="https://typegraphql.com/">Type GraphQL</a> is a library that extends Apollo Server, removing a lot of boilerplate code and providing a fantastic developer experience. The main idea of TypeGraphQL it to use Typescript classes and decorators to provide one source of truth by defining GraphQL schema.</li>
 <li><a href="https://github.com/shiftcode/dynamo-easy">Dynamo Easy</a> provides a Object Data Model as an abstraction layer for working with Dynamo DB tables</li>
 </ul>
 <h3 id="reactjs-frontend">ReactJS Frontend</h3>
@@ -518,6 +589,81 @@ High scalability and availability Pay as you use payment model (when no competit
 <li><a href="https://material-ui.com/">Material UI</a>, to make use of many out of the box UI components with a common theme and appearance</li>
 <li><a href="https://www.npmjs.com/package/axios">Axios</a>, to wrap calls to api and apply middleware (such as adding AWS authentication credentials)</li>
 </ul>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+  <div class="pswp-gallery pswp-gallery--single-column" id="photoswipe5-gallery">
+
+      <div class="box" style="max-width: 750px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/blogs/alpaca-cup-architecture/gallery-react-app/competition-results_hubb7d1f6f54493c7334ddf079d6405445_221406_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/blogs/alpaca-cup-architecture/gallery-react-app/competition-results.png" data-pswp-width="750"
+               data-pswp-height="1334" target="_blank">
+              <img src="/blogs/alpaca-cup-architecture/gallery-react-app/competition-results_hubb7d1f6f54493c7334ddf079d6405445_221406_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-react-app/competition-results.png">
+              <span class="pswp-caption-content">
+                gallery-react-app/competition-results.png<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>gallery-react-app/competition-results.png</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="box" style="max-width: 750px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/blogs/alpaca-cup-architecture/gallery-react-app/event%20page_hubb7d1f6f54493c7334ddf079d6405445_413809_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/blogs/alpaca-cup-architecture/gallery-react-app/event%20page.png" data-pswp-width="750"
+               data-pswp-height="1334" target="_blank">
+              <img src="/blogs/alpaca-cup-architecture/gallery-react-app/event%20page_hubb7d1f6f54493c7334ddf079d6405445_413809_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-react-app/event page.png">
+              <span class="pswp-caption-content">
+                Shows key event info, the competitions taking place registered competitors.<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>Event Page: Shows key event info...</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="box" style="max-width: 750px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/blogs/alpaca-cup-architecture/gallery-react-app/live%20page_hubb7d1f6f54493c7334ddf079d6405445_241552_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/blogs/alpaca-cup-architecture/gallery-react-app/live%20page.png" data-pswp-width="750"
+               data-pswp-height="1334" target="_blank">
+              <img src="/blogs/alpaca-cup-architecture/gallery-react-app/live%20page_hubb7d1f6f54493c7334ddf079d6405445_241552_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-react-app/live page.png">
+              <span class="pswp-caption-content">
+                gallery-react-app/live page.png<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>gallery-react-app/live page.png</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="box" style="max-width: 750px;">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <div class="img" style="background-image: url('/blogs/alpaca-cup-architecture/gallery-react-app/timetable%20page_hubb7d1f6f54493c7334ddf079d6405445_165058_300x300_fill_box_smart1_3.png'); background-repeat:no-repeat;" >
+            <a href="/blogs/alpaca-cup-architecture/gallery-react-app/timetable%20page.png" data-pswp-width="750"
+               data-pswp-height="1334" target="_blank">
+              <img src="/blogs/alpaca-cup-architecture/gallery-react-app/timetable%20page_hubb7d1f6f54493c7334ddf079d6405445_165058_300x300_fill_box_smart1_3.png" width="300" height="300" alt="gallery-react-app/timetable page.png">
+              <span class="pswp-caption-content">
+                gallery-react-app/timetable page.png<br>
+              </span>
+            </a>
+          </div>
+          <figcaption>
+            <p>gallery-react-app/timetable page.png</p>
+          </figcaption>
+        </figure>
+      </div>
+  </div>
+</div>
+
 <h3 id="infrastructure-as-code-aws-cdk">Infrastructure as Code (AWS CDK)</h3>
 <p>AWS Cloud Development kit is used to rapidly provision and configure cloud services.</p>
 <p>Here are the key CDK components being utilized.</p>
@@ -527,7 +673,7 @@ High scalability and availability Pay as you use payment model (when no competit
 </ul>
 
 
-<link rel="stylesheet" href=/assets/css/hugo-easy-gallery.css><div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
   <div class="pswp-gallery pswp-gallery--single-column" id="photoswipe5-gallery">
 
       <div class="box" style="max-width: 1920px;">
@@ -622,7 +768,10 @@ const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
     <li><a href="#tools">Tools</a>
       <ul>
         <li><a href="#amazon-web-services">Amazon Web Services</a></li>
-        <li><a href="#typescript-everywhere">Typescript Everywhere</a></li>
+      </ul>
+    </li>
+    <li><a href="#typescript-everywhere">Typescript Everywhere</a>
+      <ul>
         <li><a href="#nodejs-backend">NodeJS Backend</a></li>
         <li><a href="#reactjs-frontend">ReactJS Frontend</a></li>
         <li><a href="#infrastructure-as-code-aws-cdk">Infrastructure as Code (AWS CDK)</a></li>
@@ -674,13 +823,22 @@ const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
               </aside>
             
             
+              <aside class="social">
+                <h5>Links</h5>
+                <div class="social-content">
+                  <ul class="list-inline">
+                    
+                  </ul>
+                </div>
+              </aside>
+            
             
               <aside class="social">
                 <h5>Demo</h5>
                 <div class="social-content">
                   <ul class="list-inline">
                     <li class="">
-                      <a target="_blank" href="https://alpacacup.com/events">
+                      <a target="_blank" href="https://alpacacup.com">
                         alpacacup.com
                       </a>
                     </li>

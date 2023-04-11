@@ -42,8 +42,7 @@ High scalability and availability Pay as you use payment model (when no competit
       <pubDate>Sun, 15 Mar 2020 09:07:48 +0700</pubDate>
       
       <guid>https://ziggy6792.github.io/blogs/wellcome-to-my-blog/</guid>
-      <description>Introduction In this blog I aspire to detail my journey in adopting AWS Serverless Architecture;
-Amplify Lambda Cognito AppSync DynamoDB API Gateway I am creating a Competition Management App for event organizers and competitors at Singapore Wakepark. This is a full stack serverless web application (ReactJS front-end, GraphQL API (AppSync + Node JS Lambda) back-end. I chose these technologies for the job because I believe them to be a good fit to my needs;</description>
+      <description>In this blog I aspire to detail my journey in adopting AWS Amplify, Cognito, AppSync and DynamoDb.</description>
     </item>
     
   </channel>

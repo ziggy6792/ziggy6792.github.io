@@ -30,6 +30,17 @@ High scalability and availability Pay as you use payment model (when no competit
     </item>
     
     <item>
+      <title>Whire</title>
+      <link>https://ziggy6792.github.io/projects/whire/</link>
+      <pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
+      
+      <guid>https://ziggy6792.github.io/projects/whire/</guid>
+      <description>Introduction Whire is a Singaporean Tech Startup which helps companies hire great people faster through its platform and a top tier community of hiring ambassadors, saving companies hours on pre-screening and outreach efforts as well as thousands of dollars on job ads and agency fees without compromising candidate quality.
+Motivation Benjamin Marsili (founder of Whire) hired me to help him build a recruiting network platform for companies to;
+Broadcast jobs from LinkedIn (or other sources) Directly interview candidates who are referred members of the Whire network Make hiring decisions and then pay for successfully hired candidates For more information visit whire.</description>
+    </item>
+    
+    <item>
       <title>Accessing Amplify GraphQL API objects from Lambda functions</title>
       <link>https://ziggy6792.github.io/blogs/amplify-lambda-dynamodb/</link>
       <pubDate>Fri, 20 Mar 2020 09:07:48 +0700</pubDate>
@@ -53,8 +64,7 @@ High scalability and availability Pay as you use payment model (when no competit
       <pubDate>Sun, 15 Mar 2020 09:07:48 +0700</pubDate>
       
       <guid>https://ziggy6792.github.io/blogs/wellcome-to-my-blog/</guid>
-      <description>Introduction In this blog I aspire to detail my journey in adopting AWS Serverless Architecture;
-Amplify Lambda Cognito AppSync DynamoDB API Gateway I am creating a Competition Management App for event organizers and competitors at Singapore Wakepark. This is a full stack serverless web application (ReactJS front-end, GraphQL API (AppSync + Node JS Lambda) back-end. I chose these technologies for the job because I believe them to be a good fit to my needs;</description>
+      <description>In this blog I aspire to detail my journey in adopting AWS Amplify, Cognito, AppSync and DynamoDb.</description>
     </item>
     
   </channel>
