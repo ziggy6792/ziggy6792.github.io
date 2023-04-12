@@ -164,7 +164,7 @@ Whire api was successfully built and deployed on AWS
 
 {{< gallery match="gallery-phase-2/*.png" />}}
 
-### Phase 3 (4 weeks)
+### Phase 3 (8 weeks)
 
 #### Objective
 
@@ -192,12 +192,31 @@ After starting to execute this plan we ran into a problem. Cognito does not supp
 
 I then proposed 3 options
 
-| Option                                                                                                                                             | Advantages                                | Disadvantages                                                                                                                                                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Use a third party solution like auth0/octa                                                                                                         | **Simple** to set up LinkedIn login       | **Expensive** (auth0 $240/mo - octa $3/MAU)<br> Outside the AWS ecosystem (bad for developers and CI/CD) <br> **API Access** would require a custom lambda authorizer in AWS gateway <br> **Sign Up events** would require custom setup outside of AWS |
-| Mixed approach. auth0 does have an OpenID provider. The user would signup to cognito as an auth0 OpenID user. So we would use auth0 as a middleman | **Simplest solution**                     | **Bad user experience.** We don’t control the auth0 login flow <br> **Most expensive solution.** As we pay for our LinkedIn users twice <br> **No one source of truth** as users managed in auth0 and cognito                                          |
-| Write my own OpenId provider.                                                                                                                      | **Cheap** <br> **Everything kept in AWS** | **Complex**                                                                                                                                                                                                                                            |
+| Option                                                                            | Advantages                                | Disadvantages                                                                                                                                                                                                                                          |
+| --------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Use a third party solution like Auth0/octa                                        | **Simple** to set up LinkedIn login       | **Expensive** (Auth0 $240/mo - octa $3/MAU)<br> Outside the AWS ecosystem (bad for developers and CI/CD) <br> **API Access** would require a custom lambda authorizer in AWS gateway <br> **Sign Up events** would require custom setup outside of AWS |
+| Mixed approach. Use cognito with Auth0 OpenID provider (use Auth0 as a middleman) | **Simplest solution**                     | **Bad user experience.** We don’t control the Auth0 login flow <br> **Most expensive solution.** As we pay for our LinkedIn users twice <br> **No one source of truth** as users managed in Auth0 and cognito                                          |
+| Write my own OpenId provider.                                                     | **Cheap** <br> **Everything kept in AWS** | **Complex**                                                                                                                                                                                                                                            |
 
-I chose to write my own OpenId provider, which adapts LinkedIn Auth2 provider to OpenId. Luckily someone had already done this for Githubs Auth2 provider so I was able to adapt the code for my purposes (LinkedIn apis/scopes). I hosted the custom provider on AWS lambda and added the deployment to our CDK stack as well as Cogntio OpenId configuration.
+I chose to write my own OpenId provider, which adapts LinkedIn Auth2 provider to OpenId. Luckily I was able to find an existing project for the [Github Auth2 provider](https://github.com/TimothyJones/github-cognito-openid-wrapper) and adapt the code to my needs (LinkedIn apis/scopes). I hosted the custom provider on AWS lambda and added the deployment to CDK along with the additional [Cogntio OpenId configuration](https://github.com/ziggy6792/linkedin-cognito-openid-wrapper#3-finalise-cognito-configuration). The code more my standalone OpenId Auth2 wrapper can be found [here](https://github.com/ziggy6792/linkedin-cognito-openid-wrapper).
+
+#### Result
+
+In the video below you can see Whire's sign up process for referrers and referees. Users are able to sign up to Whire using their LinkedIn credentials and profile data (e.g. full name and profile photo) is pulled into Whire.
+
+{{< vimeo 816871864 >}}
+
+### Phase 4 (4 weeks)
+
+For phase 4 I added ATS integration using [merge.dev](https://merge.dev/categories/ats-recruiting-api) which allows companies to integrate Whire with their existing recruiting flows and tools. In this phase Whire was successfully integrated with [Recruitee](https://recruitee.com/) and [Greenhouse](https://www.greenhouse.com/).
 
 {{< load-photoswipe >}}
+
+## Impact
+
+> Whire Network has sofar grown to; 30 clients, 200 referrers amd 100 posted jobs.
+
+> Whether you are starting a new project or restructuring an old stack, his work ethics, drive and sound engineering mind will make the difference between what could have been an expensive failure and a software stack providing a great user as well as developer experience. Working with Simon is investing in your company's sustainable future.</p>
+> — <cite>[Benjamin Marsili](https://www.linkedin.com/in/harikrishnan-nagarajan-65871a55/)</cite>
+
+> In June 2021, of the back of the work I had done, I was appointed CTO of Whire.
