@@ -7,7 +7,7 @@
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width" />
 <link
   rel="icon"
-  href="/fav3.svg"
+  href="/fav4.svg"
   type="image/gif"
 />
 
@@ -44,17 +44,17 @@
 <meta property="og:title" content="Whire" />
 <meta property="og:description" content="Introduction Whire is a Singaporean Tech Startup which helps companies hire great people faster through its platform and a top tier community of hiring ambassadors, saving companies hours on pre-screening and outreach efforts as well as thousands of dollars on job ads and agency fees without compromising candidate quality.
 Motivation Benjamin Marsili (founder of Whire) hired me to help him build a recruiting network platform for companies to;
-Broadcast jobs from LinkedIn (and other sources) Directly interview candidates who are referred members of the Whire network Make hiring decisions and then pay for successfully hired candidates Related Links For more information on Whire visit whire." />
+Broadcast jobs from LinkedIn (and other sources) Directly interview candidates who are referred members of the Whire network Make hiring decisions and then pay for successfully hired candidates For more information on Whire visit whire." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ziggy6792.github.io/projects/whire/" /><meta property="article:section" content="projects" />
 <meta property="article:published_time" content="2021-04-03T22:53:58+05:30" />
-<meta property="article:modified_time" content="2021-04-03T22:53:58+05:30" /><meta property="og:site_name" content="Simon&#39;s Portfolio" />
+<meta property="article:modified_time" content="2021-04-03T22:53:58+05:30" /><meta property="og:site_name" content="Alpaca Consulting" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Whire"/>
 <meta name="twitter:description" content="Introduction Whire is a Singaporean Tech Startup which helps companies hire great people faster through its platform and a top tier community of hiring ambassadors, saving companies hours on pre-screening and outreach efforts as well as thousands of dollars on job ads and agency fees without compromising candidate quality.
 Motivation Benjamin Marsili (founder of Whire) hired me to help him build a recruiting network platform for companies to;
-Broadcast jobs from LinkedIn (and other sources) Directly interview candidates who are referred members of the Whire network Make hiring decisions and then pay for successfully hired candidates Related Links For more information on Whire visit whire."/>
+Broadcast jobs from LinkedIn (and other sources) Directly interview candidates who are referred members of the Whire network Make hiring decisions and then pay for successfully hired candidates For more information on Whire visit whire."/>
 
 
 
@@ -154,7 +154,7 @@ Broadcast jobs from LinkedIn (and other sources) Directly interview candidates w
     src="/fontawesome-5/all-5.15.4.js"
   ></script>
 
-  <title>Whire | Simon&#39;s Portfolio
+  <title>Whire | Alpaca Consulting
   </title>
 </head>
 
@@ -188,9 +188,9 @@ Broadcast jobs from LinkedIn (and other sources) Directly interview candidates w
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                <img src="/fav3.svg" width="30" height="30"
+                <img src="/fav4.svg" width="30" height="30"
                     class="d-inline-block align-top">
-                Simon&#39;s Portfolio
+                Alpaca Consulting
                 
             </a>
 
@@ -479,7 +479,6 @@ Broadcast jobs from LinkedIn (and other sources) Directly interview candidates w
 <li>Directly interview candidates who are referred members of the Whire network</li>
 <li>Make hiring decisions and then pay for successfully hired candidates</li>
 </ul>
-<h3 id="related-links">Related Links</h3>
 <p>For more information on Whire visit <a href="https://www.whire.net/">whire.net</a>.<br>
 To try the Whire platform yourself, visit <a href="https://app.whire.net/">app.whire.net</a>.</p>
 <h2 id="my-engagement-with-whire">My Engagement with Whire</h2>
@@ -642,16 +641,66 @@ To try the Whire platform yourself, visit <a href="https://app.whire.net/">app.w
   </div>
 </div>
 
-<h3 id="phase-3-4-weeks">Phase 3 (4 weeks)</h3>
+<h3 id="phase-3-8-weeks">Phase 3 (8 weeks)</h3>
 <h4 id="objective-2">Objective</h4>
-<p>After successfully deploying their web-app and api to AWS. One of the key features for Whire is referring candidates. For referrals, both the referrer and referee should use LinkedIn to login and share their information.</p>
+<p>One of the key features for Whire is referring candidates. For referrals, both the referrer and referee should use LinkedIn to login and share their information.</p>
 <p>For phase 3, Whire&rsquo;s aims were;</p>
 <ul>
-<li>Allow users to authenticate with Whire using LikedIn</li>
-<li>Users should be able to login to Whire using their LikedIn credentials</li>
+<li>Users should be able to login to Whire using their LinkedIn credentials</li>
+<li>LinkedIn authenticated users should have api access</li>
 <li>On logging in for the first time a user should be created in Whire&rsquo;s database</li>
 <li>Users LinkedIn profile information (name, nationality, skills etc&hellip;) should be pulled into Whire</li>
 </ul>
+<h4 id="architecture-2">Architecture</h4>
+<p>I proposed the following process for user registration, profile setup and sign in.</p>
+<figure><a href="/images/projects/whire/auth.png"><img src="/images/projects/whire/auth.png"/></a><figcaption>
+            <h4>Whire Authentication Flow</h4>
+        </figcaption>
+</figure>
+
+<ul>
+<li>Use LinkedIn as federated auth provider with Cognito</li>
+<li>A Lambda runs on user confirmation (after email validation) to fetch the users profile information. This is non blocking, incase the data can not be retrieved we do not block the user from being onboarded to Whire</li>
+</ul>
+<h4 id="execution-2">Execution</h4>
+<p>After starting to execute this plan we ran into a problem. Cognito does not support LinkedIn login out of the box. Cognito only supports some federated providers (Facebook/Google) as well as OpenId/SAML identity providers (LinkedIn only has an Auth2 provider).</p>
+<p>I then proposed 3 options</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Advantages</th>
+<th>Disadvantages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Use a third party solution like Auth0/octa</td>
+<td><strong>Simple</strong> to set up LinkedIn login</td>
+<td><strong>Expensive</strong> (Auth0 $240/mo - octa $3/MAU)<br> Outside the AWS ecosystem (bad for developers and CI/CD) <br> <strong>API Access</strong> would require a custom lambda authorizer in AWS gateway <br> <strong>Sign Up events</strong> would require custom setup outside of AWS</td>
+</tr>
+<tr>
+<td>Mixed approach. Use cognito with Auth0 OpenID provider (use Auth0 as a middleman)</td>
+<td><strong>Simplest solution</strong></td>
+<td><strong>Bad user experience.</strong> We don’t control the Auth0 login flow <br> <strong>Most expensive solution.</strong> As we pay for our LinkedIn users twice <br> <strong>No one source of truth</strong> as users managed in Auth0 and cognito</td>
+</tr>
+<tr>
+<td>Write my own OpenId provider.</td>
+<td><strong>Cheap</strong> <br> <strong>Everything kept in AWS</strong></td>
+<td><strong>Complex</strong></td>
+</tr>
+</tbody>
+</table>
+<p>I chose to write my own OpenId provider, which adapts LinkedIn Auth2 provider to OpenId. Luckily I was able to find an existing project for the <a href="https://github.com/TimothyJones/github-cognito-openid-wrapper">Github Auth2 provider</a> and adapt the code to my needs (LinkedIn apis/scopes). I hosted the custom provider on AWS lambda and added the deployment to CDK along with the additional <a href="https://github.com/ziggy6792/linkedin-cognito-openid-wrapper#3-finalise-cognito-configuration">Cogntio OpenId configuration</a>. The code more my standalone OpenId Auth2 wrapper can be found <a href="https://github.com/ziggy6792/linkedin-cognito-openid-wrapper">here</a>.</p>
+<h4 id="result-2">Result</h4>
+<p>In the video below you can see Whire&rsquo;s sign up process for referrers and referees. Users are able to sign up to Whire using their LinkedIn credentials and profile data (e.g. full name and profile photo) is pulled into Whire.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://player.vimeo.com/video/816871864" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+<h3 id="phase-4-4-weeks">Phase 4 (4 weeks)</h3>
+<p>For phase 4 I added ATS integration using <a href="https://merge.dev/categories/ats-recruiting-api">merge.dev</a> which allows companies to integrate Whire with their existing recruiting flows and tools. In this phase Whire was successfully integrated with <a href="https://recruitee.com/">Recruitee</a> and <a href="https://www.greenhouse.com/">Greenhouse</a>.</p>
 
 
 
@@ -681,6 +730,17 @@ const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
 <link rel="stylesheet" href="/assets/photoswipe5/photoswipe.css">
 <link rel="stylesheet" href="/assets/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css">
 
+<h2 id="impact">Impact</h2>
+<blockquote>
+<p>Whire Network has sofar grown to; 30 clients, 200 referrers amd 100 posted jobs.</p>
+</blockquote>
+<blockquote>
+<p>Whether you are starting a new project or restructuring an old stack, his work ethics, drive and sound engineering mind will make the difference between what could have been an expensive failure and a software stack providing a great user as well as developer experience. Working with Simon is investing in your company&rsquo;s sustainable future.</p>
+— <cite><a href="https://www.linkedin.com/in/harikrishnan-nagarajan-65871a55/">Benjamin Marsili</a></cite></p>
+</blockquote>
+<blockquote>
+<p>In June 2021, of the back of the work I had done, I was appointed CTO of Whire.</p>
+</blockquote>
 </article>
           </div>
         </div>
@@ -696,7 +756,6 @@ const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
     <li><a href="#introduction">Introduction</a>
       <ul>
         <li><a href="#motivation">Motivation</a></li>
-        <li><a href="#related-links">Related Links</a></li>
       </ul>
     </li>
     <li><a href="#my-engagement-with-whire">My Engagement with Whire</a>
@@ -704,9 +763,11 @@ const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
         <li><a href="#initial-phase">Initial Phase</a></li>
         <li><a href="#phase-1-2-weeks">Phase 1 (2 weeks)</a></li>
         <li><a href="#phase-2-4-weeks">Phase 2 (4 weeks)</a></li>
-        <li><a href="#phase-3-4-weeks">Phase 3 (4 weeks)</a></li>
+        <li><a href="#phase-3-8-weeks">Phase 3 (8 weeks)</a></li>
+        <li><a href="#phase-4-4-weeks">Phase 4 (4 weeks)</a></li>
       </ul>
     </li>
+    <li><a href="#impact">Impact</a></li>
   </ul>
 </nav></div>
               </aside>
@@ -980,8 +1041,8 @@ Related Articles Click here for introduction and overview of app features Click 
   <div class="row justify-content-center">
     <div class="col-md-4 text-center">
       <div class="pb-2">
-        <a href="https://ziggy6792.github.io/" title="Simon&#39;s Portfolio">
-          <img alt="Footer logo" src="/fav3.svg" height="40px" width="40px" />
+        <a href="https://ziggy6792.github.io/" title="Alpaca Consulting">
+          <img alt="Footer logo" src="/fav4.svg" height="40px" width="40px" />
         </a>
       </div>
       &copy; 2023  All rights reserved
