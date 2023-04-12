@@ -60,11 +60,12 @@ Whire is a Singaporean Tech Startup which helps companies hire great people fast
 
 [Benjamin Marsili](https://www.linkedin.com/in/marsilib/) (founder of Whire) hired me to help him build a recruiting network platform for companies to;
 
-- Broadcast jobs from LinkedIn (or other sources)
+- Broadcast jobs from LinkedIn (and other sources)
 - Directly interview candidates who are referred members of the Whire network
 - Make hiring decisions and then pay for successfully hired candidates
 
-For more information visit [whire.net](https://www.whire.net/)
+For more information on Whire visit [whire.net](https://www.whire.net/).<br>
+To try the Whire platform yourself, visit [app.whire.net](https://app.whire.net/).
 
 ## My Engagement with Whire
 
@@ -167,13 +168,36 @@ Whire api was successfully built and deployed on AWS
 
 #### Objective
 
-After successfully deploying their web-app and api to AWS. One of the key features for Whire is referring candidates. For referrals, both the referrer and referee should use LinkedIn to login and share their information.
+One of the key features for Whire is referring candidates. For referrals, both the referrer and referee should use LinkedIn to login and share their information.
 
 For phase 3, Whire's aims were;
 
-- Allow users to authenticate with Whire using LikedIn
-- Users should be able to login to Whire using their LikedIn credentials
+- Users should be able to login to Whire using their LinkedIn credentials
+- LinkedIn authenticated users should have api access
 - On logging in for the first time a user should be created in Whire's database
 - Users LinkedIn profile information (name, nationality, skills etc...) should be pulled into Whire
+
+#### Architecture
+
+I proposed the following process for user registration, profile setup and sign in.
+
+{{< figure src="/images/projects/whire/auth.png" link="/images/projects/whire/auth.png" title="Whire Authentication Flow" >}}
+
+- Use LinkedIn as federated auth provider with Cognito
+- A Lambda runs on user confirmation (after email validation) to fetch the users profile information. This is non blocking, incase the data can not be retrieved we do not block the user from being onboarded to Whire
+
+#### Execution
+
+After starting to execute this plan we ran into a problem. Cognito does not support LinkedIn login out of the box. Cognito only supports some federated providers (Facebook/Google) as well as OpenId/SAML identity providers (LinkedIn only has an Auth2 provider).
+
+I then proposed 3 options
+
+| Option                                                                                                                                             | Advantages                                | Disadvantages                                                                                                                                                                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Use a third party solution like auth0/octa                                                                                                         | **Simple** to set up LinkedIn login       | **Expensive** (auth0 $240/mo - octa $3/MAU)<br> Outside the AWS ecosystem (bad for developers and CI/CD) <br> **API Access** would require a custom lambda authorizer in AWS gateway <br> **Sign Up events** would require custom setup outside of AWS |
+| Mixed approach. auth0 does have an OpenID provider. The user would signup to cognito as an auth0 OpenID user. So we would use auth0 as a middleman | **Simplest solution**                     | **Bad user experience.** We don’t control the auth0 login flow <br> **Most expensive solution.** As we pay for our LinkedIn users twice <br> **No one source of truth** as users managed in auth0 and cognito                                          |
+| Write my own OpenId provider.                                                                                                                      | **Cheap** <br> **Everything kept in AWS** | **Complex**                                                                                                                                                                                                                                            |
+
+I chose to write my own OpenId provider, which adapts LinkedIn Auth2 provider to OpenId. Luckily someone had already done this for Githubs Auth2 provider so I was able to adapt the code for my purposes (LinkedIn apis/scopes). I hosted the custom provider on AWS lambda and added the deployment to our CDK stack as well as Cogntio OpenId configuration.
 
 {{< load-photoswipe >}}

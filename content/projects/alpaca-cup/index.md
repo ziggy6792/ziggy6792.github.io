@@ -63,6 +63,18 @@ The App serves 2 main purposes;
 
 ## Features
 
+Alpaca Cup's main features are;
+
+- **RealTime Updates:** All event data; competitor positions, scores, rankings, heat allocations and more is updated in realtime.
+- **Live Scoring:** Competition judges enter scores in a collaborative realtime draft table before publishing. Competitors/spectators can see their scores live (immediately after judge confirmation).
+- **Competition Building:** Event organizers can build and edit their own competitions.
+- **Event Timetable:** Event organizers can organize competition rounds into a timetable and schedule custom items (such as registration and prize ceremony).
+- **Responsive Mobile First Design:** Looks great on all devices.
+- **Social Integration:** Users can login using Facebook.
+- **Score export and backup:** Competition scores are backed up and exported to google sheets.
+
+{{< gallery match="gallery-features/*.png" />}}
+
 ## Useful Terms
 
 | Term        | Description                                                                                                                                                    | Example                                                                                       |
