@@ -263,27 +263,11 @@ params:
           Working with Simon is investing in your company's sustainable future.
         url: https://www.linkedin.com/in/marsilib/
 
-  # projects
   projects:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Realtime Crypto Tracker
-        content: A simple web application which exposes the real time market data in USD for the two cryptocurrencies BTC and ETH for potential investors.
-        image: /images/projects/crypto-bro.webp
-        featured:
-          name: Demo
-          link: https://github.com/ziggy6792/project-realtime-crypto-tracker
-      - title: Network Animation (D3, React)
-        content: |
-          Animating a series of chronological events occurring in network graph.
-          There is a play/pause slider to play/pause and scroll through the animation.
-          The events are shown in a table and table rows can be clicked on to jump to the time in the animation they occurred.
-          Able to play animation at 2x, 4x ... speeds
-        image: /images/projects/animation.png
-        featured:
-          name: Demo
-          link: https://codesandbox.io/s/85lhh5
+
     #     badges:
     #       - "Hugo"
     #       - "Bootstrap"
@@ -322,6 +306,55 @@ params:
     #     links:
     #       - icon: fab fa-github
     #         url: https://github.com/gurusabarish/HugoProfileV2
+
+  samples:
+    enable: true
+    title: Code Samples
+    items:
+      - title: Network Animation
+        content: |
+          Animating a series of chronological events occurring in network graph.
+          Features sliders for playing and varying speed and an event timeline table with clickable rows. 
+            - TypeScript
+            - React
+            - D3.js
+        image: /images/projects/animation.png
+        featured:
+          name: Demo
+          link: https://codesandbox.io/s/85lhh5
+      - title: Realtime Crypto Tracker
+        content: |-
+          A simple web-app exposing the real time market value (USD) of 2 cryptocurrencies BTC and ETH for potential investors.
+          - TypeScript
+          - React
+          - NodeJS
+          - REST ([TRPC](https://trpc.io/))
+          - Web Sockets
+        image: /images/projects/crypto-bro.webp
+        featured:
+          name: Demo
+          link: https://github.com/ziggy6792/project-realtime-crypto-tracker
+      - title: Social Network Api
+        content: |-
+          Proof of concept for a social network api.
+          - NodeJS (TypeScript)
+          - GraphQL
+          - MongoDB
+        image: /images/projects/social-network.png
+        featured:
+          name: Demo
+          link: https://github.com/ziggy6792/project-social-network-api
+      - title: Show Reels
+        content: |-
+          Proof of concept web-app for editing short video clips.
+          - React
+          - NodeJS (TypeScript)
+          - GraphQL
+          - MongoDB
+        image: /images/projects/show reels.png
+        featured:
+          name: Demo
+          link: https://github.com/ziggy6792/project-show-reels
 
   #Contact
   contact:
