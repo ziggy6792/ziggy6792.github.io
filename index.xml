@@ -23,7 +23,7 @@
       
       <guid>https://ziggy6792.github.io/projects/alpaca-cup/</guid>
       <description>Introduction Alpaca Cup is an event management application for hosting and scoring competitions. So far the app has been used exclusively for wakeboarding competitions in Singapore, however we hope that it may be used in other extreme sports in the future (such as skateboarding) or indeed any competition that has a suitable format.
-The App serves 2 main purposes;
+Alpaca Cup serves 2 main purposes;
 Sharing event information (who is in each round, when rounds start, who progress to the next round) Sharing results for each round in realtime (i.</description>
     </item>
     
@@ -34,8 +34,8 @@ Sharing event information (who is in each round, when rounds start, who progress
       
       <guid>https://ziggy6792.github.io/blogs/alpaca-cup-architecture/</guid>
       <description>Introduction This article shows an overview of the technology and architecture behind Alpaca Cup, an event management application for hosting and scoring competitions.
-Related Articles Click here for introduction and overview of app features Click here for deep dive into the original motivations for this project Tools Amazon Web Services Alpaca Cup makes use of several cloud services and tools provided by Amazon Web Services (AWS), which offer;
-High scalability and availability Pay as you use payment model (when no competitions are running the cost of running the application will be negligible) Many libraries, packages and tools available to do much of the heavy lifting involved in building modern, robust applications Here are the key AWS tools being utilized;</description>
+To try the Alpaca Cup yourself, visit alpacacup.com.
+Related Articles Click here for introduction and overview of app features Click here for deep dive into the original motivations for this project Tools Amazon Web Services Alpaca Cup makes use of several cloud services and tools provided by Amazon Web Services (AWS), which offer;</description>
     </item>
     
     <item>

@@ -14,8 +14,8 @@
       
       <guid>https://ziggy6792.github.io/blogs/alpaca-cup-architecture/</guid>
       <description>Introduction This article shows an overview of the technology and architecture behind Alpaca Cup, an event management application for hosting and scoring competitions.
-Related Articles Click here for introduction and overview of app features Click here for deep dive into the original motivations for this project Tools Amazon Web Services Alpaca Cup makes use of several cloud services and tools provided by Amazon Web Services (AWS), which offer;
-High scalability and availability Pay as you use payment model (when no competitions are running the cost of running the application will be negligible) Many libraries, packages and tools available to do much of the heavy lifting involved in building modern, robust applications Here are the key AWS tools being utilized;</description>
+To try the Alpaca Cup yourself, visit alpacacup.com.
+Related Articles Click here for introduction and overview of app features Click here for deep dive into the original motivations for this project Tools Amazon Web Services Alpaca Cup makes use of several cloud services and tools provided by Amazon Web Services (AWS), which offer;</description>
     </item>
     
     <item>
