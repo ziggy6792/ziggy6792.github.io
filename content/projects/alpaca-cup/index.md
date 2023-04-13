@@ -51,10 +51,12 @@ socialShare: true
 
 [Alpaca Cup](https://alpacacup.com/events) is an event management application for hosting and scoring competitions. So far the app has been used exclusively for wakeboarding competitions in Singapore, however we hope that it may be used in other extreme sports in the future (such as skateboarding) or indeed any competition that has a suitable format.
 
-The App serves 2 main purposes;
+Alpaca Cup serves 2 main purposes;
 
 1. Sharing event information (who is in each round, when rounds start, who progress to the next round)
 2. Sharing results for each round in realtime (i.e: live scores as they are entered by judges)
+
+To try the Alpaca Cup yourself, visit [alpacacup.com](https://alpacacup.com/).
 
 ### Related Articles
 
@@ -111,7 +113,7 @@ Judges use the app score competitors. Judge scoring is a collaborative process a
 
 ## Architecture
 
-Alpaca Cup is a state of the art web application build by professional web developers each with over 20 years' combined experience. For an in depth dive into the technology behind Alpaca Cup [see this article](/blogs/alpaca-cup-architecture/).
+Alpaca Cup is a state of the art web application build by professional web developers each with over 20 years' combined experience. For an in depth look into the technology behind Alpaca Cup [see this article](/blogs/alpaca-cup-architecture/).
 
 ## Impact
 

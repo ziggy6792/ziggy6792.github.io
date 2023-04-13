@@ -48,6 +48,8 @@ socialShare: true
 
 This article shows an overview of the technology and architecture behind [Alpaca Cup](https://alpacacup.com/events), an event management application for hosting and scoring competitions.
 
+To try the Alpaca Cup yourself, visit [alpacacup.com](https://alpacacup.com/).
+
 ### Related Articles
 
 - Click [here](/projects/alpaca-cup) for introduction and overview of app features
