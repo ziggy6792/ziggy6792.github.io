@@ -214,9 +214,9 @@ For phase 4 I added ATS integration using [merge.dev](https://merge.dev/categori
 
 ## Impact
 
-> Whire Network has sofar grown to; 30 clients, 200 referrers amd 100 posted jobs.
+> Whire Network has sofar grown to; 30 clients, 200 referrers and 100 posted jobs.
 
 > Whether you are starting a new project or restructuring an old stack, his work ethics, drive and sound engineering mind will make the difference between what could have been an expensive failure and a software stack providing a great user as well as developer experience. Working with Simon is investing in your company's sustainable future.</p>
 > — <cite>[Benjamin Marsili](https://www.linkedin.com/in/harikrishnan-nagarajan-65871a55/)</cite>
 
-> In June 2021, of the back of the work I had done, I was appointed CTO of Whire.
+> In June 2021, I took on a role as CTO of Whire.
