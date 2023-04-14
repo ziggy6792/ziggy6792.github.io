@@ -6,27 +6,27 @@
     <description>Recent content in Projects on Alpaca Consultants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Apr 2021 22:53:58 +0530</lastBuildDate><atom:link href="https://ziggy6792.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Alpaca Cup</title>
-      <link>https://ziggy6792.github.io/projects/alpaca-cup/</link>
-      <pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
-      
-      <guid>https://ziggy6792.github.io/projects/alpaca-cup/</guid>
-      <description>Introduction Alpaca Cup is an event management application for hosting and scoring competitions. So far the app has been used exclusively for wakeboarding competitions in Singapore, however we hope that it may be used in other extreme sports in the future (such as skateboarding) or indeed any competition that has a suitable format.
-Alpaca Cup serves 2 main purposes;
-Sharing event information (who is in each round, when rounds start, who progress to the next round) Sharing results for each round in realtime (i.</description>
-    </item>
-    
+    <lastBuildDate>Wed, 01 Mar 2023 22:53:58 +0530</lastBuildDate><atom:link href="https://ziggy6792.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Whire</title>
       <link>https://ziggy6792.github.io/projects/whire/</link>
-      <pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
+      <pubDate>Wed, 01 Mar 2023 22:53:58 +0530</pubDate>
       
       <guid>https://ziggy6792.github.io/projects/whire/</guid>
       <description>Introduction Whire is a Singaporean Tech Startup which helps companies hire great people faster through its platform and a top tier community of hiring ambassadors, saving companies hours on pre-screening and outreach efforts as well as thousands of dollars on job ads and agency fees without compromising candidate quality.
 Motivation Benjamin Marsili (founder of Whire) hired me to help him build a recruiting network platform for companies to;
 Broadcast jobs from LinkedIn (and other sources) Directly interview candidates who are referred members of the Whire network Make hiring decisions and then pay for successfully hired candidates For more information on Whire visit whire.</description>
+    </item>
+    
+    <item>
+      <title>Alpaca Cup</title>
+      <link>https://ziggy6792.github.io/projects/alpaca-cup/</link>
+      <pubDate>Wed, 01 Feb 2023 22:53:58 +0530</pubDate>
+      
+      <guid>https://ziggy6792.github.io/projects/alpaca-cup/</guid>
+      <description>Introduction Alpaca Cup is an event management application for hosting and scoring competitions. So far the app has been used exclusively for wakeboarding competitions in Singapore, however we hope that it may be used in other extreme sports in the future (such as skateboarding) or indeed any competition that has a suitable format.
+Alpaca Cup serves 2 main purposes;
+Sharing event information (who is in each round, when rounds start, who progress to the next round) Sharing results for each round in realtime (i.</description>
     </item>
     
   </channel>

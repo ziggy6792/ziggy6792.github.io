@@ -6,11 +6,11 @@
     <description>Recent content in Alpaca Cup on Alpaca Consultants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Apr 2021 22:53:58 +0530</lastBuildDate><atom:link href="https://ziggy6792.github.io/tags/alpaca-cup/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Feb 2023 22:53:58 +0530</lastBuildDate><atom:link href="https://ziggy6792.github.io/tags/alpaca-cup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alpaca Cup</title>
       <link>https://ziggy6792.github.io/projects/alpaca-cup/</link>
-      <pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
+      <pubDate>Wed, 01 Feb 2023 22:53:58 +0530</pubDate>
       
       <guid>https://ziggy6792.github.io/projects/alpaca-cup/</guid>
       <description>Introduction Alpaca Cup is an event management application for hosting and scoring competitions. So far the app has been used exclusively for wakeboarding competitions in Singapore, however we hope that it may be used in other extreme sports in the future (such as skateboarding) or indeed any competition that has a suitable format.
@@ -21,7 +21,7 @@ Sharing event information (who is in each round, when rounds start, who progress
     <item>
       <title>Alpaca Cup Architecture</title>
       <link>https://ziggy6792.github.io/blogs/alpaca-cup-architecture/</link>
-      <pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
+      <pubDate>Wed, 01 Feb 2023 22:53:58 +0530</pubDate>
       
       <guid>https://ziggy6792.github.io/blogs/alpaca-cup-architecture/</guid>
       <description>Introduction This article shows an overview of the technology and architecture behind Alpaca Cup, an event management application for hosting and scoring competitions.
