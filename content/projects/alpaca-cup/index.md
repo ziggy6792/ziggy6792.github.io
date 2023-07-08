@@ -1,6 +1,6 @@
 ---
 title: "Alpaca Cup"
-date: 2021-04-03T22:53:58+05:30
+date: 2023-02-01T22:53:58+05:30
 draft: false
 github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Simon Verhoeven"
@@ -113,11 +113,16 @@ Judges use the app score competitors. Judge scoring is a collaborative process a
 
 ## Architecture
 
-Alpaca Cup is a state of the art web application build by professional web developers each with over 20 years' combined experience. For an in depth look into the technology behind Alpaca Cup [see this article](/blogs/alpaca-cup-architecture/).
+Alpaca Cup is a state of the art web application build by professional web developers with over 20 years' combined experience. For an in depth look into the technology behind Alpaca Cup [see this article](/blogs/alpaca-cup-architecture/).
+
+## Development Team
+
+- [Simon](https://www.linkedin.com/in/simonverhoeven067/): system design, architecture, backend, frontend
+- [Lorenzo](https://www.linkedin.com/in/lorenzoong/): frontend, ui/styling wizard
 
 ## Impact
 
-> 23 Live competitions completed
+> 23 live competitions completed
 
 > Average 1000 active users per event
 

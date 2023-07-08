@@ -123,8 +123,8 @@ params:
     title: "Simon."
     subtitle: I build things for the web
     content: |-
-      A keen Software Developer/Consultant with 9 years’ experience in IT Professional Services and Web Application development. My main tech interests are; AWS Serverless Application Architecture (Lambda, Fargate etc..), CI/CD (AWS CDK) and front-end development (ReactJS).
-      <br>I really enjoy working with small companies and startups, as solving new and novel problem with tech is incredibly rewarding. I also get a lot of fulfillment out of and helping a development team, new to certain tech (such as NodeJS or AWS), level up their skills.
+      A keen Software Developer/Consultant with 10 years’ experience in IT Professional Services and Web Application development. My main tech interests are; AWS Serverless Application Architecture (Lambda, Fargate etc..), CI/CD (AWS CDK) and front-end development (ReactJS).
+      <br>I really enjoy working with small companies and startups, as solving new and novel problem with tech is incredibly rewarding. I also enjoy helping development teams, new to certain tech (such as NodeJS or AWS), level up their skills.
       <br>If you are thinking of starting a new project or hoping to scale a small idea into a big one please [get in touch](mailto:simonaverhoeven@gmail.com).
     image: /images/logo.png
     bottomImage:
@@ -156,7 +156,7 @@ params:
     title: "About Me"
     image: "/images/me2.jpg"
     content: |-
-      A software developer from the UK speciallizing in web development.
+      A software developer from the UK specializing in web development.
       I worked for 8 years as an IT consultant, predominantly in banking projects (in Zurich and Singapore). I now work for an AI startup.
     skills:
       enable: true
