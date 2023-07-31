@@ -49,7 +49,7 @@ socialShare: true
 
 ## Introduction
 
-[Alpaca Cup](https://alpacacup.com/events) is an event management application for hosting and scoring competitions. So far the app has been used exclusively for wakeboarding competitions in Singapore, however we hope that it may be used in other extreme sports in the future (such as skateboarding) or indeed any competition that has a suitable format.
+[Alpaca Cup](https://alpacacup.com/events) is an event management application for hosting and scoring competitions. The app has already been used in wakeboarding and wakeskating competitions all over the world, and we hope to branch out in other extreme sports in the future (such as skateboarding).
 
 Alpaca Cup serves 2 main purposes;
 
@@ -69,13 +69,14 @@ Alpaca Cup's main features are;
 
 - **RealTime Updates:** All event data; competitor positions, scores, rankings, heat allocations and more is updated in realtime.
 - **Live Scoring:** Competition judges enter scores in a collaborative realtime draft table before publishing. Competitors/spectators can see their scores live (immediately after judge confirmation).
+- **Live Broadcast Integration:** Providing overlay screens that can be used in event live streams (e.g: using [vMix](https://www.vmix.com/))
 - **Competition Building:** Event organizers can build and edit their own competitions.
 - **Event Timetable:** Event organizers can organize competition rounds into a timetable and schedule custom items (such as registration and prize ceremony).
 - **Responsive Mobile First Design:** Looks great on all devices.
 - **Social Integration:** Users can login using Facebook.
 - **Score export and backup:** Competition scores are backed up and exported to google sheets.
 
-{{< gallery match="gallery-features/*.png" />}}
+{{< gallery match="gallery-features/*.{jpg,png}" />}}
 
 ## Useful Terms
 
@@ -122,11 +123,15 @@ Alpaca Cup is a state of the art web application build by professional web devel
 
 ## Impact
 
-> 23 live competitions completed
+> 42 live competitions completed
 
 > Average 1000 active users per event
 
-See Alpaca Cup in action at the 2023 Embily Open Wakeboarding Competition Live steam.
+See Alpaca Cup in action at Brezel Wakeboard Contest 2023
+
+{{< youtube o4QmmCv05Ec >}}
+
+See Alpaca Cup in action at the 2023 Embily Open
 
 {{< youtube cnMjZtYj6us >}}
 
