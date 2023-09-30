@@ -40,7 +40,7 @@ tech:
 
 image: /images/projects/alpaca/alpaca.png
 demo:
-  name: alpacacup.com
+  name: Demo
   url: https://alpacacup.com
 description: ""
 # toc:
