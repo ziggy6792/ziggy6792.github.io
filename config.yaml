@@ -157,7 +157,9 @@ params:
     image: "/images/me2.jpg"
     content: |-
       A software developer from the UK specializing in web development.
-      I worked for 8 years as an IT consultant, predominantly in banking projects (in Zurich and Singapore). I now work for an AI startup.
+      - 9 years experience as an IT consultant, predominantly in banking projects (Zurich and Singapore).
+      - 3 years experience as an independent contractor.
+      - 3 years experience working for startups, building products from the ground up.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
