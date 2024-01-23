@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width" />
+<link
+  rel="icon"
+  href="/fav5.png"
+  type="image/gif"
+/>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<noscript>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"
+  />
+</noscript>
+
+
+<link
+  rel="stylesheet"
+  href="/css/font.css"
+  media="all"
+/>
+
+
+
+<meta property="og:title" content="TypeScript Journey - Web Series" />
+<meta property="og:description" content="Introduction Modern web development is an exciting challenge, with a myriad of languages, runtimes, and AWS services to conquer. Dive into this interactive workshop, where we&rsquo;ll explore cutting-edge frontend and backend development, all while staying firmly in the TypeScript world.
+Highlights:
+Create modern TypeScript web apps with React, Vite, and Next.JS. Master TypeScript CI/CD with SST and AWS CDK. Deploy a fullstack application to AWS complete with; Next.js frontend, Node.JS apis, cognito login, S3 upload/download and TypeScript IAC." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ziggy6792.github.io/blogs/typescript-journey/" /><meta property="article:section" content="blogs" />
+<meta property="article:published_time" content="2024-01-20T22:53:58+05:30" />
+<meta property="article:modified_time" content="2024-01-20T22:53:58+05:30" /><meta property="og:site_name" content="Alpaca Consultants" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="TypeScript Journey - Web Series"/>
+<meta name="twitter:description" content="Introduction Modern web development is an exciting challenge, with a myriad of languages, runtimes, and AWS services to conquer. Dive into this interactive workshop, where we&rsquo;ll explore cutting-edge frontend and backend development, all while staying firmly in the TypeScript world.
+Highlights:
+Create modern TypeScript web apps with React, Vite, and Next.JS. Master TypeScript CI/CD with SST and AWS CDK. Deploy a fullstack application to AWS complete with; Next.js frontend, Node.JS apis, cognito login, S3 upload/download and TypeScript IAC."/>
+
+
+
+
+
+
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/style.min.f5e7e49ae2464ddb82ff0fab1ae699e586998d3299df047d05dc7d505b32ab02.css"
+    integrity="sha256-9efkmuJGTduC/w+rGuaZ5YaZjTKZ3wR9Bdx9UFsyqwI="
+  />
+<link
+    rel="stylesheet"
+    href="/bootstrap-5/css/bootstrap.min.css"
+    media="all"
+  /><link
+  rel="stylesheet"
+  href="/css/header.css"
+  media="all"
+/>
+<link
+  rel="stylesheet"
+  href="/css/footer.css"
+  media="all"
+/>
+
+
+<link
+  rel="stylesheet"
+  href="/css/theme.css"
+  media="all"
+/>
+
+
+
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        width: .5em;
+        height: .5em;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px var(--background-color);
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: var(--secondary-color);
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="/css/single.css" />
+
+  
+  <script
+    defer
+    src="/fontawesome-5/all-5.15.4.js"
+  ></script>
+
+  <title>TypeScript Journey - Web Series | Alpaca Consultants
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+  let localStorageValue = localStorage.getItem("pref-theme");
+  let mediaQuery = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  switch (localStorageValue) {
+    case "dark":
+      document.body.classList.add("dark");
+      break;
+    case "light":
+      document.body.classList.remove("dark");
+      break;
+    default:
+      if (mediaQuery) {
+        document.body.classList.add("dark");
+      }
+      break;
+  }
+</script>
+
+
+<header>
+  <nav
+    class="navbar navbar-expand-lg 
+      animate
+     pt-3"
+  >
+    <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+      
+      <a
+        class="navbar-brand primary-font text-wrap"
+        href="/"
+      >
+        
+          <img
+            src="/fav5.png"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+          />
+          Alpaca Consultants
+        
+      </a>
+
+      
+        <div>
+          <input
+            id="search"
+            autocomplete="off"
+            class="form-control mr-sm-2 d-none d-md-block"
+            placeholder="Ctrl &#43; k to Search..."
+            aria-label="Search"
+            oninput="searchOnChange(event)"
+          />
+        </div>
+      
+
+
+      
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent"
+        aria-controls="navbarContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <svg
+          aria-hidden="true"
+          height="24"
+          viewBox="0 0 16 16"
+          version="1.1"
+          width="24"
+          data-view-component="true"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"
+          ></path>
+        </svg>
+      </button>
+
+      
+      <div
+        class="navbar-collapse text-wrap primary-font collapse"
+        id="navbarContent"
+      >
+        <ul
+          class="navbar-nav ms-auto text-center"
+        >
+          
+            <li class="nav-item navbar-text d-block d-md-none">
+              <div class="nav-link">
+                <input
+                  id="search"
+                  autocomplete="off"
+                  class="form-control mr-sm-2"
+                  placeholder="Ctrl &#43; k to Search..."
+                  aria-label="Search"
+                  oninput="searchOnChange(event)"
+                />
+              </div>
+            </li>
+          
+
+          
+            <li class="nav-item navbar-text">
+              <a
+                class="nav-link"
+                href="/#about"
+                aria-label="about"
+              >
+                About Me
+              </a>
+            </li>
+          
+
+          
+            <li class="nav-item navbar-text">
+              <a
+                class="nav-link"
+                href="/#experience"
+                aria-label="experience"
+              >
+                Experience
+              </a>
+            </li>
+          
+
+          
+            <li class="nav-item navbar-text">
+              <a
+                class="nav-link"
+                href="/#education"
+                aria-label="education"
+              >
+                Education
+              </a>
+            </li>
+          
+
+          
+            <li class="nav-item navbar-text">
+              <a
+                class="nav-link"
+                href="/#projects"
+                aria-label="projects"
+              >
+                Projects
+              </a>
+            </li>
+          
+
+          
+            <li class="nav-item navbar-text">
+              <a
+                class="nav-link"
+                href="/#samples"
+                aria-label="samples"
+              >
+                Code Samples
+              </a>
+            </li>
+          
+
+          
+            <li class="nav-item navbar-text">
+              <a
+                class="nav-link"
+                href="/#achievements"
+                aria-label="achievements"
+              >
+                Recommendations
+              </a>
+            </li>
+          
+
+          
+            <li class="nav-item navbar-text">
+              <a
+                class="nav-link"
+                href="/#contact"
+                aria-label="contact"
+              >
+                Contact
+              </a>
+            </li>
+          
+
+
+          
+          
+            
+              
+              <li class="nav-item navbar-text">
+                <a class="nav-link" href="/blogs" title="Blog posts">
+                  
+                  Blog
+                </a>
+              </li>
+            
+          
+
+          
+            <li class="nav-item navbar-text">
+              
+              <div class="text-center">
+                <button id="theme-toggle">
+                  <svg
+                    id="moon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                    ></path>
+                  </svg>
+                  <svg
+                    id="sun"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="content">
+  <section id="single">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-12 col-lg-9">
+          <div class="pr-lg-4">
+            <div class="title mb-5">
+              <h1 class="mb-4 text-center">TypeScript Journey - Web Series</h1>
+              <div class="text-center">
+                Simon Verhoeven
+                <small>|</small>
+                Jan 20, 2024
+                
+                  <span id="readingTime">
+                    min read
+                  </span>
+                
+              </div>
+            </div>
+            
+              <div class="featured-image">
+                <a
+                  
+                >
+                  <img
+                    class="img-fluid"
+                    src="/images/posts/typescript-journey/meetup.png"
+                    alt="TypeScript Journey - Web Series"
+                  />
+                </a>
+              </div>
+            
+
+
+            <hr class="full-width" />
+            
+              
+                <h2 class="uk-text-center uk-heading-small">Built with</h2>
+
+                <section>
+                  <div>
+                    <div class="flex flex-wrap gap-4">
+                      
+                        <div>
+                          <a href="https://react.dev/">
+                            <img
+                              class="h-14"
+                              src="https://cdn.worldvectorlogo.com/logos/react-1.svg"
+                              alt="React"
+                              loading="lazy"
+                              style="cursor: pointer"
+                            />
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="https://nextjs.org/">
+                            <img
+                              class="h-14"
+                              src="https://dev-yakuza.posstree.com/assets/images/category/react/nextjs/background.jpg"
+                              alt="Next"
+                              loading="lazy"
+                              style="cursor: pointer"
+                            />
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="https://aws.amazon.com/lambda/">
+                            <img
+                              class="h-14"
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Amazon_Lambda_architecture_logo.svg/200px-Amazon_Lambda_architecture_logo.svg.png"
+                              alt="AWS Lambda"
+                              loading="lazy"
+                              style="cursor: pointer"
+                            />
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="https://aws.amazon.com/api-gateway/">
+                            <img
+                              class="h-14"
+                              src="https://cdn.worldvectorlogo.com/logos/aws-api-gateway.svg"
+                              alt="AWS API Gateway"
+                              loading="lazy"
+                              style="cursor: pointer"
+                            />
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="https://aws.amazon.com/cognito/">
+                            <img
+                              class="h-14"
+                              src="/images/projects/alpaca/aws-cognito-logo.png"
+                              alt="AWS Cognito"
+                              loading="lazy"
+                              style="cursor: pointer"
+                            />
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="">
+                            <img
+                              class="h-14"
+                              src="https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9hY2M3M2RiNTFjNmE3NzIxYTIzNDAzNTQ0OWQ4MzgwOT9zaXplPTQ5NiZkZWZhdWx0PXJldHJvIn0.xgNJFrB8Tz89BFgDaybQOp1e54UfUv7VeqayL_Piddg"
+                              alt="AWS CDK"
+                              loading="lazy"
+                              style="cursor: pointer"
+                            />
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="https://sst.dev/">
+                            <img
+                              class="h-14"
+                              src="https://avatars.githubusercontent.com/u/66570915?s=200&amp;v=4"
+                              alt="SST"
+                              loading="lazy"
+                              style="cursor: pointer"
+                            />
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="https://nodejs.org/en">
+                            <img
+                              class="h-14"
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
+                              alt="Node JS"
+                              loading="lazy"
+                              style="cursor: pointer"
+                            />
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                </section>
+
+                <hr class="full-width" />
+              
+            
+            <article class="page-content p-2"><h3 id="introduction">Introduction</h3>
+<p>Modern web development is an exciting challenge, with a myriad of languages, runtimes, and AWS services to conquer. Dive into this interactive workshop, where we&rsquo;ll explore cutting-edge frontend and backend development, all while staying firmly in the TypeScript world.</p>
+<p>Highlights:</p>
+<ul>
+<li>Create modern TypeScript web apps with React, Vite, and Next.JS.</li>
+<li>Master TypeScript CI/CD with SST and AWS CDK.</li>
+<li>Deploy a fullstack application to AWS complete with; Next.js frontend, Node.JS apis, cognito login, S3 upload/download and TypeScript IAC.</li>
+<li>Ensure type safety from backend to frontend through the capabilities of tRPC.</li>
+<li>Get a glimpse of the future with Deno and Bun.</li>
+</ul>
+<p>Join us for an action-packed TypeScript adventure! 🚀🌟</p>
+<h3 id="target-audience">Target Audience</h3>
+<p>Are you interested in web development with TypeScript? Maybe you already know some React but want to level up to deploying and running fullstack web applications to AWS. This web series is for you!</p>
+<h3 id="links">Links</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLz7EK8bcbCdDEcoa0cz4DNXjsFaxCVOfs">Web Series</a> (YouTube private link, email me for access)</li>
+<li><a href="https://www.meetup.com/tech-meetup/events/296204384">Meetup</a> This web series is based off a workshop delivered in Ho Chi Minh, October 2023.</li>
+<li><a href="https://docs.google.com/presentation/d/1mYOBD6kO1uWB57J3P9wYvQVRdLzKPNj-/edit?usp=sharing&amp;ouid=115437333129535741316&amp;rtpof=true&amp;sd=true">Slides</a></li>
+<li><a href="https://github.com/ziggy6792/typeScript-journey">Code</a></li>
+</ul>
+<h2 id="course-outline">Course Outline</h2>
+<h4 id="1---welcome">1 - Welcome</h4>
+<p>Welcome to my web series “TypeScript Journey” a journey into Modern Web Development, CI/CD and AWS Magic!
+<br/>
+<br/></p>
+<h4 id="2---demo-intro--prerequisites">2 - Demo Intro &amp; Prerequisites</h4>
+<p>A look at what we will be building in this web series and prerequisites to get started.
+<br/>
+<br/></p>
+<h4 id="3---intro-ts-mono-repo">3 - Intro TS Mono-Repo</h4>
+<p>Introduction to a modern TypeScript Mono-Repository using; Turborepo, yarn workspaces, Eslint, CDK, SST.
+<br/>
+<br/></p>
+<h4 id="4---add-and-deploy-vite-react-app">4 - Add and deploy Vite React App</h4>
+<p>Creating a Vite React App in a TypeScript Mono-Repo deploying to AWS using Cloud Development Kit (SST).
+<br/>
+<br/></p>
+<h4 id="5---add-next-js-app">5 - Add Next JS App</h4>
+<p>Creating a Next JS App in a TypeScript Mono-Repo using Create T3 App.
+<br/>
+<br/></p>
+<h4 id="6---add-next-auth-cognito">6 - Add Next Auth (Cognito)</h4>
+<p>Deploying Cognito Userpool to AWS using Cloud Development Kit (SST) and configuring sign in with Next Auth.
+<br/>
+<br/></p>
+<h4 id="7---deploy-next-app-to-aws">7 - Deploy Next App to AWS</h4>
+<p>Deploying Next App to AWS using Open Next. Next App runs serverless on AWS lambda which is a very cheap way to deploy a Next App. We also configure AWS Cognito to accept signin redirect requests from the deployed site. And this highlights the issue of dependency cycles that can occur in IAC.
+<br/>
+<br/></p>
+<h4 id="8---why-i-like-this-stack">8 - Why I Like this Stack</h4>
+<p>An overview of some of the advantages of using this stack. Cheap run costs due to serverless architecture, bleeding edge features, fine grained access control through NextAuth and tRPC and Type Safe APIs.
+<br/>
+<br/></p>
+<h4 id="9---fix-trpc-mutations">9 - Fix tRPC Mutations</h4>
+<p>Open Next does not support streaming tPRC mutations out of the box. This short video shows a fix.
+<br/>
+<br/></p>
+<h4 id="10---upload-download-demo">10 - Upload Download Demo</h4>
+<p>Implementing upload/download functionality to the Next app. Adding an S3 bucket to SST app, importing the bucket into Next App and creating an api to generate pre-signed urls. In this demo, bucket name is defined in a common package and imported into SST app and Next app.
+<br/>
+<br/></p>
+<h4 id="11---using-sst-bind-and-summary">11 - Using SST Bind and Summary</h4>
+<p>Using SST bind to refactor the approach from the previous video. In this demo, bucket name is defined in SST app and then SST bind is run in Next app to generate types and the bucket name to use. Finally a summary of what we have built.</p>
+</article>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-3">
+          <div class="sticky-sidebar">
+            
+              <aside class="toc">
+                <h5>
+                  Table Of Contents
+                </h5>
+                <div class="toc-content"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#target-audience">Target Audience</a></li>
+        <li><a href="#links">Links</a></li>
+      </ul>
+    </li>
+    <li><a href="#course-outline">Course Outline</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+              </aside>
+            
+            
+              <aside class="social">
+                <h5>Links</h5>
+                <div class="social-content">
+                  <ul class="list-inline">
+                    
+                      <li class="list-inline-item text-center">
+                        <a href="https://www.youtube.com/playlist?list=PLz7EK8bcbCdDEcoa0cz4DNXjsFaxCVOfs">
+                          Web Series
+                        </a>
+                      </li>
+                    
+                    
+                  </ul>
+                </div>
+              </aside>
+            
+            
+              <aside class="tags">
+                <h5>Tags</h5>
+                <ul class="tags-ul list-unstyled list-inline">
+                  
+                    <li class="list-inline-item">
+                      <a
+                        href="https://ziggy6792.github.io/tags/web-series"
+                        target="_blank"
+                        >Web Series</a
+                      >
+                    </li>
+                  
+                    <li class="list-inline-item">
+                      <a
+                        href="https://ziggy6792.github.io/tags/typescript"
+                        target="_blank"
+                        >TypeScript</a
+                      >
+                    </li>
+                  
+                    <li class="list-inline-item">
+                      <a
+                        href="https://ziggy6792.github.io/tags/next"
+                        target="_blank"
+                        >Next</a
+                      >
+                    </li>
+                  
+                    <li class="list-inline-item">
+                      <a
+                        href="https://ziggy6792.github.io/tags/cloud-development-kit"
+                        target="_blank"
+                        >Cloud Development Kit</a
+                      >
+                    </li>
+                  
+                    <li class="list-inline-item">
+                      <a
+                        href="https://ziggy6792.github.io/tags/sst"
+                        target="_blank"
+                        >SST</a
+                      >
+                    </li>
+                  
+                </ul>
+              </aside>
+            
+
+
+            
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+          
+        </div>
+      </div>
+    </div>
+    <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+      <i class="fas fa-angle-up"></i>
+    </button>
+  </section>
+
+  
+    <div class="progress">
+      <div
+        id="scroll-progress-bar"
+        class="progress-bar"
+        role="progressbar"
+        aria-valuenow="0"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
+    </div>
+    <script src="/js/scrollProgressBar.js"></script>
+  
+
+
+  <script>
+    var topScroll = document.getElementById("topScroll");
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        topScroll.style.display = "block";
+      } else {
+        topScroll.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  
+    <script src="/js/readingTime.js"></script>
+  
+
+  </div><footer>
+    <div class="container py-3" id="recent-posts">
+    
+    
+    
+    
+    <div class="h3 text-center text-secondary py-3">
+        Recent Posts
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/typescript-journey/">
+                        <img src="/images/posts/typescript-journey/meetup.png" class="card-img-top" alt="TypeScript Journey - Web Series">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/typescript-journey/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="TypeScript Journey - Web Series">TypeScript Journey - Web …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Introduction Modern web development is an exciting challenge, with a myriad of languages, runtimes, and AWS services to conquer. Dive into this interactive workshop, where we&rsquo;ll explore cutting-edge frontend and backend development, all while staying firmly in the TypeScript world.
+Highlights: …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Jan 20, 2024</span>
+                    <a href="/blogs/typescript-journey/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/alpaca-cup-architecture/">
+                        <img src="/images/posts/alpaca-cup-architecture/alpaca-web-developer.png" class="card-img-top" alt="Alpaca Cup Architecture">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/alpaca-cup-architecture/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Alpaca Cup Architecture">Alpaca Cup Architecture</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Introduction This article shows an overview of the technology and architecture behind Alpaca Cup, an event management application for hosting and scoring competitions.
+To try the Alpaca Cup yourself, visit alpacacup.com.
+Related Articles Click here for introduction and overview of app features Click …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Feb 1, 2023</span>
+                    <a href="/blogs/alpaca-cup-architecture/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/amplify-lambda-dynamodb/">
+                        <img src="/images/posts/Accessing-DynamoDB-Tables/Amplify.png" class="card-img-top" alt="Accessing Amplify GraphQL API objects from Lambda functions">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/amplify-lambda-dynamodb/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Accessing Amplify GraphQL API objects from Lambda functions">Accessing Amplify GraphQL …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article focuses on creating a Lambda function with Amplify CLI that has access to these tables.</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Mar 20, 2020</span>
+                    <a href="/blogs/amplify-lambda-dynamodb/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</div><div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com/" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/simonverhoeven067/" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+  <div class="row justify-content-center">
+    <div class="col-md-4 text-center">
+      <div class="pb-2">
+        <a href="https://ziggy6792.github.io/" title="Alpaca Consultants">
+          <img alt="Footer logo" src="/fav5.png" height="40px" width="40px" />
+        </a>
+      </div>
+      &copy; 2024  All rights reserved
+    </div>
+  </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("light")) {
+        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
+    }
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+    <script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>

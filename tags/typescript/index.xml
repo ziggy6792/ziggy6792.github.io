@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TypeScript on Alpaca Consultants</title>
+    <link>https://ziggy6792.github.io/tags/typescript/</link>
+    <description>Recent content in TypeScript on Alpaca Consultants</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Jan 2024 22:53:58 +0530</lastBuildDate><atom:link href="https://ziggy6792.github.io/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TypeScript Journey - Web Series</title>
+      <link>https://ziggy6792.github.io/blogs/typescript-journey/</link>
+      <pubDate>Sat, 20 Jan 2024 22:53:58 +0530</pubDate>
+      
+      <guid>https://ziggy6792.github.io/blogs/typescript-journey/</guid>
+      <description>Introduction Modern web development is an exciting challenge, with a myriad of languages, runtimes, and AWS services to conquer. Dive into this interactive workshop, where we&amp;rsquo;ll explore cutting-edge frontend and backend development, all while staying firmly in the TypeScript world.
+Highlights:
+Create modern TypeScript web apps with React, Vite, and Next.JS. Master TypeScript CI/CD with SST and AWS CDK. Deploy a fullstack application to AWS complete with; Next.js frontend, Node.JS apis, cognito login, S3 upload/download and TypeScript IAC.</description>
+    </item>
+    
+  </channel>
+</rss>
