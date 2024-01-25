@@ -6,7 +6,17 @@
     <description>Recent content in TypeScript on Alpaca Consultants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jan 2024 22:53:58 +0530</lastBuildDate><atom:link href="https://ziggy6792.github.io/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Jan 2024 10:53:58 +0530</lastBuildDate><atom:link href="https://ziggy6792.github.io/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fullstack Web Development - Bootcamp</title>
+      <link>https://ziggy6792.github.io/blogs/web-dev-bootcamp/</link>
+      <pubDate>Thu, 25 Jan 2024 10:53:58 +0530</pubDate>
+      
+      <guid>https://ziggy6792.github.io/blogs/web-dev-bootcamp/</guid>
+      <description>Introduction So you are interested in Web Development? There are of 100s of different tracks that can be followed and I am not going to argue that the track below it the only or even best. This blog post simply outlines;
+How I got into web development, what I found useful and what worked for me. Some useful recourses to get you started with web development in 2024. Bootcamp Step 1 - JavaScript Fundamentals First step is to get familiar with coding in general and learning some javascript.</description>
+    </item>
+    
     <item>
       <title>TypeScript Journey - Web Series</title>
       <link>https://ziggy6792.github.io/blogs/typescript-journey/</link>
