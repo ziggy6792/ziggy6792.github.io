@@ -8,9 +8,13 @@ tags:
   - Web Series
   - TypeScript
   - Next
+  - AWS
   - Cloud Development Kit
   - SST
 tech:
+  - logo: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/250px-Typescript_logo_2020.svg.png
+    name: "TypeScript"
+    url: https://www.typescriptlang.org/
   - logo: https://cdn.worldvectorlogo.com/logos/react-1.svg
     name: "React"
     url: "https://react.dev/"
@@ -41,7 +45,7 @@ description: ""
 socialShare: true
 ---
 
-### Introduction
+## Introduction
 
 Modern web development is an exciting challenge, with a myriad of languages, runtimes, and AWS services to conquer. Dive into this interactive workshop, where we'll explore cutting-edge frontend and backend development, all while staying firmly in the TypeScript world.
 
