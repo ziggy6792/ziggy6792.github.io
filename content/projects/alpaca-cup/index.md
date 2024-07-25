@@ -112,6 +112,12 @@ Judges use the app score competitors. Judge scoring is a collaborative process a
 
 {{< gallery match="gallery-judges/*.png" />}}
 
+### Live Casters
+
+Live Casters use the app to broadcast wakeboarding competitions live, such as on YouTube. The app provides real-time updates for the next rider, start lists, standings, and more, displayed as an overlay on the live stream.
+
+{{< gallery match="gallery-live-casters/*.png" />}}
+
 ## Architecture
 
 Alpaca Cup is a state of the art web application build by professional web developers with over 20 years' combined experience. For an in depth look into the technology behind Alpaca Cup [see this article](/blogs/alpaca-cup-architecture/).
@@ -123,16 +129,25 @@ Alpaca Cup is a state of the art web application build by professional web devel
 
 ## Impact
 
-> 42 live competitions completed
+> 50 live competitions completed
 
 > Average 1000 active users per event
 
-See Alpaca Cup in action at Brezel Wakeboard Contest 2023
+See Alpaca Cup in action!
+
+<!-- https://youtu.be/DSyeE2lIdf0?t=25780 -->
+
+Wakelake Embily Open, 2024
+
+{{< youtube id=DSyeE2lIdf0 start=25780 >}}
+<br/>
+
+Brezel Wakeboard Contest, 2023
 
 {{< youtube o4QmmCv05Ec >}}
-
-See Alpaca Cup in action at the 2023 Embily Open
+<br/>
+Wakelake Embily Open, 2023
 
 {{< youtube cnMjZtYj6us >}}
-
+<br/>
 {{< load-photoswipe >}}

@@ -4,5 +4,5 @@
     "**/.pnp.*": true
   },
   "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
-  "cSpell.words": ["Fargate", "schemaless", "Whire's"]
+  "cSpell.words": ["definitly", "Fargate", "schemaless", "Whire's"]
 }

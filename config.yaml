@@ -123,9 +123,11 @@ params:
     title: "Simon."
     subtitle: I build things for the web
     content: |-
-      A keen Software Developer/Consultant with 10 years’ experience in IT Professional Services and Web Application development. My main tech interests are; AWS Serverless Application Architecture (Lambda, Fargate etc..), CI/CD (AWS CDK) and front-end development (ReactJS).
+      A keen Software Developer/Consultant with 10 years’ experience in IT Professional Services and Web Application development. My main tech interests are; AWS Serverless Application Architecture (Lambda, Fargate etc..), CI/CD (AWS CDK) and frontend development (ReactJS).
       <br>I really enjoy working with small companies and startups, as solving new and novel problem with tech is incredibly rewarding. I also enjoy helping development teams, new to certain tech (such as NodeJS or AWS), level up their skills.
-      <br>If you are thinking of starting a new project or hoping to scale a small idea into a big one please [get in touch](mailto:simonaverhoeven@gmail.com).
+      <br>
+      With my team of skilled professionals, we're well-equipped to assist you in building a top-tier software solution for your project.
+      Whether you're embarking on a new venture or hoping to scale a small idea into a big one please [get in touch](mailto:simonaverhoeven@gmail.com).
     image: /images/logo.png
     bottomImage:
       enable: false
@@ -157,9 +159,9 @@ params:
     image: "/images/me2.jpg"
     content: |-
       A software developer from the UK specializing in web development.
-      - 9 years experience as an IT consultant, predominantly in banking projects (Zurich and Singapore).
-      - 3 years experience as an independent contractor.
-      - 3 years experience working for startups, building products from the ground up.
+      - 10 years experience as an IT consultant, predominantly in banking projects (Zurich and Singapore).
+      - 4 years experience as an independent contractor.
+      - 4 years experience working for startups, building products from the ground up.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
@@ -170,6 +172,26 @@ params:
         - AWS - API Gateway, Lambda, Cognito, DynamoDB, EC2, ECS
         - DevOps - Jenkins, Docker, AWS Cloud Development Kit
         - Relational and NoSQL Databases - Postgres, MySQL, MongoDB, DynamoDB
+
+  team:
+    enable: true
+    title: My Team
+    # subtitle: The Alpaca Team
+    content: |-
+      Leveraging established networks in Singapore and Vietnam, I lead a team of skilled professionals dedicated to crafting top-tier software solutions for your project.
+      <br>
+      With access to a broad pool of talent, we can assemble a team tailored precisely to your project's requirements.
+      <br>
+      <br>
+      My team excels in essential aspects of software development, covering:
+      - Web Development
+      - Backend Development
+      - Mobile Development
+      - DevOps
+    image: /images/alpaca-team.png
+    bottomImage:
+      enable: false
+    # roundImage: true # Make hero image circular | default false
 
   # Experience
   experience:

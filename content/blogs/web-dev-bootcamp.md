@@ -36,31 +36,34 @@ socialShare: true
 
 ## Introduction
 
-So you are interested in Web Development? There are of 100s of different tracks that can be followed and I am not going to argue that the track below it the only or even best.
-This blog post simply outlines;
+So, you intrigued by the world of Web Development? With numerous tracks to explore, it's essential to recognize that the path outlined below
+isn't the sole or definitive one. Instead, this blog post aims to;
 
-- How I got into web development, what I found useful and what worked for me.
-- Some useful recourses to get you started with web development in 2024.
+- Share my journey into web development, highlighting what proved valuable and effective for me.
+- Provide valuable resources to kickstart your web development journey in 2024.
 
 ## Bootcamp
 
 ### Step 1 - JavaScript Fundamentals
 
-First step is to get familiar with coding in general and learning some javascript.
+First step is to get familiar with coding in general and learning some JavaScript.
 Coding is an infinite virtual jigsaw puzzle where you can build whatever you can imagine.
 If the prospect of this excites you, it serves as a promising indicator to persist and delve deeper into the world of coding.
 
+[Leetcode](https://leetcode.com/) is a great way to test your knowledge. Some people get super into Leetcode as they enjoy solving puzzles. If you are someone who loves Sudoku for example, this might resonate with you. I would say if you are able to answer the "Easy" questions you are ready to move on to step 2. But, if you are having fun, doing some of the "Medium" rated puzzles will definitly serve you very well in your web dev journey.
+
 #### Recourses
 
-- [Codecademy Free Trial](https://www.codecademy.com/courses/introduction-to-javascript/informationals/learn-javascript-welcome)
+- [Codecademy Free Trial](https://www.codecademy.com/courses/introduction-to-javascript/informationals/learn-javascript-welcome) - Learn some JavaScript Fundamentals.
+- [Leetcode - 30 Days of JavaScript](https://leetcode.com/studyplan/30-days-of-javascript/) - Test your understanding. Just the "Easy" questions is enough.
 
 ### Step 2 - Web Dev Fundamentals
 
 The next step would be to learn web dev fundaments. Topics such as;
 
-- Fundamentally how do website work?
-- Where and how does the code I write get executed?
-- How do I style a site?
+- Fundamentally how do websites work?
+- Where/when/how how does my code get executed?
+- How to style a site
 - Responsive design
 - Authentication
 
@@ -71,22 +74,22 @@ The next step would be to learn web dev fundaments. Topics such as;
   to get a free/cheap Udemy subscription.
 - Reddit and Stack Overflow are probably the best places to get answers to your questions. Reddit for general questions questions (e.g: [this](https://www.reddit.com/r/aws/comments/qcpyiz/cheapest_way_to_integrate_aws_cognito_with/))
   Stack Overflow for specific questions (e.g [this](https://stackoverflow.com/questions/69365021/typegoose-mongoose-map-custom-type-to-db))
-- I do not rate classes. If you need a class to pleasure you to keep learning. Maybe you are not motivated enough to keep doing this.
-  Focus on what you enjoy!
+- Classes can be helpful, if that’s your preference, but are definitely not essential and I would probably avoid them. A lot are overpriced, especially when considering the abundance of awesome and free recourses out there (which paid classes will mostly just regurgitate).
+  Either way, mastering web development primarily requires a lot of self learning.
 
 #### What should I learn?
 
 - Learn a frontend framework. I recommend React.
-- If you learn React. Learn functional components form the start. Do not waste your time learning the old style class based components
+- If you learn React. Learn functional components form the start. Do not waste your time learning the old style class based components.
 - You may want to learn a server side React (i.e: [NextJS](https://nextjs.org/)) but I would say that is very complicated place to start.
-  I would suggest starting with single page applications (i.e: [Vite](https://vitejs.dev/guide/)) and be aware that server side React exists so that you can reach for it in future if you need it
+  I would suggest starting with single page applications (i.e: [Vite](https://vitejs.dev/guide/)) and be aware that server side React exists so that you can reach for it in future if you need it.
 
 #### Recourses
 
 - [Udemy - The Web Developer Bootcamp 2024](https://www.udemy.com/course/the-web-developer-bootcamp/) -
   While I haven't personally taken this course, I was thoroughly impressed by my friend's journey. Having transitioned from a school teacher to a web developer,
   they demonstrated remarkable proficiency within just 1.5 years of embarking on their web development venture.
-  This was their first course they highly recommend it.
+  This was their first course and they highly recommend it.
 - For help - [r/aws](https://www.reddit.com/r/aws/), [r/javascript](https://www.reddit.com/r/javascript/), [r/nextjs](https://www.reddit.com/r/nextjs/), [r/node](https://www.reddit.com/r/node/)
 
 ### Step 3 - Learn TypeScript
@@ -107,7 +110,7 @@ You need a lot more than React to build and deploy a modern website.
 
 #### Some key topis
 
-- Working with apis. Even if you are not a full stack developer you will inevitably have to use apis in web development. Learn how to make and consume Type Safe APIs!
+- Working with apis. Even if you are not a full stack developer you will inevitably have to use apis in web development. Learn how to make and consume Type Safe APIs.
 - Learn how to deploy websites. Deploying on AWS is a popular choice. You can do this with TypeScript too!
 
 #### Recourses
@@ -120,8 +123,8 @@ Find some repos that interest you and play around with them. Be curious and add 
 
 #### Recourses
 
-- [Code Samples](/#samples) here are some of my sample projects. Check them out and play around.
-- [GitHub](https://github.com/) there are thousands of projects there to look at! Most cool new libraries (e.g: [TanStack Router](https://tanstack.com/router/v1))
+- [Code Samples](/#samples) - Here are some of my sample projects. Check them out and play around.
+- [GitHub](https://github.com/) - There are thousands of projects there to look at! Most cool new libraries (e.g: [TanStack Router](https://tanstack.com/router/v1))
   have stater projects on GitHub. Playing around with them is a great way to learn.
 
 ### Step 6 - Build a Personal Project
@@ -131,8 +134,8 @@ Do not try to build the next AirBnb. Build something simple and fun that you and
 
 #### Recourses
 
-- [Wakeboard Competition App Project](/blogs/wakeboard-competition-app/) - My first passion project
-- [Code Assignment](https://docs.google.com/document/d/1kjhAq2c5wTl7shTc2lWM8Pe_JBD1edNWy4XQdGbMNiE/edit?usp=sharing) if you are really stuck for ideas then here
+- [Wakeboard Competition App Project](/blogs/wakeboard-competition-app/) - My first passion project.
+- [Code Assignment](https://docs.google.com/document/d/1kjhAq2c5wTl7shTc2lWM8Pe_JBD1edNWy4XQdGbMNiE/edit?usp=sharing) - If you are really stuck for ideas then here
   is a code assignment which I set to evaluate candidates.
 
 ### Step 7 - Call Me! ☎️

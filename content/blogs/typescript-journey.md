@@ -72,66 +72,66 @@ Are you interested in web development with TypeScript? Maybe you already know so
 
 ## Course Outline
 
-#### 1 - Welcome
+### 1 - Welcome
 
 Welcome to my web series “TypeScript Journey” a journey into Modern Web Development, CI/CD and AWS Magic!
 <br/>
 <br/>
 
-#### 2 - Demo Intro & Prerequisites
+### 2 - Demo Intro & Prerequisites
 
 A look at what we will be building in this web series and prerequisites to get started.
 <br/>
 <br/>
 
-#### 3 - Intro TS Mono-Repo
+### 3 - Intro TS Mono-Repo
 
 Introduction to a modern TypeScript Mono-Repository using; Turborepo, yarn workspaces, Eslint, CDK, SST.
 <br/>
 <br/>
 
-#### 4 - Add and deploy Vite React App
+### 4 - Add and deploy Vite React App
 
 Creating a Vite React App in a TypeScript Mono-Repo deploying to AWS using Cloud Development Kit (SST).
 <br/>
 <br/>
 
-#### 5 - Add Next JS App
+### 5 - Add Next JS App
 
 Creating a Next JS App in a TypeScript Mono-Repo using Create T3 App.
 <br/>
 <br/>
 
-#### 6 - Add Next Auth (Cognito)
+### 6 - Add Next Auth (Cognito)
 
 Deploying Cognito Userpool to AWS using Cloud Development Kit (SST) and configuring sign in with Next Auth.
 <br/>
 <br/>
 
-#### 7 - Deploy Next App to AWS
+### 7 - Deploy Next App to AWS
 
 Deploying Next App to AWS using Open Next. Next App runs serverless on AWS lambda which is a very cheap way to deploy a Next App. We also configure AWS Cognito to accept signin redirect requests from the deployed site. And this highlights the issue of dependency cycles that can occur in IAC.
 <br/>
 <br/>
 
-#### 8 - Why I Like this Stack
+### 8 - Why I Like this Stack
 
 An overview of some of the advantages of using this stack. Cheap run costs due to serverless architecture, bleeding edge features, fine grained access control through NextAuth and tRPC and Type Safe APIs.
 <br/>
 <br/>
 
-#### 9 - Fix tRPC Mutations
+### 9 - Fix tRPC Mutations
 
 Open Next does not support streaming tPRC mutations out of the box. This short video shows a fix.
 <br/>
 <br/>
 
-#### 10 - Upload Download Demo
+### 10 - Upload Download Demo
 
 Implementing upload/download functionality to the Next app. Adding an S3 bucket to SST app, importing the bucket into Next App and creating an api to generate pre-signed urls. In this demo, bucket name is defined in a common package and imported into SST app and Next app.
 <br/>
 <br/>
 
-#### 11 - Using SST Bind and Summary
+### 11 - Using SST Bind and Summary
 
 Using SST bind to refactor the approach from the previous video. In this demo, bucket name is defined in SST app and then SST bind is run in Next app to generate types and the bucket name to use. Finally a summary of what we have built.
