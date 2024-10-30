@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 25 Jan 2024 10:53:58 +0530</lastBuildDate><atom:link href="https://ziggy6792.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Privacy Policy</title>
+      <link>https://ziggy6792.github.io/privacy-policy/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://ziggy6792.github.io/privacy-policy/</guid>
+      <description>Privacy Policy Effective Date: September 1, 2024
+This Privacy Policy describes how [Your Company Name] (&amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;) collects, uses, and shares information when you use our custom GPT API.
+1. Information We Collect Personal Information: We may collect personal information such as your name, email address, and login credentials when you use our services. Usage Data: We collect data related to your interactions with the GPT API, including input queries and generated responses.</description>
+    </item>
+    
+    <item>
       <title>Fullstack Web Development - Bootcamp</title>
       <link>https://ziggy6792.github.io/blogs/web-dev-bootcamp/</link>
       <pubDate>Thu, 25 Jan 2024 10:53:58 +0530</pubDate>
