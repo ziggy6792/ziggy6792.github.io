@@ -6,15 +6,14 @@
     <description>Recent content in Cloud Formation on Alpaca Consultants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Mar 2020 09:07:48 +0700</lastBuildDate><atom:link href="https://ziggy6792.github.io/tags/cloud-formation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Mar 2020 09:07:48 +0700</lastBuildDate>
+    <atom:link href="https://ziggy6792.github.io/tags/cloud-formation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome to my blog</title>
       <link>https://ziggy6792.github.io/blogs/wellcome-to-my-blog/</link>
       <pubDate>Sun, 15 Mar 2020 09:07:48 +0700</pubDate>
-      
       <guid>https://ziggy6792.github.io/blogs/wellcome-to-my-blog/</guid>
       <description>In this blog I aspire to detail my journey in adopting AWS Amplify, Cognito, AppSync and DynamoDb.</description>
     </item>
-    
   </channel>
 </rss>

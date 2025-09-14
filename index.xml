@@ -6,116 +6,95 @@
     <description>Recent content on Alpaca Consultants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jan 2024 10:53:58 +0530</lastBuildDate><atom:link href="https://ziggy6792.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Jan 2024 10:53:58 +0530</lastBuildDate>
+    <atom:link href="https://ziggy6792.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Privacy Policy</title>
       <link>https://ziggy6792.github.io/privacy-policy/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://ziggy6792.github.io/privacy-policy/</guid>
       <description>Privacy Policy Effective Date: September 1, 2024
 This Privacy Policy describes how [Your Company Name] (&amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;) collects, uses, and shares information when you use our custom GPT API.
 1. Information We Collect Personal Information: We may collect personal information such as your name, email address, and login credentials when you use our services. Usage Data: We collect data related to your interactions with the GPT API, including input queries and generated responses.</description>
     </item>
-    
     <item>
       <title>Fullstack Web Development - Bootcamp</title>
       <link>https://ziggy6792.github.io/blogs/web-dev-bootcamp/</link>
       <pubDate>Thu, 25 Jan 2024 10:53:58 +0530</pubDate>
-      
       <guid>https://ziggy6792.github.io/blogs/web-dev-bootcamp/</guid>
       <description>Introduction So, you intrigued by the world of Web Development? With numerous tracks to explore, it&amp;rsquo;s essential to recognize that the path outlined below isn&amp;rsquo;t the sole or definitive one. Instead, this blog post aims to;
 Share my journey into web development, highlighting what proved valuable and effective for me. Provide valuable resources to kickstart your web development journey in 2024. Bootcamp Step 1 - JavaScript Fundamentals First step is to get familiar with coding in general and learning some JavaScript.</description>
     </item>
-    
     <item>
       <title>TypeScript Journey - Web Series</title>
       <link>https://ziggy6792.github.io/blogs/typescript-journey/</link>
       <pubDate>Sat, 20 Jan 2024 22:53:58 +0530</pubDate>
-      
       <guid>https://ziggy6792.github.io/blogs/typescript-journey/</guid>
       <description>Introduction Modern web development is an exciting challenge, with a myriad of languages, runtimes, and AWS services to conquer. Dive into this interactive workshop, where we&amp;rsquo;ll explore cutting-edge frontend and backend development, all while staying firmly in the TypeScript world.
 Highlights:
 Create modern TypeScript web apps with React, Vite, and Next.JS. Master TypeScript CI/CD with SST and AWS CDK. Deploy a fullstack application to AWS complete with; Next.js frontend, Node.JS apis, cognito login, S3 upload/download and TypeScript IAC.</description>
     </item>
-    
     <item>
       <title>Join Alpaca Consultants Network</title>
       <link>https://ziggy6792.github.io/join/</link>
       <pubDate>Wed, 01 Mar 2023 22:53:58 +0530</pubDate>
-      
       <guid>https://ziggy6792.github.io/join/</guid>
       <description>Join Alpaca Consultants Network Engage in tech discussions Acquire knowledge and solutions Get answers to tech questions Recruiting skilled developers for paid projects </description>
     </item>
-    
     <item>
       <title>Whire</title>
       <link>https://ziggy6792.github.io/projects/whire/</link>
       <pubDate>Wed, 01 Mar 2023 22:53:58 +0530</pubDate>
-      
       <guid>https://ziggy6792.github.io/projects/whire/</guid>
       <description>Introduction Whire is a Singaporean Tech Startup which helps companies hire great people faster through its platform and a top tier community of hiring ambassadors, saving companies hours on pre-screening and outreach efforts as well as thousands of dollars on job ads and agency fees without compromising candidate quality.
 Motivation Benjamin Marsili (founder of Whire) hired me to help him build a recruiting network platform for companies to;
 Broadcast jobs from LinkedIn (and other sources) Directly interview candidates who are referred members of the Whire network Make hiring decisions and then pay for successfully hired candidates For more information on Whire visit whire.</description>
     </item>
-    
     <item>
       <title>Alpaca Cup</title>
       <link>https://ziggy6792.github.io/projects/alpaca-cup/</link>
       <pubDate>Wed, 01 Feb 2023 22:53:58 +0530</pubDate>
-      
       <guid>https://ziggy6792.github.io/projects/alpaca-cup/</guid>
       <description>Introduction Alpaca Cup is an event management application for hosting and scoring competitions. The app has already been used in wakeboarding and wakeskating competitions all over the world, and we hope to branch out in other extreme sports in the future (such as skateboarding).
 Alpaca Cup serves 2 main purposes;
 Sharing event information (who is in each round, when rounds start, who progress to the next round) Sharing results for each round in realtime (i.</description>
     </item>
-    
     <item>
       <title>Alpaca Cup Architecture</title>
       <link>https://ziggy6792.github.io/blogs/alpaca-cup-architecture/</link>
       <pubDate>Wed, 01 Feb 2023 22:53:58 +0530</pubDate>
-      
       <guid>https://ziggy6792.github.io/blogs/alpaca-cup-architecture/</guid>
       <description>Introduction This article shows an overview of the technology and architecture behind Alpaca Cup, an event management application for hosting and scoring competitions.
 To try the Alpaca Cup yourself, visit alpacacup.com.
 Related Articles Click here for introduction and overview of app features Click here for deep dive into the original motivations for this project Tools Amazon Web Services Alpaca Cup makes use of several cloud services and tools provided by Amazon Web Services (AWS), which offer;</description>
     </item>
-    
     <item>
       <title>Image Gallery</title>
       <link>https://ziggy6792.github.io/gallery/</link>
       <pubDate>Sat, 25 Jun 2022 18:35:46 +0530</pubDate>
-      
       <guid>https://ziggy6792.github.io/gallery/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Accessing Amplify GraphQL API objects from Lambda functions</title>
       <link>https://ziggy6792.github.io/blogs/amplify-lambda-dynamodb/</link>
       <pubDate>Fri, 20 Mar 2020 09:07:48 +0700</pubDate>
-      
       <guid>https://ziggy6792.github.io/blogs/amplify-lambda-dynamodb/</guid>
       <description>Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article focuses on creating a Lambda function with Amplify CLI that has access to these tables.</description>
     </item>
-    
     <item>
       <title>Wakeboard Competition App Project</title>
       <link>https://ziggy6792.github.io/blogs/wakeboard-competition-app/</link>
       <pubDate>Thu, 19 Mar 2020 09:07:48 +0700</pubDate>
-      
       <guid>https://ziggy6792.github.io/blogs/wakeboard-competition-app/</guid>
       <description>A short write up the Wakeboard Competition Management App; motivation, requirements, tools and design.</description>
     </item>
-    
     <item>
       <title>Welcome to my blog</title>
       <link>https://ziggy6792.github.io/blogs/wellcome-to-my-blog/</link>
       <pubDate>Sun, 15 Mar 2020 09:07:48 +0700</pubDate>
-      
       <guid>https://ziggy6792.github.io/blogs/wellcome-to-my-blog/</guid>
       <description>In this blog I aspire to detail my journey in adopting AWS Amplify, Cognito, AppSync and DynamoDb.</description>
     </item>
-    
   </channel>
 </rss>

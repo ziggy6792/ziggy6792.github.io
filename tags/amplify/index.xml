@@ -6,24 +6,21 @@
     <description>Recent content in Amplify on Alpaca Consultants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Mar 2020 09:07:48 +0700</lastBuildDate><atom:link href="https://ziggy6792.github.io/tags/amplify/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Mar 2020 09:07:48 +0700</lastBuildDate>
+    <atom:link href="https://ziggy6792.github.io/tags/amplify/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Accessing Amplify GraphQL API objects from Lambda functions</title>
       <link>https://ziggy6792.github.io/blogs/amplify-lambda-dynamodb/</link>
       <pubDate>Fri, 20 Mar 2020 09:07:48 +0700</pubDate>
-      
       <guid>https://ziggy6792.github.io/blogs/amplify-lambda-dynamodb/</guid>
       <description>Amplify offers the ability to add Lambda functions which use other configured resources including AppSync API DynamoDB Tables. This article focuses on creating a Lambda function with Amplify CLI that has access to these tables.</description>
     </item>
-    
     <item>
       <title>Welcome to my blog</title>
       <link>https://ziggy6792.github.io/blogs/wellcome-to-my-blog/</link>
       <pubDate>Sun, 15 Mar 2020 09:07:48 +0700</pubDate>
-      
       <guid>https://ziggy6792.github.io/blogs/wellcome-to-my-blog/</guid>
       <description>In this blog I aspire to detail my journey in adopting AWS Amplify, Cognito, AppSync and DynamoDb.</description>
     </item>
-    
   </channel>
 </rss>

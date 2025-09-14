@@ -6,37 +6,32 @@
     <description>Recent content in Alpaca Cup on Alpaca Consultants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Feb 2023 22:53:58 +0530</lastBuildDate><atom:link href="https://ziggy6792.github.io/tags/alpaca-cup/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Feb 2023 22:53:58 +0530</lastBuildDate>
+    <atom:link href="https://ziggy6792.github.io/tags/alpaca-cup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alpaca Cup</title>
       <link>https://ziggy6792.github.io/projects/alpaca-cup/</link>
       <pubDate>Wed, 01 Feb 2023 22:53:58 +0530</pubDate>
-      
       <guid>https://ziggy6792.github.io/projects/alpaca-cup/</guid>
       <description>Introduction Alpaca Cup is an event management application for hosting and scoring competitions. The app has already been used in wakeboarding and wakeskating competitions all over the world, and we hope to branch out in other extreme sports in the future (such as skateboarding).
 Alpaca Cup serves 2 main purposes;
 Sharing event information (who is in each round, when rounds start, who progress to the next round) Sharing results for each round in realtime (i.</description>
     </item>
-    
     <item>
       <title>Alpaca Cup Architecture</title>
       <link>https://ziggy6792.github.io/blogs/alpaca-cup-architecture/</link>
       <pubDate>Wed, 01 Feb 2023 22:53:58 +0530</pubDate>
-      
       <guid>https://ziggy6792.github.io/blogs/alpaca-cup-architecture/</guid>
       <description>Introduction This article shows an overview of the technology and architecture behind Alpaca Cup, an event management application for hosting and scoring competitions.
 To try the Alpaca Cup yourself, visit alpacacup.com.
 Related Articles Click here for introduction and overview of app features Click here for deep dive into the original motivations for this project Tools Amazon Web Services Alpaca Cup makes use of several cloud services and tools provided by Amazon Web Services (AWS), which offer;</description>
     </item>
-    
     <item>
       <title>Wakeboard Competition App Project</title>
       <link>https://ziggy6792.github.io/blogs/wakeboard-competition-app/</link>
       <pubDate>Thu, 19 Mar 2020 09:07:48 +0700</pubDate>
-      
       <guid>https://ziggy6792.github.io/blogs/wakeboard-competition-app/</guid>
       <description>A short write up the Wakeboard Competition Management App; motivation, requirements, tools and design.</description>
     </item>
-    
   </channel>
 </rss>

@@ -6,27 +6,24 @@
     <description>Recent content in Cloud Development Kit on Alpaca Consultants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jan 2024 10:53:58 +0530</lastBuildDate><atom:link href="https://ziggy6792.github.io/tags/cloud-development-kit/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Jan 2024 10:53:58 +0530</lastBuildDate>
+    <atom:link href="https://ziggy6792.github.io/tags/cloud-development-kit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fullstack Web Development - Bootcamp</title>
       <link>https://ziggy6792.github.io/blogs/web-dev-bootcamp/</link>
       <pubDate>Thu, 25 Jan 2024 10:53:58 +0530</pubDate>
-      
       <guid>https://ziggy6792.github.io/blogs/web-dev-bootcamp/</guid>
       <description>Introduction So, you intrigued by the world of Web Development? With numerous tracks to explore, it&amp;rsquo;s essential to recognize that the path outlined below isn&amp;rsquo;t the sole or definitive one. Instead, this blog post aims to;
 Share my journey into web development, highlighting what proved valuable and effective for me. Provide valuable resources to kickstart your web development journey in 2024. Bootcamp Step 1 - JavaScript Fundamentals First step is to get familiar with coding in general and learning some JavaScript.</description>
     </item>
-    
     <item>
       <title>TypeScript Journey - Web Series</title>
       <link>https://ziggy6792.github.io/blogs/typescript-journey/</link>
       <pubDate>Sat, 20 Jan 2024 22:53:58 +0530</pubDate>
-      
       <guid>https://ziggy6792.github.io/blogs/typescript-journey/</guid>
       <description>Introduction Modern web development is an exciting challenge, with a myriad of languages, runtimes, and AWS services to conquer. Dive into this interactive workshop, where we&amp;rsquo;ll explore cutting-edge frontend and backend development, all while staying firmly in the TypeScript world.
 Highlights:
 Create modern TypeScript web apps with React, Vite, and Next.JS. Master TypeScript CI/CD with SST and AWS CDK. Deploy a fullstack application to AWS complete with; Next.js frontend, Node.JS apis, cognito login, S3 upload/download and TypeScript IAC.</description>
     </item>
-    
   </channel>
 </rss>
